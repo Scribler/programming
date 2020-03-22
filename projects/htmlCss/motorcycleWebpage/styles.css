@@ -1,0 +1,45 @@
+@font-face{
+   font-family: 'Montserrat';
+   src: url(/resources/fonts/Montserrat/Montserrat-medium.tff);
+   font-weight: medium;
+}
+
+@font-face{
+   font-family: 'Montserrat';
+   src: url('./resources/fonts/Montserrat/Montserrat-light.tff');
+   font-weight: light;
+}
+
+h1, h2 {
+   color: green;
+   font-family: Montserrat;
+   font-weight: medium;
+}
+
+h1 {
+   font-size: 2em;
+   font-weight: 100;
+}
+
+h2 {
+   font-size: 1em;
+   font-weight: 800px;
+}
+
+p {
+   font-size: .8em;
+   text-align: justify;
+   font-family: Montserrat;
+   font-weight: medium;
+}
+
+.picture {
+   height: 10em;
+   width: auto;
+}
+
+.author {
+   height: 5em;
+   width: auto;
+   border-radius: 90%
+}

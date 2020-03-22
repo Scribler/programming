@@ -1,0 +1,59 @@
+HOW TO BUILD A WEBSITE
+
+7 STEPS
+
+1 -  DEFINE YOUR PROJECT
+      - Define the goal of your project
+      - Define your audience
+      - Design with your goal and audience in mind
+2 -  PLAN OUT EVERYTHING
+      - Plan your content: text, images, video's, icons, etc.
+      - Start thinking about visual hierarchy
+      - Define the navigation 
+      - Define the site structure if it's a bigger project
+3 -  SKETCH YOUR IDEAS BEFORE YOU DESIGN
+      - Get inspired and think about your design
+      - Get ideas out of your head: sketch your ideas before you start designing
+      - Make as many sketches as you want, but don't make it perfect
+      - NEVER START DESIGNING WITHOUT HAVING AN IDEA OF WHAT YOU WANT TO BUILD
+4 -  DESIGN AND DEVELOPE YOUR WEBSITE
+      - Design your website using guidelines and tips you learned in the web design section
+      - Do that using HTML and CSS, designing in the browser
+      - Use sketches, content and planning decisions you've made in steps 1,2, and 3.
+      - This step is the biggest part of building a website, but: all steps are imiportant!
+5 -  IT'S NOT DONE YET: OPTIMIZATION
+      - Optimize performance: site speed
+      - Search engine optimization (SEO)
+6 -  LAUNCH THE MASTERPIECE
+      - All you need for launching is a webserver that will host your website and deliver it to the world.
+7 -  SITE MAINTENANCE
+      - Launching is not the end of the story
+      - Monitor your users behavior and change your website if necessary
+      - Update your ocntent regularly: blog
+
+WEBSITE STUFF
+
+html = content
+css = style
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

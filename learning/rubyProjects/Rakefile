@@ -1,0 +1,17 @@
+namespace :admin do
+  desc "writes 'hello world'"
+  task :hello_world do
+    puts "Hello world!"
+  end
+end
+
+namespace :dude do
+  desc "It bee's chill an stuff"
+  task :sup do
+    puts "Sup dude?"
+    print "> "
+    chill_answer = $stdin.gets.chomp
+    puts "#{chill_answer}?! Narley dude!"
+    puts "And remember. Be excellent to each other. And PARTY ON dudes!"
+  end
+end

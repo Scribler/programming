@@ -1,0 +1,30 @@
+#numberedul{
+    padding: 20px;
+    max-width: 275px;
+    color: red;
+    background: lightpink;
+}
+
+#letteredul{
+    padding: 20px;
+    max-width: 275px;
+    color: green;
+    background: lightslategray;
+}
+
+.numbered{
+
+}
+
+.lettered{
+    
+}
+
+li{
+    list-style-type: none;
+    max-width: 200px;
+    padding: 10px;
+    margin: 8px;
+    background: #eee;
+    border: 1px dotted #ddd;
+}

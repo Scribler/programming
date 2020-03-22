@@ -1,0 +1,303 @@
+*INDEX* (topics organized by line number)
+
+58) Efficiency with Code
+119-259) Missing Semester Course Notes
+260-???) Git/Homebrew Notes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*INDEX END*
+
+(58) EFFICIENCY WITH CODE - Youtube Video is Bookmarked for later.
+
+DEFINITIONS:
+
+EFFICIENCY: - HOW MUCH WORK IS REQUIRED BY A TASK
+    - Improving efficiency involves doing less work
+    - An efficient program is one which does the minimum (that we're aware of) amound of work to accomplish a given task.
+
+PERFORMANCE: - HOW QUICKLY A PROGRAM DOES ITS WORK
+
+- Improving performance involves doing work faster
+- But, there is no such thing as "performant", not even a word in the English Language
+    - There is essentially no point at which a program cannot do work any faster... until you hit Bremermann's limit...(max physically possible according to physics)
+
+
+***ON EFFICIENT CODING AND HOW TO ACCOMPLISH REPEATABLE SPEED***
+
+
+    On the surface it would appear that Java is faster than c++ but Java doesn't give you the same amount of control over that speed as c++ does. This means that a novice in c++ will have a slower program, at least at first, but if they become better that situation changes and all of a sudden they will not be the slower one.
+
+HIGH LEVEL THESIS:
+
+-Efficiency through Algorithms
+-Performance through Data Structures
+
+
+    The goal is to do the least amount of work. There is a limit, and you want to use all of it to do your computation as quickly as possible.  You can have tons of power but if you don't utilize it to accomplish your task you won't have good performance. Even if you have brilliant algorithms in place, you will still be slow, because your system isn't utilizing the actual power that you have available in order to USE those algorithms. There is a limit to the amount that is reasonable of course.  You just want to make sure that you utilize the amount that makes your code run fastest.
+
+ALL COMES BACK TO WATTS
+- Every circuit not used on a processor is wasting power
+- Don't reduce this to the absurd -- it clearly doesn't make sense to use more parts of the CPU without improving performance!
+
+Efficiency > ALGORITHMS (you can use the same ones on all systems)
+- Complexity theory & analysis
+- Common across higher level languages, etc.
+- Very well understood by most (I hope?)
+- IMproving algorithmic efficiency requires finding a different way of solving the problem.
+
+SUB-STRING SEARCHING
+- initially, you might have a basic O(n^2) algorithm
+- Next, we have Knuth-Morris-Pratt (a table to skip)
+- Finally, we have Boyer-Moore (use the end of the needle)
+
+
+
+
+
+
+     
+
+     
+
+
+
+
+
+
+
+
+
+
+(119) MISSING SEMESTER COURSE NOTES
+
+bash            - "Born Again SHell". How you interact with the computer
+terminal        - A window to view a shell. Typically, but not always where you access bash.
+shell prompt    - The prompt sends commands to bash in the case of mac or linux.
+environment-variable - is a variable that is set in the shell.  ex. date ex2. $PATH etc...
+path            - path from root
+relative-path   - path from where you currently are down to root.
+                - ex. ../../../directory/directory/file.doc (This goes down and then back up, and is a way to traverse the filesystem using relative paths.
+pwd             - print working directory
+ls              - list ex. ls .. (this lists the previous directory)
+
+~               - brings you to the home directory ex. cd ~/ (this brings you to home and you can write relative file paths coming from the home directory using this.
+
+**Most programs take arguments like "flags" and "options" that usually start with a dash or two ex. --help **
+EX. usage is(for ls) ls [OPTION]... [FILE]... (where 3 dots means one or more, and the square brackets means what is within is optional. Hence this means ls can take an optional number of options and an optional number of files.
+    -An option is a tag that takes a value ex. -a
+    -A flag is a tag that doesn't take a value ex. --color[WHEN]
+**
+
+-l              - flag that gives you additional information about files such as permissions.
+
+drwx             - directory / read / write / execute(search) / -(no permission) permision styles
+
+!!!EXAMPLE OF FILE PERMISIONS AND WHICH EACH SECTION IS FOR!!!
+***PERMISIONS FOR FILES***
+first character - Directory = 'd' /  file = '-' / s = ? / t = ? / l = ? / 
+r               - read - read it's contents
+w               - write - save the file / edit
+x               - execute - can execute the file 
+***PERMISIONS FOR FILES***
+***PERMISIONS FOR DIRECTORIES***
+r               - read(list) - are you alowed to see which files are in this directory.
+w               - write - rename create remove files in this directory. If you have write access to a file, but not to the parent directory, you will not be able to delete the file.You will be able to edit it and even empty it, but you will not be able to totally remove the file.
+x               - execute(search) - are you allowed to enter this directory. If you want to access a file you must have x on the file and all the directory files preceeding it. and you have to enter from the most parental directory.
+***PERMISIONS FOR DIRECTORIES***
+
+PERMISIONS      
+first-group     - Permisions for Owner of file
+second-group    - Permisions for Group that owns file
+third-group     - Permisions for everyone else
+first name      - Owner of file
+second name     - Group owner of file
+
+drwxr-xr-x   4 stevenmcintyre  staff        - directory/rwx/r-x/r-x/
+-rwx------   7 stevenmcintyre  staff        - file/rwx/---/---/
+drwxr-xr-x  66 stevenmcintyre  staff        - directory/rwx/r-x/r-x/
+-rw-r--r--@     - file/rw-/r--/r--/@
+
+
+
+
+mv              - rename file or move file or both.
+cp              - lets you copy a file.  Takes two arguments. from path and two path.
+rm              - lets you remove a file (it's not recursive)(unless you pass the -r flag which)
+rmdir           - lets you remove a directory, but only if it is empty
+mkdir           - lets you create a new directory(or more than one directory if you put spaces)
+man             - manual pages (takes as an argument the name of another program and gives you the manual page for that program. It's easier to navigate than the --help pages and is basically the same. [press q to quit]
+C-l             -clears the screen
+
+Everything has a default input and output stream, and this allows you to chain outputs into inputs and make chains of commands.
+ex. echo hello > hello.txt [this will make a file called hello.txt and put the text 'hello' into it.  it will not echo to the console because the output of the echo program has been redirected into the new file 'hello.txt'.
+
+cat             - prints the contents of a file.
+>               - This rewires the output into whatever it points at.(this will rewrite the file).
+>>              - This is append which adds it to whatever it points at without rewriting it.
+|               - take the output of the program to the left, and make it the input of the program to the right.
+curl            - transfer a URL (a tool to transfer data from or to a server.  You can use this to get information from a website or even scroll through a website with many pages if they are numbered... You could then use it to pull from or push to each page! This is cool stuff!  This is probably something that is used with web browsers.  HMMMM... This is starting to get interesting.
+
+**COMMANDS TO PLAY WITH**
+curl --head --silent google.com
+curl --head --silent google.com | grep -i content-length
+curl --head --silent google.com | grep -i content-length | cut --delimiter=' ' -f2
+
+you can use | to send images and video files in binery too!
+
+root user       - superuser (sudo)[superuser do]
+
+sudo            - do as su(superuser) runs program as root
+
+***Linux Only***
+sysfs(linuxOnly)- sys (kernal parameters)(accesed by sudo cd /sys)
+    sys is only for linux. mac doesn't give you this accessability :(  really finding myself wanting to use linux more.
+
+    echo 1060 | sudo tee brightness - This would change your screen brightness on your screen to 1060.  You can't run sudo first, because echo is a separate program and so when you try to apply it to the file in sys it doesn't have sudo privalege.  This is why you pipe echo into the sudo program.
+    "tee" in this case is like > or >> but it also prints to the console to confirm what you've just transfered.
+***Linux Only End***
+
+sudo su         - Opens a shell as root. You can use this to change things in sys if you are running linux, although the sudo su command does work in osx.
+
+tee             -is like > or >> but it also prints to the console to confirm what you've just transfered.
+
+open [file]     -xdg open if in linux this command will open a file with the appropriate program. txt with text edit, etc...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(260) Git/Homebrew Notes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
