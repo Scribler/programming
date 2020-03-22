@@ -1,4 +1,4 @@
+#ignore .DS-Store file
 *.DS_Store
-*~
-*.swp
-*.swo
+#ignore all vim swap files
+.*.s[a-w][a-z]
