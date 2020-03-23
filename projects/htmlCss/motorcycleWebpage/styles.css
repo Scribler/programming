@@ -1,36 +1,31 @@
-@font-face{
-   font-family: 'Montserrat';
-   src: url(/resources/fonts/Montserrat/Montserrat-medium.tff);
-   font-weight: medium;
-}
-
-@font-face{
-   font-family: 'Montserrat';
-   src: url('./resources/fonts/Montserrat/Montserrat-light.tff');
-   font-weight: light;
+body {
+   font-family: Helvetica Neue, Arial;
+   font-size: 18px;
+   color: #B7E1AB;
+   background-color: #777777;
 }
 
 h1, h2 {
-   color: green;
-   font-family: Montserrat;
-   font-weight: medium;
+   color: #91A8FF;
+   /* font-weight: medium; */
+   font-family: Helvetica Neue, Arial;
+
 }
 
 h1 {
-   font-size: 2em;
-   font-weight: 100;
+   font-size: 40px;
+   /* font-weight: 100; */
 }
 
 h2 {
-   font-size: 1em;
-   font-weight: 800px;
+   font-size: 25px;
+   /* font-weight: 800px; */
 }
 
 p {
-   font-size: .8em;
    text-align: justify;
-   font-family: Montserrat;
-   font-weight: medium;
+   font-family: Helvetica Neue, Arial;
+   /* font-weight: medium; */
 }
 
 .picture {
