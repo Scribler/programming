@@ -1,12 +1,47 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.clearfix:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
 body {
    font-family: Helvetica Neue, Arial;
    font-size: 18px;
-   color: #B7E1AB;
-   background-color: #777777;
+   background-color: #777;
+}
+
+.container {
+   width: 940px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.blog-post {
+   background-color: #0000ff;
+   width: 75%;
+   float: left;
+   padding-left: 30px;
+   padding-right: 30px;
+   
+}
+
+.other-posts {
+   background-color: #00ff00;
+   width: 25%;
+   float: left;
+}
+
+.author-box {
+   background-color: #ffff00;
 }
 
 h1, h2 {
-   color: #91A8FF;
    /* font-weight: medium; */
    font-family: Helvetica Neue, Arial;
 
@@ -14,18 +49,20 @@ h1, h2 {
 
 h1 {
    font-size: 40px;
+   margin-top: 20px;
+   margin-bottom: 20px;
    /* font-weight: 100; */
 }
 
 h2 {
    font-size: 25px;
+   margin-bottom: 10px;
    /* font-weight: 800px; */
 }
 
-p {
+.maintext {
    text-align: justify;
-   font-family: Helvetica Neue, Arial;
-   /* font-weight: medium; */
+   margin-bottom: 20px;
 }
 
 .picture {
@@ -33,8 +70,12 @@ p {
    width: auto;
 }
 
-.author {
+.authorpic {
    height: 5em;
    width: auto;
    border-radius: 90%
+}
+
+.authortext {
+   font-size: 22px;
 }

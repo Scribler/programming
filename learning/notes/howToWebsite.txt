@@ -1,6 +1,53 @@
 HOW TO BUILD A WEBSITE
 
-7 STEPS
+INDEX
+
+50) 7 Steps of Building A Website
+85) The CSS Box Model
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+50) 7 Steps of Building A Website
 
 1 -  DEFINE YOUR PROJECT
       - Define the goal of your project
@@ -31,11 +78,26 @@ HOW TO BUILD A WEBSITE
       - Monitor your users behavior and change your website if necessary
       - Update your ocntent regularly: blog
 
-WEBSITE STUFF
 
-html = content
-css = style
 
+
+
+85) THE CSS BOX MODEL
+
+-  Content: text, images. etc
+-  Padding: transparent area around the content, inside of the box.
+-  Border: goes around the padding and the content
+-  Margin: space between tghe boxes
+
+With box-sizing: border-box in CSS, we can define the height and the width for an entire box, rather than just for the content.
+   - normally it is related to the width and height of the content.
+   - To do this set box-sizing to : border-box
+
+   Block Elements: use the full width of the browser and force line breaks
+
+   Inline Elements: images, links, strong and em elements.  You can't set their height and their width.
+
+   The browser with specify margins to most elements unless you start by removing them. Do this.
 
 
 
