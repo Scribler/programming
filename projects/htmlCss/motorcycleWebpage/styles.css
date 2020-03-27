@@ -6,6 +6,10 @@
 
 html { 
    background-color: #C3C3C3;
+   font-size: 16px;
+}
+h1 {
+   font-size: 45;
 }
 
 .title-bar h1{
@@ -25,6 +29,7 @@ html {
 body {
    font-family: Helvetica Neue, Arial;
    font-size: 18px;
+   height: 100%;
 }
 
 .blog-lists {
@@ -41,7 +46,7 @@ body {
    padding: 20px;
 }
 
-.container {
+.article-container {
    width: 940px;
    margin: 50px auto 0 auto;
 }
@@ -55,15 +60,20 @@ body {
 }
 
 .other-posts {
-   width: 25%;
    float: left;
+   width: 25%;
+   height: 100%;
    list-style: none;
 }
-
+.other-posts li {
+   font-size: .8em;
+   margin: 5px 0 40px 10px;;
+}
 .author-box {
    border-top: 1px solid #777;
    padding: 30px 0px 30px 30px;
 }
+
 
 h1, h2 {
    /* font-weight: medium; */
@@ -78,7 +88,7 @@ h1 {
 }
 
 h2 {
-   font-size: 25px;
+   font-size: 20px;
    margin-bottom: 10px;
    /* font-weight: 800px; */
 }
@@ -102,3 +112,4 @@ h2 {
 .authortext {
    font-size: 22px;
 }
+
