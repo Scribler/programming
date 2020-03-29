@@ -1,19 +1,1 @@
-* {
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
-}
-
-html {
-	background-color: #fff;
-	color: #555;
-	font-family: 'lato', 'Arial', 'sans-serif';
-	font-weight: 300;
-	text-rendering: optimizeLegibility;
-}
-
-h1 {
-	font-size: 30px;
-	font-weight: 300;
-	color: rgb(57, 87, 61);
 }

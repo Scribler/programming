@@ -8,8 +8,23 @@ html {
    background-color: #C3C3C3;
    font-size: 16px;
 }
+
 h1 {
-   font-size: 45;
+   font-size: 75px;
+}
+
+.blog-post {
+   width: 75%;
+   float: left;
+   padding: 0 30px 0 30px;
+   padding-right: 30px;
+   position: relative;
+}
+.date {
+   padding-bottom: 65px;
+}
+.opening-paragraph {
+   padding-bottom: 20px;
 }
 
 .title-bar h1{
@@ -32,11 +47,15 @@ body {
    height: 100%;
 }
 
-.blog-lists {
+.reg-list{
+   padding: 0 0 0 30px;
+}
+
+.blog-list {
    list-style: none;
 }
-.blog-lists li{
-   padding: 20px 0 5px 0;
+.blog-list li{
+   padding: 45px 0 35px 0;
 }
 
 .sidebar-lists {
@@ -46,24 +65,19 @@ body {
    padding: 20px;
 }
 
-.article-container {
+.container {
    width: 940px;
    margin: 50px auto 0 auto;
 }
 
-.blog-post {
-   width: 75%;
-   float: left;
-   padding: 0 30px 0 30px;
-   padding-right: 30px;
-   
-}
+
 
 .other-posts {
    float: left;
    width: 25%;
    height: 100%;
    list-style: none;
+   padding-right: 30px;
 }
 .other-posts li {
    font-size: .8em;
@@ -73,6 +87,19 @@ body {
    border-top: 1px solid #777;
    padding: 30px 0px 30px 30px;
 }
+.author-box img{
+   height: 5em;
+   width: auto;
+   border-radius: 90%;
+   float: left;
+}
+.authortext {
+   font-size: 22px;
+   margin-top: 40px;
+   margin-left: 20px;
+   float: left;
+}
+
 
 
 h1, h2 {
@@ -88,7 +115,7 @@ h1 {
 }
 
 h2 {
-   font-size: 20px;
+   font-size: 30px;
    margin-bottom: 10px;
    /* font-weight: 800px; */
 }
@@ -101,15 +128,5 @@ h2 {
 .picture {
    height: 10em;
    width: auto;
-}
-
-.authorpic {
-   height: 5em;
-   width: auto;
-   border-radius: 90%
-}
-
-.authortext {
-   font-size: 22px;
 }
 
