@@ -63,6 +63,21 @@ people's eyes towards)
 
    WORKING WITH ICONS!
 
+   1) USE ICONS TO LIST FEATURES / STEPS -  help to get an ideo of what's around them.
+   2) USE ICONS FOR ACTIONS & LINKS -  Like I'm going to do with my website!
+        ***RULES FOR USING ICONS***
+         - icon's should be recognizable
+         - label your icons
+   3) ICONS SHOULD NOT TAKE A CENTER STAGE IN YOUR DESIGN!
+   4) USE 'ICON FONTS' WHENEVER POSSIBLE (they have higher resolution and scale ;))
+   
+
+
+
+   SPACING & LAYOUT
+
+   1)
+
 
 
 
