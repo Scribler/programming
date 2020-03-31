@@ -1,6 +1,81 @@
+
+
+THE MAIN THINGS YOU CAN USE TO MAKE A GREAT WEBSITE!
+
 Designer - Creates the look and feel
 Develper - Makes the website
 
-TYPOGRAPHY
+
+
+
+TYPOGRAPHY!
+
+1) FONT SIZE- between 15px - 25px
+
+2) HEADINGS - Make them BIG (32 - 90) ish No real size limit but reduce the font weight if
+           you are going to go really big
+
+3) LINE SPACING - 120% - 150% 100% is too tight and 200% is way too wide
+
+4) CHARACTERS PER LINE - 45 - 90 characters per line is the easiest to read and follow
+   along with.  Too long is hard for the eye's to track and two narrow looks weird (unless it is in columbs)
+
+5) USE GOOD FONTS - ex.- serif(Traditional purposes,Storytelling,Longreading)
+                       - sans-serif(more neutral,clean,simple,modern)
+ Good Sans-Serif fonts - Open Sans,Lato,Raleway,Monsterrat,PTsans
+ Good serif fonts ------ Cardo,Merriweather,PTserif
+
+
+
+
+PICKING COLORS!
+
+
+1) USE ONLY ONE BASE COLOR & black white or some shade of gray. ***You can also use different shades of that
+      color in order to create a color pallet for your website.
+2) USE A TOOL TO CHOOSE THE RIGHT COLORS
+3) USE COLOR TO DRAW ATTENTION - pick a main color (and use the second one for buttons and other important things you want to draw 
+people's eyes towards)
+4) Never Use Black
+5) CHOOSE COLORS WISELY - basic color theory
+   - RED    - power,passion,strength,excitement. (darker more powerful/elegent### lighter tones more energetic)
+   - ORANGE - draws attention, but not as overpowering as red. Cheerfulness and creativity, (friendliness,confidence,courage)
+   - YELLOW - gives feeling of happiness and livliness(associates with curiosity,intelligence,brightness,etc)
+   - GREEN  - color of harmony,nature,life,and health.(also often associated with money.)(in design has a ballancing/hormonizing effect)
+   - BLUE   - Paitience,peace,trustworthiness,stability(associated with professionalism,trust,honor)
+   - PURPLE - Power,nobility,wealth(wisdom,royalty,nobility,luxury,and myster)
+   - PINK   - Romance,pacivity,care,peace,affection,etc
+   - BROWN  - Relaxation, confidence(earthiness,nature,durability,comfort,reliability)
+
+
+
+
+   WORKING WITH IMAGES!
+
+   1) PUT TEXT DIRECTLY ON IMAGE -  (must be a dark image or it won't work well, also it may look good on your screen, but you don't control the end user's contrast ratio)
+   2) OVERLAY THE IMAGE WITH A COLOR -   put a transparent color over the entire picture to give yourself something uniform to put the test overtop of.(You can do this with color gradients as well) Keep in mind color theory when you are doing this.
+   3) PUT YOUR TEST IN A BOX -  you can just put an opaque box over the picture so you can still see the picture.
+   4) BLUR THE IMAGE -  using a filter or simply an out of focus part of the picture. ***Make sure it stays on the blured part of the picture in any screen resolution. Remember to take into account other form factors!
+   5) FLOOR FADE -  blend the bottom of the picture into black and put the text over that bottom section.
+
+
+
+
+   WORKING WITH ICONS!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
