@@ -2,12 +2,14 @@
 <html>
    <head>
       <title>Steven's Blog Of Random Things</title>
-      <link rel="stylesheet" type="text/css" href="styles.css"/>
-      <link rel="stylesheet" type="text/css" href="normalize.css"/>
+      <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css"/>
+      <!-- my css always last -->
+      <link rel="stylesheet" type="text/css" href="resources/css/styles.css"/>
    </head>
 
    <body>
       <div class="container">
+         <div class="above-footer">
          <div class="title-bar">
             <h1>Steven's Blog Of Random Things</h1>
          </div>
@@ -24,11 +26,11 @@
                         <a href="https://www.yamahamotorsports.com/dual-sport/models/wr250r" target="_blank">WR250R Webpage</a>
                      And here are some pictures of it out in the wild!
                         <br>
-                        <a href="wr250r.jpg" target="_blank">Link to picture of WR250R</a>
+                        <a href="resources/pictures/wr250r.jpg" target="_blank">Link to picture of WR250R</a>
                      </p>
                      
-                     <img class="picture" src="wr250r.jpg" alt="picture of a Yamaha wr250r dualsport motorcycle">
-                     <img class="picture" src="wr250r-bike-valley.jpg" alt="picture of a Yamaha wr250r dualsport motorcycle overlooking a valley">
+                     <img class="picture" src="resources/pictures/wr250r.jpg" alt="picture of a Yamaha wr250r dualsport motorcycle">
+                     <img class="picture" src="resources/pictures/wr250r-bike-valley.jpg" alt="picture of a Yamaha wr250r dualsport motorcycle overlooking a valley">
 
 
                      <li><h3>Kawasaki KLX250s</h3></li>
@@ -40,7 +42,6 @@
                </ul>
             <br>
          </div>
-
             <ul class="other-posts">
                <li><a href="howToBeginLearningWebDevelopement.html">How to Begin to Learn Programming / Webdevelopement</a></li>
                <li>How to approach hobbies in a busy life</li>
@@ -51,17 +52,22 @@
                <li>Eighth Blog Post</li>
             </ul>
 
+         <!-- <div class="other-posts-container"> -->
+         <!-- </div> -->
+            
          <div class="clearfix"></div>
+         </div>
          <div class="author-box">
-            <img class="authorpic" src="me.jpg" alt="Picture of Steven McIntyre">
+            <img class="authorpic" src="resources/pictures/me.jpg" alt="Picture of Steven McIntyre">
             <p class="authortext">
             Author: Steven McIntyre<br>
             email: ***********@gmail.com
             </p>
+            <div class="clearfix"></div>
         </div>
       </div>
    </body>
 
-         <script src="sandbox.js"></script>
+         <script src="resources/js/sandbox.js"></script>
 
 </html>

@@ -1,0 +1,134 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.clearfix:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+.clearfix2:after {
+   content: '';
+   display: block;
+   clear: both;
+}
+
+html { 
+   /* background-color: #C3C3C3; */
+   font-size: 16px;
+}
+
+body {
+   font-family: Helvetica Neue, Arial;
+   font-size: 18px;
+   height: 100%;
+}
+
+h1 {
+   font-size: 40px;
+}
+
+h2 {
+   font-size: 30px;
+}
+
+.title-bar h1{
+   background-color: green;
+   width: 100%;
+   float: left;
+   text-align: center;
+   padding-bottom: 30px;
+   padding-top: 20px;
+}
+
+.date {
+   padding-bottom: 65px;
+}
+.opening-paragraph {
+   padding-bottom: 20px;
+}
+.above-footer {
+   overflow: hidden;
+}
+.blog-post {
+   width: 75%;
+   float: left;
+   padding: 0 30px 0 30px;
+   padding-right: 30px;
+   position: relative;
+}
+
+/* for lists inside of articles that aren't fully list articles */
+.inner-list{
+   padding: 0 0 0 30px;
+}
+
+.blog-list {
+   list-style: none;
+}
+.blog-list li{
+   padding: 45px 0 35px 0;
+}
+
+.sidebar-lists {
+   list-style: none;
+}
+.sidebar-lists li {
+   padding: 20px;
+}
+
+.container {
+   width: auto;
+   /* padding-top: 50px; */
+}
+
+.other-posts {
+   background-color: yellow;;
+   float: left;
+   width: 25%;
+   list-style: none;
+   padding-right: 30px; 
+   padding-bottom: 100%;
+   margin-bottom: -100%;
+
+}
+.other-posts li {
+   font-size: .8em;
+   margin: 20px 0 40px 10px;
+  
+}
+.author-box {
+   border-top: 1px solid #777;
+   padding: 30px 0px 30px 30px;
+   clear: both;
+}
+.author-box img{
+   height: 5em;
+   width: auto;
+   border-radius: 90%;
+   float: left;
+}
+.authortext {
+   font-size: 22px;
+   margin-top: 20px;
+   margin-left: 20px;
+   float: left;
+}
+
+
+
+
+
+.maintext {
+   text-align: justify;
+   margin-bottom: 20px;
+}
+
+.picture {
+   height: 10em;
+   width: auto;
+}
+

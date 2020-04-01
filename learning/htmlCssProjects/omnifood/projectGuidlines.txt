@@ -1,6 +1,16 @@
 OMNIFOOD
+1)>
+- GOAL OF THE PROJECT - Show what Omnifood does, how it works and in which cities it opperates in. Then, make people sign up on a subscription plan.
 
-GOAL OF THE PROJECT - Show what Omnifood does, how it works and in which cities it opperates in. Then, make people sign up on a subscription plan.
+- AUDIENCE - Busy people who don't have time to cook, or don't like it.
 
-AUDIENCE - Busy people who don't have time to cook, or don't like it.
+2)>
+- One page webpage containing information provided by Omnifood, with simple navigation.
+- Navigation: Also provided by Omnifood in a text document.
+
+3)> Do up some sketches for each section of your website
+
+4)> Define COLOR-(orange) FONT-(Lato)
+
+
 
