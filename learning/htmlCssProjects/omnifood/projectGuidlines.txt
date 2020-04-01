@@ -1,0 +1,6 @@
+OMNIFOOD
+
+GOAL OF THE PROJECT - Show what Omnifood does, how it works and in which cities it opperates in. Then, make people sign up on a subscription plan.
+
+AUDIENCE - Busy people who don't have time to cook, or don't like it.
+
