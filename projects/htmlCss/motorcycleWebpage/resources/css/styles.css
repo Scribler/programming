@@ -11,19 +11,22 @@
 }
 
 html { 
-   /* background-color: #C3C3C3; */
+   color: #474747;
    font-size: 16px;
 }
 
 body {
-   font-family: Helvetica Neue, Arial;
-   font-size: 18px;
+   font-family: latoregular, Helvetica Neue, Arial;
+   font-size: 16px;
+   line-height: 150%;
+   letter-spacing: 120%;
    height: 100%;
-   background-color: #CFD1CE;
 }
 
 h1 {
-   font-size: 40px;
+   font-family: latohairline, Helvetica Neue, Arial;
+   font-size: 60px;
+   color: #598251;
 }
 
 h2 {
@@ -32,12 +35,12 @@ h2 {
 }
 
 .title-bar h1{
-   background-color: green;
+   background-color: #FFFC6A;
    width: 100%;
    float: left;
    text-align: center;
-   padding-bottom: 30px;
-   padding-top: 20px;
+   padding-bottom: 60px;
+   padding-top: 50px;
 }
 
 .date {
@@ -83,7 +86,6 @@ h2 {
 }
 
 .other-posts {
-   background-color: yellow;
    float: left;
    width: 25%;
    list-style: none;

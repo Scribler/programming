@@ -3,11 +3,23 @@
    padding: 0;
    box-sizing: border-box;
 }
-
+html {
+   background-color: #fff;
+   color: #555;
+   font-family: 'latoregular', 'Arial', 'sans-serif';
+   font-weight: 300;
+   font-size: 20px;
+   text-rendering: optimizeLegibility;
+}
 h1 {
    color: blue;
    font-size: 50px;
-   font-family: latohairline;
+   font-family: 'latolight', 'Arial', 'sans-serif';
+   font-weight: 100;
 }
 
-
+.row {
+   max-width: 1140px;
+   /* this makes top and bottom '0' and left and right auto! */
+   margin: 0 auto;
+}
