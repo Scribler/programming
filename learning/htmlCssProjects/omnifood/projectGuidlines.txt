@@ -14,3 +14,29 @@ OMNIFOOD
 
 
 
+LECTURE ONE! MAIN POINTS
+-  new HTML elements: header,nav,ul,li
+-  put text on an image: make the image darker
+-  how to make that image as high as the browser viewport
+-  how to make a vertically and horizontally centered box
+-  how to design buttons
+-  the 4 link states in CSS: link, visited, hover, active
+-  CSS3 transitions for small animations
+-  How to create a simple navigation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
