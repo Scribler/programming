@@ -4,49 +4,63 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!-- stylesheets -->
+      <link rel="stylesheet" type="text/css" href="resources/data/grid.css">
+      <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css"/>
+      <link rel="stylesheet" type="text/css" href="vendors/fonts/lato/stylesheet.css"/>
+      <link rel="stylesheet" href="resources/css/styles.css">
       <title>Last Budget</title>
-      <link rel="stylesheet" href="styles.css">
    </head>
 
    <body>
-
-      <div class="title">
-         <h1>Last Budget</h1>
-         <ol>
-            <li>Start with different sections (income)(bills)(spending)(savings)(etc)</li>
-            <li>Start blank (click the plus and enter the data)(later add the ability to save data)</li>
-            <li>Have the sections add up to a total</li>
-            <li>spent box, where you enter what you spent and it takes it off of the corresponding section's total amount</li>
+      <header>
+         <div class="hero-text-box">
+            <h1>The Budget Website</h1>
+            <ul>
+               <li>Enter your details</li>
+               <li>Plan your spending amount</li>
+               <li>Easily follow your budget!</li>
+            </ul>
+         </div>
+      </header>
+      <div class="main-container">
+         <div class="title">
+            <h1>Last Budget</h1>
+            <ol>
+               <li>Start with different sections (income)(bills)(spending)(savings)(etc)</li>
+               <li>Start blank (click the plus and enter the data)(later add the ability to save data)</li>
+               <li>Have the sections add up to a total</li>
+               <li>spent box, where you enter what you spent and it takes it off of the corresponding section's total amount</li>
+         </div>
+         <div class="breakTime">
+            <h3>Take A Break</h3>
+               <a href="http://questionablecontent.net" target="_blank">Questionable Content</a>
+               <br>
+               <a href="http://lfg.co" target="_blank">Looking For Group</a>
+               <br>
+               <a href="https://www.youtube.com/channel/UCBn8MR2Gyc_Ee50y_4ECfaQ" target="_blank">Youtube-Everride</a>
+         </div>
+         <div class="budgetApp">
+            <p>Budget App Goes Here</p>
+            <ul>
+               <li>MISSING EXPENSES!!! - ELECTRICITY, ...?</li>
+               <li>Total Minimum Monthly Income = $3300</li>
+                  <button onclick="blankEntry()">+</button>
+               <li class="bEntry">Total Minimum Biweekly Income = $1650</li>
+               <li>Total Monthly Expenses = $2565</li>
+               <li>Total Amount Remaining = $735</li>
+               <li>Rent = $1350</li>
+               <li>Phone = $65</li>
+               <li>Electricity = ?</li>
+               <li>Food = $400</li>
+               <li>Alcohol = $200</li>
+               <li>Transit = $50</li>
+               <li>Savings = $350</li>
+               <li>Play = $150</li>
+            </ul>
+         </div>
       </div>
-      <div class="breakTime">
-         <h3>Take A Break</h3>
-            <a href="http://questionablecontent.net" target="_blank">Questionable Content</a>
-            <br>
-            <a href="http://lfg.co" target="_blank">Looking For Group</a>
-            <br>
-            <a href="https://www.youtube.com/channel/UCBn8MR2Gyc_Ee50y_4ECfaQ" target="_blank">Youtube-Everride</a>
-      </div>
-      <div class="budgetApp">
-         <p>Budget App Goes Here</p>
-         <ul>
-            <li>MISSING EXPENSES!!! - ELECTRICITY, ...?</li>
-            <li>Total Minimum Monthly Income = $3300</li>
-               <button onclick="blankEntry()">+</button>
-            <li class="bEntry">Total Minimum Biweekly Income = $1650</li>
-            <li>Total Monthly Expenses = $2565</li>
-            <li>Total Amount Remaining = $735</li>
-            <li>Rent = $1350</li>
-            <li>Phone = $65</li>
-            <li>Electricity = ?</li>
-            <li>Food = $400</li>
-            <li>Alcohol = $200</li>
-            <li>Transit = $50</li>
-            <li>Savings = $350</li>
-            <li>Play = $150</li>
-         </ul>
-      </div>
-
-      <script src="sandbox.js"></script>
+      <script src="resources/js/sandbox.js"></script>
 
    </body>
 </html>

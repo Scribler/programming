@@ -1,0 +1,48 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html {
+   background-color: #fff;
+   color: #999;
+   font-family: 'latoregular', 'Arial', 'sans-serif';
+   font-weight: 300;
+   font-size: 20px;
+   text-rendering: optimizeLegibility;
+}
+body {
+   font-family: latoregular, Helvetica Neue, Arial;
+   font-size: 16px;
+   line-height: 150%;
+   letter-spacing: 120%;
+   height: 100%;
+}
+
+header {
+   background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(photos/money.jpg);
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+}
+.main-container {
+   position: absolute;
+   background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(photos/money.jpg);
+   height: 100vh;
+   width: auto;
+}
+
+.title {
+    color: #505050;
+}
+
+.hero-text-box {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-75%, -75%);
+}
+
+a {
+   color: red;
+}
