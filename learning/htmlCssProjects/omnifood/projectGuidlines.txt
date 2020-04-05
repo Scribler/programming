@@ -11,26 +11,81 @@ OMNIFOOD
 5) -  DEFINE --->>> MAIN-COLOR-(orange) FONT-(Lato)
 
 LECTURE ONE! MAIN POINTS
--  new HTML elements: header,nav,ul,li
--  put text on an image: make the image darker
--  how to make that image as high as the browser viewport
--  how to make a vertically and horizontally centered box
--  how to design buttons
--  the 4 link states in CSS: link, visited, hover, active
--  CSS3 transitions for small animations
--  How to create a simple navigation.
+1) -  New HTML elements: header,nav,ul,li
+         - 'header' = NOT the same as the head.  It is usually the first element in the body. 
+            Put your header here.
+
+2) -  Put text on an image: make the image darker
+         - when setting the background image, use the linear-gradient tag(use two, one top, one bottom) 
+         to put a dark color over the picture you want to store the picutre in a 'pictures' folder in the
+         css folder in this case. This is shown in the example below where  we put a picture behind the   
+         header.
+
+      ex1.) header {
+                  background-image: linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.70)), url(img/hero.jpg);
+               background-size: cover;
+               background-position: center;
+               height: 100vh;
+            }
 
 
-first thing
+3) -  how to make that image as high as the browser viewport
+         - frome the above example 'ex1.' the last thre lines accomplish this.
+      *** 
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      ***
 
-second thing
 
-third thing
+4) -  how to make a vertically and horizontally centered box
+         - You must use absolute positioning then use "transform: translate(-##, -##);" to position your
+         elements where you want them, as shown below.
+      
+      ex2.) .hero-text-box {
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               transform: translate(-75%, -75%);
+            }
 
-first thing
-second thing
-third thing
-third thing
+
+5) -  how to design buttons
+         - First, set the font-family with fallbacks
+         - Second, set your display setting to 'inline-block'
+         - Lastly, set your button styling.
+         - example of a button with no coloration after being clicked(since that makes it look tacky :P).
+
+      ex3.)    .btn:link,
+               .btn:visited{
+                  font-family: 'latolight', 'Arial', 'sans-serif';
+                  display: inline-block;
+                  padding: 10px 30px;
+                  font-weight: 300;
+                  text-decoration: none;
+                  border-radius: 200px;
+               }
+
+
+6) -  the 4 link states(psudo-classes) in CSS: link, visited(after clicked), hover, active
+         - example of a button with link and visited set to the same settings (see ex3)
+
+7) -  CSS3 transitions for small animations
+         -
+
+8) -  How to create a simple navigation.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
