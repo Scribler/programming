@@ -71,12 +71,12 @@ LECTURE ONE! MAIN POINTS
          - example of a button with link and visited set to the same settings (see ex3)
 
 7) -  CSS3 transitions for small animations
-         -THE FOLLOWING CLASSES add the transitions.  The SECOND one does the initial fade, and the first 
-         one does the return fade. (it doesn't need to fade initially since it contains the original 
-         styling.)
-
-         - .btn:link,
-            .btn:visited {
+         -This class makes the buttons transition and de-transition.  If you were to put the transition 
+         element into the hover class(where you might think it would go) then it will only transition too, 
+         not from the new styling.
+         
+            .btn:link,
+            .btn:visited{
                display: inline-block;
                padding: 10px 30px;
                font-weight: 300;
@@ -85,15 +85,16 @@ LECTURE ONE! MAIN POINTS
                transition: background-color 0.5s, border 0.5s, color 0.5s;
             }
 
-            .btn:hover,
-            .btn:active {
-               background-color:#b05d14;
-               transition: background-color 0.5s, border 0.5s, color 0.5s;
-            }
-
-
 8) -  How to create a simple navigation.
-         - 
+         - navigation
+
+
+
+
+CODE STRUCTURE!
+-use css comments /* text */
+
+
 
 
 
