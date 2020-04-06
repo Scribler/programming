@@ -50,25 +50,52 @@ header {
    transform: translate(-75%, -75%);
 }
 
-
 .btn:link,
 .btn:visited{
-   font-family: 'latolight', 'Arial', 'sans-serif';
    display: inline-block;
    padding: 10px 30px;
    font-weight: 300;
    text-decoration: none;
    border-radius: 200px;
+   transition: background-color 0.5s, border 0.5s, color 0.5s;
 }
+
 .btn-full:link,
 .btn-full:visited{
    color: #fff;
    background-color: #e67e22;
    border: 1px solid #e67e22;
+   margin-right: 15px;
 }
+
 .btn-ghost:link,
 .btn-ghost:visited{
    color: #e67e22;
    border: 1px solid #e67e22;
 }
+
+.btn:hover,
+.btn:active {
+   background-color:#b05d14;
+   transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+
+.btn-full:hover,
+.btn-full:active {
+   color: #fff;
+   background-color:#b05d14;
+   border: 1px solid #b05d14;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+   color: #fff;
+   border: 1px solid #b05d14;
+}
+
+
+
+
+
+
 
