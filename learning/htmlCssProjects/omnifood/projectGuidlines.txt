@@ -94,10 +94,23 @@ LECTURE ONE! MAIN POINTS
 CODE STRUCTURE!
 -use css comments /* text */
 
+***ICONS***
+This first example is how you would load local icons, and is probably the best way to go about.
+
+<i class="name-of-icon"></i>
 
 
 
+This example is how you would load an icon using an external service. You have the tag, and at the bottom, before the html tag, you put the link to the website using a script tag.
 
+<ion-icon name="restaurant-outline"></ion-icon>
+
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+
+WHITE SPACE PROPER USE!
+
+- Margins should be used in most cases for spacing out elements, but if you want to use the inside space for color you might use padding.
 
 
 
