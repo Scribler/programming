@@ -37,7 +37,7 @@ html {
 }
 .box {
    padding-top: 3%;
-   padding: 1%;;
+   padding: 1%;
 }
 .box:hover {
    background-color: orange;
@@ -76,7 +76,7 @@ h1 {
    word-spacing: 4px;
 }
 h2 {
-   padding: 50px 0px;
+   padding: 0 0 30px 0;
    font-size: 180%;
    letter-spacing: 1px;
    word-spacing: 2px;
@@ -117,8 +117,7 @@ p {
    display: block;
    line-height: 145%;
    width: 70%;
-   margin: 30px auto 90px auto;
-
+   margin: 10px auto 0px auto;
 }
 
 /*--------------BUTTONS--------------*/
@@ -231,10 +230,11 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
    border-bottom: 2px solid #e67e22;
-/*    border: 1px solid #fff; */
-   /* padding: 9px 29px; */
-   /* border-radius: 200px; */
+/* border: 1px solid #fff; */
+/* padding: 9px 29px; */
+/* border-radius: 200px; */
 }
+
 /* ------------------------------------------------------------- */
 /* FEATURES SECTION */
 /* ------------------------------------------------------------- */
@@ -248,13 +248,45 @@ header {
 .outer-right {
    padding-right: 4%;
 }
+.section-features .long-copy { 
+   margin-bottom: 30px;
+}
 
+/* ------------------------------------------------------------- */
+/* MEALS SECTION */
+/* ------------------------------------------------------------- */
+.section-meals {
+   height: 100vh;
+   padding: 0px;
+}
+.meals-showcase {
+   list-style: none;
+   width: 100%;
+}
 
+.meals-showcase li {
+   width: 25%;
+   float: left;
+   display: block;
+}
+.meal-photo {
+   background-color: #000;
+   margin: 0;
+   width: 100%;
+   overflow: hidden;
+}
 
-
-
-
-
+.meal-photo img {
+   opacity: 0.7;
+   width: 100%;
+   height: auto;
+   transform: scale(115%);
+   transition: transform 0.5s, opacity 0.5s;
+}
+.meal-photo img:hover {
+   transform: scale(1.03);
+   opacity: 1;
+}
 
 
 
