@@ -2,13 +2,12 @@
 /* COLORS */
 /* ------------------------------------------------------------- */
 
-/* orange      - #e67e22
- * dark-orange - #b05d14
-/* white       - #fff 
-
-
-
-
+/* orange      - #e67e22   - special + icons  */
+/* dark-orange - #b05d14   - hover            */
+/* white       - #fff      - text/background  */
+/* off-white   - #f4f4f4   - background       */
+/* dark-grey   - #111      - text             */
+/*  */
 
 
 /* ------------------------------------------------------------- */
@@ -42,6 +41,14 @@ html {
 .box:hover {
    background-color: orange;
 }
+.clearfix {zoom: 1}
+.clearfix:after {
+   content: '.';
+   clear: both;
+   display: block;
+   height: 0;
+   visibility: hidden;
+}
 
 /*--------------ICONS--------------*/
 
@@ -54,7 +61,7 @@ ion-icon {
   font-size: 350%; 
 }
 section {
-   padding: 80px 0px;
+   /* padding: 80px 0px; */
 }
 
 .icons {
@@ -239,8 +246,9 @@ header {
 /* FEATURES SECTION */
 /* ------------------------------------------------------------- */
 .section-features {
-   color: black;
+   color: #111;
    height: 100vh;
+   padding-top: 50px;
 }
 .outer-left {
    padding-left: 4%;
@@ -256,8 +264,8 @@ header {
 /* MEALS SECTION */
 /* ------------------------------------------------------------- */
 .section-meals {
-   height: 100vh;
-   padding: 0px;
+   height: 100%;
+   /* padding-bottom: -50px; */
 }
 .meals-showcase {
    list-style: none;
@@ -287,17 +295,79 @@ header {
    transform: scale(1.03);
    opacity: 1;
 }
+/* ------------------------------------------------------------- */
+/* STEPS SECTION */
+/* ------------------------------------------------------------- */
+.section-steps {
+   height: 100vh;
+   padding-top: 80px;
+   color: #111;
+   background-color: #f4f4f4;
+}
+.steps-box {
+}
+/* left side */
+.app-screen {
+   width: 40%;
+}
+.steps-box:first-child {
+   text-align: right;
+   padding-right: 3%;
+   margin-top: 30px;
+   width: 30%;
+}
+/* right side */
+.steps-box:last-child {
+   padding-left: 3%;
+   margin-top: 70px;
+   width: 50%;
+}
+.works-step {
+   margin-bottom: 80px;
+}
+.works-step div {
+   color: #e67e22;
+   border: 2px solid #e67e22;
+   border-radius: 50%;
+   height: 55px;
+   width: 55px;
+   text-align: center;
+   display: inline-block;
+   padding-top: 4px;
+   float: left;
+   font-size: 150%;
+   margin-right: 25px;
+}
+.works-step:last-of-type {
+   margin-bottom: 80px;
+}
 
 
+/* buttons for 'play store', and 'apple app store' */
+.btn-app {
+   display: inline-block;
+   float: left;
+}
+.btn-app img {
+   height: 50px;
+   width: auto;
+   margin-right: 10px;
+}
 
-
-
-
-
-
-
-
-
+/* ------------------------------------------------------------- */
+/* CITIES SECTION */
+/* ------------------------------------------------------------- */
+.section-cities {
+   height: 100vh;
+   padding-top: 10px;
+   color: #111;
+   background-color: #fff;
+   margin: 0;
+}
+.city-feature {
+   display: inline-block;
+   float: left;
+}
 
 
 
