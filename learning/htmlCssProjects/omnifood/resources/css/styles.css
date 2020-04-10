@@ -60,10 +60,19 @@ html {
 .icon-big {
   font-size: 350%; 
 }
-section {
-   /* padding: 80px 0px; */
+/* NOTE HOW THESE ICONS WERE LINED UP AND POSITIONED. ALSO THEIR SIZE IS ENTIRELY BASED OFF OF THE HEIGHT OF THE LINE */
+.icon-small {
+   display: inline-block;
+   width: 50px;
+   height: 25px;
+   font-size: 100%;
+   text-align: center;
+   color: #e67e22;
+/* !!!!magic for aligning icons!!!! */
+   line-height:120%;
+   vertical-align: middle;
+   margin-top: -4px;
 }
-
 .section-features icons {
    display: block;
    text-align: center;
@@ -126,7 +135,19 @@ p {
    width: 70%;
    margin: 10px auto 0px auto;
 }
-
+/*--------------LINKS--------------*/
+a:link,
+a:visited{
+   color: #e67e22;
+   text-decoration: none;
+   border-bottom: 1px solid #e67e22;
+   transition: border-bottom 0.5s, color 0.5s;
+}
+a:hover,
+a:active{
+   color: #555;
+   border-bottom: 1px solid transparent;
+}
 /*--------------BUTTONS--------------*/
 .btn:link,
 .btn:visited{
@@ -302,7 +323,7 @@ header {
    height: 100vh;
    padding-top: 80px;
    color: #111;
-   background-color: #f4f4f4;
+   background-color: #ccc;
 }
 .steps-box {
 }
@@ -348,6 +369,11 @@ header {
    display: inline-block;
    float: left;
 }
+.btn-app:link,
+.btn-app:visited{
+   border: none;
+   /* border: 0; also works ;)  */
+}
 .btn-app img {
    height: 50px;
    width: auto;
@@ -362,14 +388,41 @@ header {
    padding-top: 10px;
    color: #111;
    background-color: #fff;
-   margin: 0;
+   margin: 80px 0 0 0;
 }
 .section-cities img {
    width: 100%;
    height: auto;
+   margin-bottom: 15px;
 }
+.section-cities h3 {
+   padding-left: 5px;
+}
+/* .city-right { */
+   /* margin-right: 20px; */
+/* } */
+/* .city-left { */
+   /* margin-left: 20px; */
+/* } */
 .city-feature {
+   margin-bottom: 5px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
