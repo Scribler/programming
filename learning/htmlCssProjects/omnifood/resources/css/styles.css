@@ -1,4 +1,4 @@
-/ class="icon-small"* ------------------------------------------------------------- */
+/* ------------------------------------------------------------- */
 /* COLORS */
 /* ------------------------------------------------------------- */
 
@@ -200,9 +200,11 @@ header {
    background-image: linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.70)), url(img/hero.jpg);
    background-size: cover;
    background-position: center;
+   /* limit the use of 100vh to the header or intro section. IT WILL CAUSE MAJOR PROBLEMS with content overflowing into other sections otherwise. */
    height: 100vh;
    width: 100%;
    overflow-x: hidden;
+   background-attachment: fixed;
 }
 /* .hero-text-box { */
    /* position: absolute; */
@@ -268,8 +270,9 @@ header {
 /* ------------------------------------------------------------- */
 .section-features {
    color: #111;
-   height: 100vh;
+   /* height: 100vh; */
    padding-top: 50px;
+   padding-bottom: 50px;
 }
 .outer-left {
    padding-left: 4%;
@@ -320,10 +323,11 @@ header {
 /* STEPS SECTION */
 /* ------------------------------------------------------------- */
 .section-steps {
-   height: 100vh;
+   /* height: 100vh; */
    padding-top: 80px;
    color: #111;
    background-color: #ccc;
+   padding-bottom: 80px;
 }
 .steps-box {
 }
@@ -385,8 +389,9 @@ header {
 /* ------------------------------------------------------------- */
 .section-cities {
    display: block;
-   height: 100vh;
+   /* height: 100vh; */
    padding-top: 10px;
+   padding-bottom: 140px;
    color: #111;
    background-color: #fff;
    margin: 80px 0 0 0;
@@ -414,38 +419,71 @@ header {
 /* ------------------------------------------------------------- */
 .section-testimonials {
    display: block;
-   height: 180vh;
-   padding-top: 10px;
+   /* height: 120vh; */
+   padding-top: 50px;
+   padding-bottom: 80px;
    margin: -80px 0 0 0;
    background-image: linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.70)), url(img/back-customers.jpg);
    background-size: cover;
+   background-attachment: fixed;
    /* this made the whole section disappear when the screen got too small */
    /* overflow-x: hidden; */
 }
-.section-testimonials img {
-   display: block;
-}
+/* .section-testimonials img { */
+   /* display: block; */
+/* } */
 .section-testimonials ion-icon {
    padding-left: 15px;
 }
-.section-testimonials img {
-   min-width: 80px;
+/* .section-testimonials img { */
+   /* min-width: 80px; */
+/* } */
+blockquote {
+   padding: 2px;
+   font-style: italic;
+   line-height: 145%;
+         /* position needs to be relative for the sake of the following nested ABSOLUTE element */
+   position: relative;
+   margin-top: 40px;
 }
-
-.customer {
-   padding-left: 40px;
+blockquote:before {
+   content: "\201C";
+   font-size: 500%;
+   display: block;
+         /* in order for this to display correctly the parrent (blockquote) must have 'position: relative;' */
+   position: absolute;
+   top: -15:px;
+   left: -15px;
+}
+cite {
+   font-size: 90%;
+   margin-top: 25px;
+   display: block;
+}
+cite img {
+   height: 45px;
+   border-radius: 50%;
+   margin-right: 10px;
+   vertical-align: middle;
 }
 /* ------------------------------------------------------------- */
 /* SIGN UP SECTION */
 /* ------------------------------------------------------------- */
 .section-sign-up {
    color: #111;
-   height: 100vh;
    padding-top: 50px;
+   padding-bottom: 50px;
+   background-color: #ccc;
 }
-
-
-
+.section-sign-up li{
+   list-style: none;
+}
+.plan-box {
+   padding-left: 40px;
+}
+.plan-box ul {
+   padding-bottom: 50px;
+}
 
 
 
