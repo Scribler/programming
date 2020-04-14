@@ -326,7 +326,7 @@ header {
    /* height: 100vh; */
    padding-top: 80px;
    color: #111;
-   background-color: #ccc;
+   background-color: #eee;
    padding-bottom: 80px;
 }
 .steps-box {
@@ -473,21 +473,43 @@ cite img {
    color: #111;
    padding-top: 50px;
    padding-bottom: 50px;
-   background-color: #ccc;
+   background-color: #f4f4f4;
 }
 .section-sign-up li{
    list-style: none;
+   padding: 5px 0;
 }
 .plan-box {
-   padding-left: 40px;
+   background-color: #fff;
+   width: 90%;
+   padding: 30px 20px 0px 20px;
+   border: solid black 2px;
+   border-radius: 5px;
+   margin: 10px;
+}
+.plan-box div {
+   padding: 15px;
+   border-bottom: 1px solid #e8e8e8;
+}
+.plan-box div:last-child a {
+   text-align: center;
+   padding: 0 auto;
 }
 .plan-box ul {
    padding-bottom: 50px;
 }
+.plan-price {
+   font-family: 'latohairline', 'Arial', 'sans-serif';
+   font-size: 200%;
+   font-weight: light;
+   margin-bottom: 10px;
+   color: #e67e22;
+}
 
-
-
-
+.plan-price span {
+   font-family: 'latoregular', 'Arial', 'sans-serif';
+   font-size: 40%;
+}
 
 
 
