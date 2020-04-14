@@ -473,7 +473,7 @@ cite img {
    color: #111;
    padding-top: 50px;
    padding-bottom: 50px;
-   background-color: #f4f4f4;
+   background-color: #fcfcfc;
 }
 .section-sign-up li{
    list-style: none;
@@ -482,19 +482,32 @@ cite img {
 .plan-box {
    background-color: #fff;
    width: 90%;
-   padding: 30px 20px 0px 20px;
-   border: solid black 2px;
+   padding: 30px 20px -10px 20px;
+   /* border: solid black 2px; */
    border-radius: 5px;
    margin: 10px;
+   /* box-shadow: x-axis-offset y-axis-offset blur color; */
+   /* blur color difference should be VERY subtle */
+   box-shadow: 0 2px 2px #efefef;
 }
 .plan-box div {
    padding: 15px;
    border-bottom: 1px solid #e8e8e8;
 }
-.plan-box div:last-child a {
-   text-align: center;
-   padding: 0 auto;
+.plan-box div:first-child{
+   background-color: #fefefe;
+   /* some changes we made got rid of the radius so they are re-added here. */
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
 }
+.plan-box div:last-child{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   margin-top: 15px;
+   border: none;
+}
+
 .plan-box ul {
    padding-bottom: 50px;
 }
