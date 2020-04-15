@@ -16,8 +16,10 @@
 
    <body>
 
+<!-- * -->
+<!---------- HEADER SECTION ---------->
+<!-- * -->
 
-<!---------- OPENING SECTION ---------->
       <header>
 
          <nav>
@@ -43,8 +45,10 @@
 
       </header>
 
-
+<!-- * -->
 <!---------- FEATURES SECTION ---------->
+<!-- * -->
+
       <section class="section-features">
          <div class="row">
             <h2>
@@ -95,7 +99,11 @@
             </div>
          </div>
       </section>
+
+<!-- * -->
 <!---------- MEALS SECTION ---------->
+<!-- * -->
+
       <section class="section-meals">
 <!-- USING clearfix on the ul to me all the floating li's be cleared by 'section steps' the following section. -->
          <ul class="meals-showcase clearfix">
@@ -146,8 +154,10 @@
 
       </section>
 
-
+<!-- * -->
 <!---------- STEPS SECTION ---------->
+<!-- * -->
+
       <section class="section-steps">         
          <div class="row">
             <h2>How it works &mdash; Simple as 1, 2, 3</h2>
@@ -188,8 +198,10 @@
          </div>
      </section>
 
-
+<!-- * -->
 <!---------- CITIES SECTION ---------->
+<!-- * -->
+
      <section class="section-cities">
         <div class="row">
            <h2>We're currently in these cities</h2>
@@ -264,8 +276,10 @@
 
      </section>
 
-
+<!-- * -->
 <!---------- TESTIMONIALS SECTION ---------->
+<!-- * -->
+
      <section class="section-testimonials">
         <div class="row">
            <h2>Our customers can't live without us</h2>
@@ -302,12 +316,17 @@
 
      </section>
 
+<!-- * -->
+<!-- membership plans section -->
+<!-- * -->
+
      <section class="section-sign-up">
         <div class="row">
            <h2>Start eating healthy today </h2>
         </div>
         
         <div class="row">
+<!-- premium plan -->
            <div class="col span-1-of-3">
               <div class="plan-box clearfix">
                  <div>
@@ -330,7 +349,7 @@
                  
               </div>
            </div>
-
+<!-- pro plan -->
            <div class="col span-1-of-3">
               <div class="plan-box clearfix">
                  <div>
@@ -351,7 +370,7 @@
                  </div>
               </div>
            </div>
-           
+<!-- starter plan -->
            <div class="col span-1-of-3">
               <div class="plan-box clearfix">
                  <div>
@@ -377,20 +396,86 @@
      </section>
 
 
-     <section class="section-contact-form">
+     <section class="section-form">
+        <div class="row">
+           <h2>We're happy to hear from you</h2>
+        </div>
 
+        <div class="row">
+<!-- FORM STARTS HERE -->
+           <form method="post" action="#" class="contact-form">
+<!-- name field -->
+              <div class="row">
+                 <div class="col span-1-of-3">
+                    <label for="name">Name</label>
+                 </div>
+                 <div class="col span-2-of-3">
+                    <input type="text" name="name" id="name" placeholder="Your name" required>
+                 </div>
+              </div>
+<!-- email field -->
+              <div class="row">
+                 <div class="col span-1-of-3">
+                    <label for="email">Email</label>
+                 </div>
 
+                 <div class="col span-2-of-3">
+                    <input type="email" name="email" id="email" placeholder="Your email" required>
+                 </div>
+              </div>
+<!-- how did you find us? -->
+              <div class="row">
+                 <div class="col span-1-of-3">
+                    <label for="find-us">How did you find us?</label>
+                 </div>
+
+                 <div class="col span-2-of-3">
+                    <select name="find-us" id="find-us">
+                       <option value="friends" selected>Friends</option>
+                       <option value="search"d>Search Engine</option>
+                       <option value="ad">Advertisement</option>
+                       <option value="other">Other</option>
+                    </select>
+                 </div>
+              </div>
+<!-- newsletter checkbox  -->
+              <div class="row">
+                 <div class="col span-1-of-3">
+                    <label for="news">Would you like to receive our newsletter?</label>
+                 </div>
+
+                 <div class="col span-2-of-3">
+                    <input type="checkbox" name="news" id="news" checked> Yes, Please
+                 </div>
+              </div>
+<!-- message box -->
+              <div class="row">
+                 <div class="col span-1-of-3">
+                    <label for="message">Drop us a line</label>
+                 </div>
+
+                 <div class="col span-2-of-3">
+                    <textarea name="message" placeholder="Your message" id="message"></textarea>
+                 </div>
+              </div>
+<!-- send button -->
+              <div class="row">
+                 <div class="col span-1-of-3">
+                    <label>&nbsp;</label>
+                 </div>
+
+                 <div class="col span-2-of-3">
+                    <input type="submit" value="Send It!">
+                 </div>
+              </div>
+
+           </form>
+        </div>
 
 
      </section>
      
 
-     <section class="section-contact-form">
-
-
-
-
-     </section>
 
 <!-- SCRIPTS -->
       <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
@@ -398,16 +483,6 @@
    </body>
 </html>
 <!--
-
-Section 7: Contact form
-Title: We're happy to hear from you
-
-Fields to include:
-Name
-Email
-How did you find us?
-Newsletter
-Drop us a line
 
 Section 8: Footer
 Title: None
