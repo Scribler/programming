@@ -1,0 +1,8 @@
+HOW TO MAKE A WEBSITE RESPONSIVE
+
+Media Queries And Break Points
+
+Standard breakpoints for tablet and mobile.
+When more skilled, simply go by when it looks terrible and test on a range of screen sizes (perhaps multiple stages of breaks foro each range?)
+- Break at 0-480px, 480-768px, 768-1024px, 1024-1200>>
+
