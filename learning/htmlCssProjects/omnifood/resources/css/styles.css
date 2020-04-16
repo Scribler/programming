@@ -38,9 +38,9 @@ html {
 /* REUSABLE COMPONENTS */
 /* ------------------------------------------------------------- */
 .row {
-   /* max-width: 1140px; */
+   max-width: 1140px;
    /* this makes top and bottom '0' and left and right auto! */
-   /* margin: 0 auto; */
+   margin: 0 auto;
 }
 .box {
    padding-top: 3%;
