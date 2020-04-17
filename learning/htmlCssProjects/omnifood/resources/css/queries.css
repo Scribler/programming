@@ -1,8 +1,26 @@
 /* Big tablet to 1200px (widths smaller than the 1140px row) */
-@media only screen and (max-width: 1200px;) {
-}
+@media only screen and (max-width: 1200px) {
+   .hero-text-box {
+      position: relative;
+      width: 100%;
+      padding: 0 2%;
+      top: 35.11%;
+   }
+   .row { padding: 0 2%; }
+   body { font-size: 18px; }
+   section { padding: 60px; }
 
+   .long-copy {
+      /* commented out to return to the way the teacher had it */
+      /* display: block; */
+      width: 80%;
+      margin-left: 10px;
+   }
+   .steps-box { margin-top: 10px; }
+   .works-step {  }
+}
 /* Small tablet to big tablet: from 768px to 1023px */
+/* 950 might be a better break point for this website */
 @media only screen and (max-width: 1023px;) {
 }
 
