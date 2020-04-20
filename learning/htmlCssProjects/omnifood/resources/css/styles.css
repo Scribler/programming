@@ -25,6 +25,7 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   overflow-x: hidden;
 }
 html {
    background-color: #fff;
@@ -81,6 +82,7 @@ html {
    line-height:120%;
    vertical-align: middle;
    margin-top: -4px;
+   margin-right: 10px;
 }
 .section-features icons {
    display: block;
@@ -495,6 +497,7 @@ cite img {
    padding: 5px 0;
 }
 .plan-box {
+   font-size: 90%;
    background-color: #fff;
    width: 90%;
    padding: 30px 20px -10px 20px;

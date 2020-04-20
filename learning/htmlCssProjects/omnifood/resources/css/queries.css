@@ -1,10 +1,11 @@
 /* Big tablet to 1200px (widths smaller than the 1140px row) */
 @media only screen and (max-width: 1200px) {
-   .hero-text-box {
+   body .hero-text-box {
+      /* float: left; */
       width: 100%;
       padding: 0 2%;
    }
-   .row { padding: 0 2%; }
+   body .row { padding: 0 2%; }
 }
 
 
@@ -22,10 +23,23 @@
    body .works-step:last-of-type { margin-bottom: 60px; }
    div .app-screen { width: 50%; }
 
+   body .icon-small { 
+      width: 17px;
+      margin-right: 2px;
+   }
+   body .city-feature { font-size: 45%; }
+   body .plan-box {
+      font-family: 'latolight', 'Arial', 'sans-serif';
+      width: 100%;
+      margin: 0px;
+      font-size: 90%;
+      padding: 10px 5px -10 5px;
+   }
 }
 
 /* Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width: 767px) {
+}
 /* small phones: from 0 to 480 px */
 @media only screen and (max-width: 480px) {
 }
