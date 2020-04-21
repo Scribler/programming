@@ -27,13 +27,15 @@
    box-sizing: border-box;
    overflow-x: hidden;
 }
-html {
+html,
+body {
    background-color: #fff;
    color: #111;
    font-family: 'latoregular', 'Arial', 'sans-serif';
    font-weight: 300;
    font-size: 20px;
    text-rendering: optimizeLegibility;
+   overflow-x: hidden;
 }
 /* ------------------------------------------------------------- */
 /* REUSABLE COMPONENTS */
@@ -531,7 +533,7 @@ cite img {
 }
 .plan-price {
    font-family: 'latohairline', 'Arial', 'sans-serif';
-   font-size: 200%;
+   font-size: 300%;
    font-weight: light;
    margin-bottom: 10px;
    color: #e67e22;
@@ -553,7 +555,7 @@ cite img {
 }
 
 .contact-form {
-   width: 80%;
+   width: 70%;
    margin: 0 auto;
 }
 /* this specification stops it from selecting all input fields.  it only will select 'text' and 'email' input fields */
