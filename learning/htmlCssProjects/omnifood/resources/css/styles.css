@@ -257,7 +257,7 @@ header {
    position: relative;
    list-style: none;
    padding-top: 1%;
-   /* margin-top: 55px; */
+   margin-top: 55px;
    /* taking out the margin so I can use smaller screen size without pushing the buttons off the buttom of the screen */
    /* transform: translate(-30%, +65%); */
 
@@ -268,8 +268,8 @@ header {
    margin-right: 2%;
    transition: color 0.5s;
 }
-.main-nav li a:link,
-.main-nav li a:visited {
+.main-nav a:link,
+.main-nav a:visited {
    padding: 8px 0px;
    text-decoration: none;
    color: #fff;
