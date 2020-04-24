@@ -255,19 +255,25 @@ header {
 /*--------------NAVIGATION--------------*/
 .main-nav {
    position: relative;
+   float: right;
    list-style: none;
-   padding-top: 1%;
-   /* margin-top: 55px; */
+   /* padding-top: 1%; */
+   margin-top: 55px;
    /* taking out the margin so I can use smaller screen size without pushing the buttons off the buttom of the screen */
    /* transform: translate(-30%, +65%); */
 
 }
-.main-nav li{
+
+.main-nav li {
    display: inline-block;
-   float: right;
-   margin-right: 2%;
-   transition: color 0.5s;
+   height: 100%;
+   /* float: right; */
+   margin-left: 40px%;
+   /* transition: color 0.5s; */
+   padding-left: 20px;
+   overflow-x: none;
 }
+
 .main-nav li a:link,
 .main-nav li a:visited {
    padding: 8px 0px;
@@ -278,13 +284,14 @@ header {
    border-bottom: 2px solid transparent;
    transition: border-color 0.5s;
 }
+
 .main-nav li a:hover,
 .main-nav li a:active {
    border-bottom: 2px solid #e67e22;
+}
 /* border: 1px solid #fff; */
 /* padding: 9px 29px; */
 /* border-radius: 200px; */
-}
 
 /* ------------------------------------------------------------- */
 /* FEATURES SECTION */
