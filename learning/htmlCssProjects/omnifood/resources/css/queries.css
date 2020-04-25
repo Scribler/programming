@@ -59,7 +59,7 @@
       margin-left: 0%;
    }
    body h1 { font-size: 180% }
-   body h2 { font-size: 130% }
+   body h2 { font-size: 150% }
    /* reducing white space */
    body .works-step { margin-bottom: 20px; }
    body .works-step:last-of-type { margin-bottom: 20px; }

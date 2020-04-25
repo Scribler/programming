@@ -276,7 +276,8 @@ header {
 
 .main-nav li a:link,
 .main-nav li a:visited {
-   padding: 8px 0px;
+   /* if there is too much padding on the top and the bottom the child element will end up scrolling within the parent element */
+   padding: 3px 0px;
    text-decoration: none;
    color: #fff;
    text-transform: uppercase;
@@ -361,6 +362,7 @@ header {
 /* left side */
 .app-screen {
    width: 40%;
+   padding-bottom: 20px;
 }
 .steps-box:first-child {
    text-align: right;
@@ -396,6 +398,7 @@ header {
 .btn-app {
    display: inline-block;
    float: left;
+   padding-bottom: 20px;
 }
 .btn-app:link,
 .btn-app:visited{
