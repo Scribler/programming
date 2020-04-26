@@ -44,8 +44,11 @@ body {
    /* this makes top and bottom '0' and left and right auto! */
    margin: 0 auto;
 }
+.section {
+   padding: 80px 0;
+}
 .box {
-   padding-top: 3%;
+   /* padding-top: 3%; */
    padding: 1%;
 }
 .box:hover {
@@ -237,13 +240,6 @@ header {
            transform: translate(-50%, -50%);
 }
 
-/* changed to relative positioning to accomodate more screen sizes */
-/* .hero-text-box { */
-   /* word-break: normal; */
-   /* margin: 10% 25%; */
-   /* transform: translate(+30%, +120%); */
-   /* padding-bottom: 50px; */
-/* } */
 .hero-text-box h1 {
    padding-right: 140px;
 }
@@ -254,7 +250,6 @@ header {
    width: auto;
    float: left;
    margin-top: 20%;
-   /* padding-left: 2%; */
 }
 
 .logo-black { display: none;
@@ -268,14 +263,8 @@ header {
 /* main navi  */
 
 .main-nav {
-   /* position: relative; */
    float: right;
    list-style: none;
-   /* padding-top: 1%; */
-   /* margin-top: 55px; */
-   /* taking out the margin so I can use smaller screen size without pushing the buttons off the buttom of the screen */
-   /* transform: translate(-30%, +65%); */
-
 }
 .main-nav ul {
    padding: 0;
@@ -286,16 +275,11 @@ header {
 .main-nav li {
    display: inline-block;
    position: relative;
-   /* float: right; */
-   margin-left: 40px%;
-   /* transition: color 0.5s; */
-   /* padding-left: 20px; */
-   /* overflow-x: none; */
+   margin-left: 40px;
 }
 
 .main-nav li a:link,
 .main-nav li a:visited {
-   /* if there is too much padding on the top and the bottom the child element will end up scrolling within the parent element */
    height: 100%;
    padding: 8px 0px;
    text-decoration: none;
@@ -344,13 +328,6 @@ header {
    padding-bottom: 30px;
    text-align: center;
 }
-/* commented out for making site responsive */
-/* .outer-left { */
-   /* padding-left: 5%; */
-/* } */
-/* .outer-right { */
-   /* padding-right: 5%; */
-/* } */
 .section-features .long-copy { 
    display: inline-block;
    margin-bottom: 30px;
@@ -361,7 +338,6 @@ header {
 /* ------------------------------------------------------------- */
 .section-meals {
    height: 100%;
-   /* padding-bottom: -50px; */
 }
 .meals-showcase {
    list-style: none;
@@ -449,7 +425,6 @@ header {
 .btn-app:link,
 .btn-app:visited{
    border: none;
-   /* border: 0; also works ;)  */
 }
 .btn-app img {
    height: 50px;
@@ -462,12 +437,9 @@ header {
 /* ------------------------------------------------------------- */
 .section-cities {
    display: block;
-   /* height: 100vh; */
-   /* padding-top: 10px; */
    padding-bottom: 30px;
    color: #111;
    background-color: #fff;
-   /* margin: 80px 0 0 0; */
 }
 .section-cities img {
    width: 100%;
@@ -477,12 +449,6 @@ header {
 .section-cities h3 {
    padding-left: 5px;
 }
-/* .city-right { */
-   /* margin-right: 20px; */
-/* } */
-/* .city-left { */
-   /* margin-left: 20px; */
-/* } */
 .city-feature {
    margin-bottom: 5px;
    font-family: 'latolight', 'Arial', 'sans-serif';
@@ -495,25 +461,15 @@ header {
 .section-testimonials {
    color: #fff;
    display: block;
-   /* height: 120vh; */
-   /* margin-top: 50px; */
    padding-bottom: 30px;
    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.70)), to(rgba(0,0,0,0.70))), url(img/back-customers.jpg);
    background-image: linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.70)), url(img/back-customers.jpg);
    background-size: cover;
    background-attachment: fixed;
-   /* this made the whole section disappear when the screen got too small */
-   /* overflow-x: hidden; */
 }
-/* .section-testimonials img { */
-   /* display: block; */
-/* } */
 .section-testimonials ion-icon {
    padding-left: 15px;
 }
-/* .section-testimonials img { */
-   /* min-width: 80px; */
-/* } */
 blockquote {
    padding: 2px;
    font-style: italic;
@@ -560,7 +516,6 @@ cite img {
    background-color: #fff;
    width: 90%;
    padding: 30px 20px -10px 20px;
-   /* border: solid black 2px; */
    border-radius: 5px;
    margin: 10px;
    /* box-shadow: x-axis-offset y-axis-offset blur color; */

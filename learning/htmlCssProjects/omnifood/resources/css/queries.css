@@ -43,7 +43,7 @@
       font-size: 20px;
       margin-left: 90;
       padding-left: 90;
-      overflow-x: hidden;
+      overflow-x: none;
    }
 }
 
