@@ -39,6 +39,12 @@
    .contact-form {
       width: 80%;
    }
+   body .main-nav li {
+      font-size: 20px;
+      margin-left: 90;
+      padding-left: 90;
+      overflow-x: hidden;
+   }
 }
 
 /* Small phones to small tablets: from 481px to 767px */
