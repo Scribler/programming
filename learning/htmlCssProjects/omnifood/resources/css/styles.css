@@ -35,6 +35,7 @@ body {
    font-size: 20px;
    text-rendering: optimizeLegibility;
    overflow-x: hidden;
+   /* scroll-behavior: smooth; */
 }
 /* ------------------------------------------------------------- */
 /* REUSABLE COMPONENTS */
@@ -268,6 +269,7 @@ header {
    font-size: 100%;
    float: right;
    list-style: none;
+   margin-top: 55px;
 }
 .main-nav ul {
    padding: 0;
@@ -303,21 +305,22 @@ header {
 
 .sticky {
    position: fixed;
-   z-index: 999;
    top: 0;
    left: 0;
    width: 100%;
    background-color: rgba(255, 255, 255, 0.99);
    box-shadow: 0 2px 2px #efefef;
    /* box-shadow: 0=xdim, 2px=ydim, 2px=blurAmount, Color; */
+   z-index: 9999;
+   /* z-index:9999 puts the element always on top '9999' is the max input for z-index */
 }
-.main-nav {
-   margin-top: 13px;
+.sticky .main-nav {
+   margin-top: 12px;
 }
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
    /* if there is too much padding on the top and the bottom the child element will end up scrolling within the parent element */
-   padding: 19px 0px;
+   padding: 21px 0px;
    color: #555;
 }
 .sticky .logo { display: none; }
@@ -330,7 +333,9 @@ header {
 /* ------------------------------------------------------------- */
 .section-features {
    color: #111;
-   /* padding-top: 50px; */
+
+   /* this padding is here so that the animated scroll doesn't cover the title with the menu */
+   padding-top: 50px;
    padding-bottom: 30px;
    text-align: center;
 }
@@ -383,6 +388,7 @@ header {
 /* ------------------------------------------------------------- */
 .section-steps {
    background-color: #eee;
+   padding-top: 50px;
 }
 .steps-box {
    margin-top: 30px;
@@ -446,6 +452,7 @@ header {
    padding-bottom: 30px;
    color: #111;
    background-color: #fff;
+   padding-top: 50px;
 }
 .section-cities img {
    width: 100%;

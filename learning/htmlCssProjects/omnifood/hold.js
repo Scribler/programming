@@ -1,32 +1,4 @@
-$(document).ready(function() {
-   //
-   // For the sticky navigation
-   //
 
-   $('.js--section-features').waypoint(function(direction) {
-      if (direction == "down") {
-         $('nav').addClass('sticky');
-      } else {
-         $('nav').removeClass('sticky');
-      }
-   }, {
-      offset: '60px'
-   });
-
-
-   //
-   // Scroll on buttons
-   //
-
-
-   // This SELECTS button / and scrolls to the top of section plans on click
-   $('.js--scroll-to-plans').click(function() {
-      $('html, body').animate({scrollTop: $('.js--section-plans').offset().top}, 1000);
-   });
-
-   $('.js--scroll-to-start').click(function() {
-      $('html, body').animate({scrollTop: $('.js--section-features').offset().top}, 1000);
-   });
 
 
    //
@@ -54,7 +26,7 @@ $(document).ready(function() {
            event.preventDefault();
            $('html, body').animate({
              scrollTop: target.offset().top
-           }, 800, function() {
+           }, 3000, function() {
              // Callback after animation
              // Must change focus!
              var $target = $(target);
@@ -69,10 +41,4 @@ $(document).ready(function() {
          }
        }
      });
-
-
-
-
-
-});
 
