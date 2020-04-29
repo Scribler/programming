@@ -100,6 +100,9 @@ $(document).ready(function() {
         });
 
 
+   //
+   // Click show-hide animations
+   //
         $('.js--nav-icon').click(function() {
            var nav = $('.js--main-nav');
 
