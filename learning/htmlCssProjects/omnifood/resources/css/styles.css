@@ -311,6 +311,10 @@ header {
 .nav-icon {
    font-size: 200%;
    color: #fff;
+   display: none;
+}
+.vis {
+   display: inline-block;
 }
 
 /* sticky navi  */
@@ -721,9 +725,6 @@ footer {
 .js--wp-3.animated {
    opacity: 1;
 }
-
-
-
 
 
 
