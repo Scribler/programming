@@ -80,24 +80,33 @@ $(document).ready(function() {
            offset:' 50%'
         });
 
-        $('.js--wp-2').waypoint(function(direction){
+        $('.js--wp-2').waypoint(function(direction) {
            $('.js--wp-2').addClass('animated fadeInUp'); // fade in up phone
 
         }, {
            offset:' 50%'
         });
 
-        $('.js--wp-3').waypoint(function(direction){
-           $('.js--wp-3').addClass('animated fadeIn'); // fade in cities
+        $('.js--wp-3').waypoint(function(direction) {
+           $('.js--wp-3').addClass('animated fadeIn'); // fade in 
         }, {
            offset:' 50%'
         });
    
-        $('.js--wp-4').waypoint(function(direction){
+        $('.js--wp-4').waypoint(function(direction) {
            $('.js--wp-4').addClass('animated pulse'); // price plan pulse
         }, {
            offset:' 50%'
         });
+
+
+        $('.js--nav-icon').click(function() {
+           var nav = $('.js--main-nav');
+
+           nav.slideToggle(200);
+        });
+
+
 
 });
 
