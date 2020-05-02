@@ -105,17 +105,8 @@ $(document).ready(function() {
    //
         $('.js--nav-icon').click(function() {
            var nav = $('.js--main-nav');
-           var icon = $('js--nav-icon ion-icon');
 
            nav.slideToggle(200);
-           if (icon.contains('reorder-three-outline')) {
-              console.log('it does!')
-              icon.addName('close-outline');
-              icon.removeName('reorder-three-outline');
-           } else {
-              icon.addName('reorder-three-outline');
-              icon.removeName('close-outline')
-           };
 
       });
 
