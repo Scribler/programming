@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* colors */
+/*
+
+green: green;
+blue: blue;
+mid: purple;
+
+ */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   }
+
+html,
+body {
+   text-color: #444;
+   font-family: Lato, Arial;
+   padding: 100px;
+   background: linear-gradient(to bottom right, green, blue);
+   height: 100vh;
+}
+h1 {
+   font-weight: 200;
+   font-size: 60px;
+}
+
+.heading {
+   display: flex;
+}
+.heading__first {
+   width: 100%;
+   background: white;
+   flex: 1 1 100%;
+}
+.heading__second {
+   width: 100%;
+   background: pink;
+   flex: 1 1 50%;
+}
+.heading__third {
+   width: 100%;
+   background: yellow;
+   flex: 1 1 50%;
+}
