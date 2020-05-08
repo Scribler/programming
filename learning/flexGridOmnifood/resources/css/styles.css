@@ -20,10 +20,17 @@ body {
   height: 100vh;
 }
 
-h1 {
-  padding: 40px;
-}
 .pizza {
+  display: flex;
 }
-.pizza__hero {
+
+.pizza__hero{
+}
+
+.pizza__img {
+  width: 100%;
+}
+
+.pizza__content {
+  background-color: white;
 }
