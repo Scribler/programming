@@ -12,7 +12,7 @@ let email = 'mario@thenetninja.co.uk';
 
 // let result = email.replace('m', 'w'); // replace 'm' with 'w'
 
-
+let result = email.replace('n', 'w');  // only replaces the first instance of n
 
 
 console.log(result);
