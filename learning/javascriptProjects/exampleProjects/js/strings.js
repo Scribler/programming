@@ -33,10 +33,11 @@ console.log(fullname.length);
 // functions)
 console.log('# using the string  method "toUpperCase" & "toLowerCase" to capitalize all letters in a string');
 console.log(fullname.toUpperCase());
-console.log(fullname.toLowerCase());
+let result = fullname.toLowerCase();
+// note - the function does not change the variable
+console.log(result, fullname);
 
-
-
-
+let index = email.indexOf('@');
+console.log(index);
 
 
