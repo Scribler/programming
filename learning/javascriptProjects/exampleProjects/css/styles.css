@@ -14,7 +14,8 @@
    box-sizing: border-box;
    font-family: Arial;
 }
-
+body {
+}
 
 /* ------------------------------- */
 /* REUSABLE COMPONENTS */
@@ -29,7 +30,20 @@
 /* ------------------------------- */
 /* SECTION 1*/
 /* ------------------------------- */
+.header {
+}
+.section__1 {
+  display: flex;
+  justify-content: space-around;
+}
+.container {
+  flex: 0 1 55%;
+}
+.sidebar {
+  flex: 0 1 20%;
+}
 h1 {
+  display: center;
   font-size: 48px;
   color: blue;
   font-weight: 100;
