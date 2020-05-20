@@ -65,6 +65,11 @@ const scores = [50, 25, 0, 100, 20, 10];
 
 for(let i = 0; i < scores.length; i++){
 
+  // this code makes it ignore zero's and continue the loop
+  if(scores[i] === 0){
+    continue;
+  }
+
   console.log('your score; ', scores[i]);
 
   if (scores[i] === 100){
