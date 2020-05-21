@@ -1,7 +1,12 @@
 // Functions (reusable code blocks) object
 
+// Function Declaration
 
 
+
+
+
+// Function Expression
 
 
 
