@@ -39,7 +39,7 @@ if(grade === 'A'){
 } else {
 
 }
-
+// These rules also applies to const (but not to'var'. 'var' igonors block scope)
 console.log(' ');
 // variables and block scope
 let age = 30; // global scope
@@ -57,13 +57,14 @@ if(true){
     console.log('inside second code block', age); // the nested block takes it's imediate 
                                                   // parent block's definition of age if 
                                                   // none is defined in the block.
+    var test = 'this "var" variable ignores block scope';
   }
 }
 
 console.log(`outside codeblock ${age}, ${name}`);
 console.log(name); // this doesn't work because name was defined in local scope and this is
                    // outside of the block
-
+console.log(test);
 console.log(' ');
 
 
