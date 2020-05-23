@@ -1,6 +1,6 @@
-// Functions (reusable code blocks) object
+// FUNCTIONS (REUSABLE CODE BLOCKS) OBJECT
 
-// Function Declaration
+// FUNCTION DECLARATION
 
 greet(); // functions are hoisted to the top of the file by the interpreter which is why 
          // this still runs.
@@ -13,7 +13,7 @@ function greet(){
 
 greet();
 
-// Function Expression
+// FUNCTION EXPRESSION
 
 const speak = function(){
   console.log('this is a function expression. It needs a semicolon after it :P');
@@ -26,7 +26,7 @@ speak();
 
 
 console.log(' ');
-// arguments and parameters
+// ARGUMENTS AND PARAMETERS
 
 // note the use of default arguemtns.
 const speak2 = function(name = 'enter a name', age = 'enter an age'){ // name and age are parameters. bob and 12 are       
@@ -42,7 +42,7 @@ speak2('bob', 12);
 
 
 console.log(' ');
-// returning values
+// RETURNING VALUES
 const speak3 = function(name = 'luigi', time = 'night'){
   console.log(`good ${time} ${name}`);
 };
@@ -58,7 +58,7 @@ console.log(area);
 
 
 console.log(' ');
-// regular functions
+// REGULAR FUNCTIONS 
 
 const calcArea2 = function(radius){
   return 3.14 * radius**2;
@@ -66,7 +66,7 @@ const calcArea2 = function(radius){
 
 
 console.log(' ');
-// arrow functions
+// ARROW FUNCTIONS
 
 const calcArea3 = radius => { // radius would have parenthesis if more than one prameters.
   return 3.14 * radius**2;
@@ -85,7 +85,16 @@ foo();
 
 
 
+// HIGHER ORDER FUNCTIONS AND NESTING
+const bar = [1, 2, 3, 4, 5];
+let foobar = bar.map(num => num * 2);
 
+console.log(foobar);
+
+const myFunc = age => age * 2;
+const largeFunc = (firstFunc, age) => firstFunc(age + 10);
+
+console.log(largeFunc(myFunc, 10));
 
 
 
