@@ -41,8 +41,6 @@ speak2('bob', 12);
 
 
 
-
-
 console.log(' ');
 // returning values
 const speak3 = function(name = 'luigi', time = 'night'){
@@ -75,6 +73,31 @@ const calcArea3 = radius => { // radius would have parenthesis if more than one 
 };
 
 console.log(calcArea3(5));
+
+
+// The most basic of arrow functions. This shows that it is basically just a simplified 
+// function expression. REMEMBER YOUR SEMICOLONS!
+const foo = () => {
+  console.log('bar');
+};
+
+foo();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
