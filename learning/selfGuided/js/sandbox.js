@@ -1,14 +1,17 @@
+// VARIABLES
 let firstNames = ['John', 'Henry', 'Dale', 'Colin', 'Greg', 'Toby'];
 let surNames = ['Jacobs', 'Earnhart', 'Cummings', 'Fritz'];
 let strangeNames = ['Dorps', 'Quorps', 'Smellington', 'Frrrrp', 'haha', 'somethingelse'];
+let numList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
 // function to send a greeting to whomever's name is typed in.
 const greet = (name) => {
   console.log('hello ' + name);
   console.log(' ');
 };
 
+
 // function to match a list of first names with a list of last names.
-// lets try injecting this into an unordered list.
 const matchNames = (first, last) => {
   let f = 0;
   let l = 0;
@@ -28,7 +31,7 @@ const matchNames = (first, last) => {
 greet('Steven');
 matchNames(firstNames, surNames);
 matchNames(firstNames, strangeNames);
-
+matchNames(numList, strangeNames);
 
 
 
