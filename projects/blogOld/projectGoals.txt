@@ -1,0 +1,15 @@
+SHORT TERM PROJECT GOALS
+  - Link all projects to blog website (make it more than a blog?  A portfolio website with a blog portion?)
+  - build AJAX so that website doesn't need to reload the whole page in order to display a new blog.
+  - Figure out how to organize a website folder with different pages.
+
+
+
+
+
+
+
+
+
+
+LONG TERM PROJECT GOALS
