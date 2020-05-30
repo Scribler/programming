@@ -1,138 +1,73 @@
+/*          colors         */
+
+/* green = #474747; */
+/* unsure = #598251; */
+
+/*          */
+
+
+/*          */
+/*          reusable styles         */
+/*          */
 * {
    margin: 0;
    padding: 0;
-   box-sizing: border-box;
 }
 
-.clearfix:after {
-   content: "";
-   display: table;
-   clear: both;
-}
-
-html { 
-   color: #474747;
-   font-size: 16px;
-}
-
-body {
+html, body { 
    font-family: latoregular, Helvetica Neue, Arial;
+   height: 100%;
    font-size: 16px;
    line-height: 150%;
    letter-spacing: 120%;
-   height: 100%;
+   color: #474747;
 }
 
 h1 {
    font-family: latohairline, Helvetica Neue, Arial;
    font-size: 290%;
    color: #598251;
-   margin: 0;
 }
 
 h2 {
    font-size: 30px;
-   padding-top: 40px;
-}
-
-.title-bar h1{
-   background-color: #FFFC6A;
-   width: 100%;
-   float: left;
-   text-align: center;
-   padding-bottom: 60px;
-   padding-top: 50px;
-   line-height: 100%;
-}
-
-.date {
-   padding-bottom: 65px;
-}
-.opening-paragraph {
-   padding-bottom: 20px;
-}
-/* This tag stops the sidebar from overlapping the footer (this is combined with the last two lines of '.other-posts') */
-.above-footer {
-   overflow: hidden;
-}
-.blog-post {
-   width: 75%;
-   float: left;
-   padding: 0 30px 100px 30px;
-   padding-right: 30px;
-   position: relative;
-   padding: 0 10%;
-}
-
-/* for lists inside of articles that aren't fully list articles */
-.inner-list{
-   padding: 0 0 0 30px;
-}
-
-.blog-list {
-   list-style: none;
-}
-.blog-list li{
-   padding: 45px 0 35px 0;
-}
-
-.sidebar-lists {
-   list-style: none;
-}
-.sidebar-lists li {
-   padding: 20px;
-}
-
-.container {
-   width: auto;
-   /* padding-top: 50px; */
-}
-
-.other-posts {
-   float: left;
-   width: 25%;
-   list-style: none;
-   padding-right: 30px;
-   /* these two lines are what make the background color extend down to the footer(and technically beyond it) */
-   padding-bottom: 100%;
-   margin-bottom: -100%;
-
-}
-.other-posts li {
-   font-size: 70%;
-   margin: 1.5em 0 2em 10px;
-  
-}
-.author-box {
-   border-top: 1px solid #777;
-   padding: 30px 0px 30px 30px;
-   width: 100%;
-}
-.author-box img{
-   height: 5em;
-   width: auto;
-   border-radius: 90%;
-   float: left;
-}
-.authortext {
-   font-size: 22px;
-   margin-top: 20px;
-   margin-left: 20px;
-   float: left;
 }
 
 
 
-
-
-.maintext {
-   text-align: justify;
-   margin-bottom: 20px;
+/*          */
+/*          header         */
+/*          */
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #FFFC6A;
+  padding: 60px 0 70px 0;
+}
+header h1 {
 }
 
-.picture {
-   height: 10em;
-   width: auto;
+
+/*          */
+/*          Main Content         */
+/*          */
+
+.main__body {
+  display: flex;
+  padding: 40px 20px;
+}
+.blog__content {
+  flex: 0 1 80%;
+}
+.suggestedReading {
+  flex: 0 1 10%;
 }
 
+/*          */
+/*          Footer         */
+/*          */
 
+footer {
+  padding: 40px 20px;
+  background-color: orange;
+}
