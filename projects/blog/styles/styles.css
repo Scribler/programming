@@ -15,7 +15,7 @@
 }
 
 html, body { 
-   font-family: latoregular, Helvetica Neue, Arial;
+   font-family: lato, Helvetica Neue, Arial;
    height: 100%;
    font-size: 16px;
    line-height: 150%;
@@ -24,13 +24,14 @@ html, body {
 }
 
 h1 {
-   font-family: latohairline, Helvetica Neue, Arial;
-   font-size: 290%;
-   color: #598251;
+  font-size: 320%;
+  font-weight: 100;
+  color: #598251;
 }
 
 h2 {
    font-size: 30px;
+   font-weight: 200;
 }
 
 
