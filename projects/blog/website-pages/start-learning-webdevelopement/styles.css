@@ -1,0 +1,12 @@
+.title-bar {
+  display: flex;
+  padding: 30px;
+}
+h1 {
+  padding: 30px;
+  text-align: center;
+  display: center;
+}
+h2 {
+  padding: 20px 0;
+}

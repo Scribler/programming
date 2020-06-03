@@ -15,4 +15,4 @@ for(x in person){
 }
 
 document.getElementById('blogs').innerHTML = text;
-console.log(text);
+console.log(text)
