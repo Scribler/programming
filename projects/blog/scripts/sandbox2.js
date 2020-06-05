@@ -8,7 +8,7 @@
 // These constants store the query
 const verseChoose = document.querySelector('select');
 const poemDisplay = document.querySelector('pre');
-  
+ 
 // This function uses a callback function to display the verse.
 verseChoose.onchange = function() {
     const verse = verseChoose.value;

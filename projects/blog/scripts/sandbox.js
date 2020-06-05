@@ -16,3 +16,13 @@ for(x in person){
 
 document.getElementById('blogs').innerHTML = text;
 console.log(text)
+
+
+// TARGET -> LIST ITEMS (containing name)
+
+
+
+
+
+
+
