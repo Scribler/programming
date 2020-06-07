@@ -1,0 +1,16 @@
+WEBSITE LAYOUT
+
+
+Your passcode is: 75994453657
+
+You will need it in the FTP lecture.
+
+Please note that this is not the voucher you use at checkout.
+
+You need to use the passcode to get a valid voucher.
+
+
+...notes...
+
+domain =    website address
+file-host = website location
