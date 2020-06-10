@@ -1,2 +1,17 @@
+/*   */
+/* Reusable styles */
+/*   */
+
+body {
+  /* padding: 0; */
+  /* margin: 0; */
+}
 h1 { color: blue; }
-p { color: red; }
+p { color: green; }
+
+.small-picture {}
+.medium-picture {
+  height: 200px;
+  width: auto;
+}
+.large-picture {}
