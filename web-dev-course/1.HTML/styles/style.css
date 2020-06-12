@@ -8,6 +8,10 @@ body {
 }
 h1 { color: blue; }
 p { color: green; }
+iframe{
+  height: 350px;
+  width: 450px;
+}
 
 .small-picture {}
 .medium-picture {
