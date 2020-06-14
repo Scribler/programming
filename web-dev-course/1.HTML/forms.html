@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
+    <title>Forms</title>
+    <link href="pictures/site-icon.jpg" rel="shortcut icon">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+  </head>
+
+
+  <body id="www.mywebsite.com">
+    <a href="index.html">Return to home page</a>
+    <h1>Forms</h1>
+    <p>How to make forms.</p>
+
+
+    <h3>What are forms used for</h3>
+      <ul>
+        <li>search</li>
+        <li>booking tickets</li>
+        <li>logging in</li>
+      </ul>
+      <p>You are populating a set of data</p>
+
+
+    <h4>Log In Form</h4>
+    <p>Please note that in the wild you would not use the git method in this situation since it would end up posting the password up in the url after you hit submit. AKA. It would be completely insecure.  There will be a different method used later on for this.</p>
+
+    <form method="get">
+      <!-- name - is for use of php, id - is for use by html.  Therefore. YOU NEED BOTH. -->
+      <label for="email">Email:</label>
+      <input type="text" name="email" placeholder="email" size="30px" maxlength="100" id="email">
+      <br />
+      <label for="password">Password</label>
+      <input type="password" name="password" placeholder="password" size="30px" maxlength="30" id="password">
+      <br />
+      <!-- value is what is displayed on the button -->
+      <input type="submit" value="login">
+    </form>
+
+
+    <h3>Marketplace Checkout Form</h3>
+    <Section>
+      <form>
+        <input type="text" name="address" id="address" placeholder=">
+      </form>
+    </Section>
+
+
+
+
+<!-- IMAGE NAMES -->
+
+<!--
+pictures/10-Best-VIM-Cheat-Sheet-03-720x509.jpg
+pictures/klx250s1.jpg
+pictures/klx250s2.jpg
+pictures/site-icon.jpg
+-->
+  </body>
+</html>
+
