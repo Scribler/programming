@@ -1,0 +1,15 @@
+/* reusable css */
+h1 {
+  color: brown;
+}
+p {
+  color:green;
+  font-size: 300%;
+}
+
+
+/* unique css */
+#decide {
+  color: blue;
+  font-size: 200%;
+}
