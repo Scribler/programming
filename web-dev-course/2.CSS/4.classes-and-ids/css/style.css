@@ -2,14 +2,14 @@
 h1 {
   color: brown;
 }
-p {
+.green {
   color:green;
-  font-size: 300%;
+  font-size: 200%;
 }
 
 
 /* unique css */
 #decide {
   color: blue;
-  font-size: 200%;
+  font-size: 300%;
 }
