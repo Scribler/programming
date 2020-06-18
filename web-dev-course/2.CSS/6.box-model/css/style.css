@@ -8,6 +8,10 @@ h1 {
   margin: 0;
   padding: 0;
 }
+p {
+  background-color: #1799C3;
+}
+
 .great {
   background-color: #F7FF42;
   color: black;
@@ -53,24 +57,37 @@ h1 {
   background-color: #3C5A9A;
   color: white;
   padding: 10px;
-  margin: 5px;
   height: auto;
   width: auto;
+  border: 10px red ridge;
+  /* outline isn't taken into account by the dimmensions of the elements */
+  outline-style: solid;
+  outline-color: blue;
+  outline-width: thick;
+  margin: 20px;
 }
 .box-padding__yellowbox {
   background-color: rgb(206, 206, 68, 50%);
   color: hsl(300, 67%, 49%);
   padding: 10px 5px 7px 3em;
+  margin: 60px 10px 30px 20px;
+  border-color: black yellow red purple;
+  border-style: ridge;
+  border-width: 10px 15px 30px 20px;
   height: auto;
   width: auto;
 }
 .box-padding__greenbox {
   background-color: green;
   color: white;
-  padding: 40px 10px;
-  height: auto;
-  width: auto;
+  padding: 10px 10px;
+  margin: 60px 10px;
+  border-width: 10px 10px;
+  border-color: blue;
+  border-style: groove;
+  border-radius: 80px;
+  height: 100px;
+  width: 100px;
 }
-
 
 
