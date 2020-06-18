@@ -1,0 +1,76 @@
+/*   */
+/*       Reusable classes      */
+/*   */
+h1 { 
+  color: #BF260B;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.great {
+  background-color: #F7FF42;
+  color: black;
+}
+
+/*   */
+/*       Box Model      */
+/*   */
+.box {
+  background: #B4F3FE;
+  padding: 10px;
+}
+.box__bluebox {
+  background-color: #3C5A9A;
+  color: white;
+  height: 100px;
+  width: auto;
+}
+.box__yellowbox {
+  background-color: rgb(206, 206, 68, 50%);
+  color: hsl(300, 67%, 49%);
+  height: 100px;
+  width: auto;
+}
+.box__greenbox {
+  background-color: green;
+  color: white;
+  height: 100px;
+  width: auto;
+}
+
+/*   */
+/*       Padding      */
+/*   */
+.box__padding {
+  background: #FC7608;
+  padding: 10px;
+}
+.box__padding h1 {
+  color: blue;
+}
+.box-padding__bluebox {
+  background-color: #3C5A9A;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  height: auto;
+  width: auto;
+}
+.box-padding__yellowbox {
+  background-color: rgb(206, 206, 68, 50%);
+  color: hsl(300, 67%, 49%);
+  padding: 10px 5px 7px 3em;
+  height: auto;
+  width: auto;
+}
+.box-padding__greenbox {
+  background-color: green;
+  color: white;
+  padding: 40px 10px;
+  height: auto;
+  width: auto;
+}
+
+
+
