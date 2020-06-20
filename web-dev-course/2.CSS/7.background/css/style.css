@@ -54,7 +54,11 @@ p {
   color: blue;
 }
 .box-padding__bluebox {
-  background-color: #3C5A9A;
+  /* background-color: #3C5A9A; */
+  background-image: url(../pictures/klx250s1.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
   color: white;
   padding: 10px;
   height: 100px;
@@ -67,14 +71,18 @@ p {
   margin: 20px;
 }
 .box-padding__yellowbox {
-  background-color: rgb(206, 206, 68, 50%);
+  background-image: url(../pictures/klx250s2.jpg);
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  /* background-position: right bottom; */
   color: hsl(300, 67%, 49%);
   padding: 10px 5px 7px 3em;
   margin: 60px 10px 30px 20px;
   border-color: black yellow red purple;
   border-style: ridge;
   border-width: 10px 15px 30px 20px;
-  height: auto;
+  height: 200px;
   width: auto;
 }
 .box-padding__greenbox {
