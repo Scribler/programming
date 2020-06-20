@@ -1,0 +1,74 @@
+/*   */
+/*       Reusable classes      */
+/*   */
+h1 { 
+  color: #BF260B;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+p {
+  background-color: #1799C3;
+}
+/* .parafloat { */
+  /* float: right; */
+/* } */
+.intro {
+  margin-bottom: 20px;
+}
+.great {
+  /* yellow */
+  background-color: #F7FF42;
+  color: black;
+}
+.article-picture {
+  border: ridge 10px;
+  border-color: green blue;
+  float: left;
+  height: 250px;
+  width: auto;
+  margin: 20px;
+ }
+ .article-picture:hover {
+   outline: solid yellow 2px;
+ }
+
+/*   */
+/*       Box Model      */
+/*   */
+.box {
+  background: #FB00EE;
+  /* padding: 2px 0; */
+}
+.box__bluebox {
+  /* blue */
+  background-color: #3C5A9A;
+  color: white;
+  float: left;
+  height: 100px;
+  width: auto;
+}
+.box__cont {
+  clear: both;
+}
+.box__yellowbox {
+  background-color: rgb(206, 206, 68, 90%);
+  color: hsl(300, 67%, 49%);
+  float: right;
+  height: 100px;
+  width: auto;
+}
+.box__greenbox {
+  background-color: green;
+  color: white;
+  height: 100px;
+  width: auto;
+}
+.box__float {
+  background-color: #21FFD8;
+  color: black;
+  height: 100px;
+  width: auto;
+}
+

@@ -27,18 +27,29 @@ p {
 .box__bluebox {
   background-color: #3C5A9A;
   color: white;
+  position: fixed;
+  /* (top and left) mean 30 px away from the top and 30px away from the left */
+  /* (top and right) mean 30 px away from the top and 30px away from the right */
+  top: 30px;
+  right: 30px;
   height: 100px;
   width: auto;
 }
 .box__yellowbox {
   background-color: rgb(206, 206, 68, 50%);
   color: hsl(300, 67%, 49%);
+  position: relative;
+  top: 20px;
+  left: 20px;
   height: 100px;
   width: auto;
 }
 .box__greenbox {
   background-color: green;
   color: white;
+  position: absolute;
+  top: 380px;
+  left: 75px;
   height: 100px;
   width: auto;
 }
