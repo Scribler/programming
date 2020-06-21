@@ -26,16 +26,19 @@ p {
 }
 .box__bluebox {
   background-color: #3C5A9A;
+  color: black;
   height: 100px;
   width: auto;
 }
 .box__yellowbox {
   background-color: rgb(206, 206, 68, 50%);
+  color: hsl(300, 67%, 49%);
   height: 100px;
   width: auto;
 }
 .box__greenbox {
   background-color: green;
+  color: black;
   height: 100px;
   width: auto;
 }

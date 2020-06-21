@@ -9,11 +9,13 @@ h1 {
   padding: 0;
 }
 p {
-  background-color: hsl(0, 96%, 67%, 50%);
+  background-color: hsl(357, 100%, 49%);
 }
 
 .great {
-  background-color: #F7FF42;
+  background-color: blue;
+  /* display: block; will make an inline element display like a block element. IT DOES NOT CHANGE IT INTO A BLOCK ELEMENT. */
+  /* display: block; */
   color: black;
 }
 
@@ -25,33 +27,35 @@ p {
   padding: 10px;
 }
 .box__bluebox {
-  background-color: rgb(60, 90, 154, 60%);
+  background-color: #3C5A9A;
   color: white;
-  position: fixed;
-  /* (top and left) mean 30 px away from the top and 30px away from the left */
-  /* (top and right) mean 30 px away from the top and 30px away from the right */
-  top: 30px;
-  right: 30px;
+  /* visibility hides the element but preserves the space it took up. */
+  /* visibility: hidden; */
+  /* display:none; totally gets rid of the element and the space it occupied */
+  /* display: none; */
+  text-decoration: underline;
   height: 100px;
   width: auto;
 }
 .box__yellowbox {
-  background-color: rgb(206, 206, 68, 50%);
-  color: hsl(300, 67%, 49%);
-  position: relative;
-  top: 20px;
-  left: 20px;
-  /* default z-index is 0. higher positive numbers will place it abover lower z-index items. */
-  z-index: 2;
+  background-color: rgb(206, 206, 68);
+  color: white;
+  /* display: inline; */
+  font-weight: bold;
+  letter-spacing: 12px;
+  text-shadow: 3px 3px 1px blue;
+  text-indent: 40px;
   height: 100px;
   width: auto;
 }
 .box__greenbox {
   background-color: green;
   color: white;
-  position: absolute;
-  top: 220px;
-  left: 75px;
+  text-decoration: overline;
+  font-style: italic;
+  /* indents first line! */
+  text-indent: 40px;
+  font-size: 1.5em;
   height: 100px;
   width: auto;
 }
