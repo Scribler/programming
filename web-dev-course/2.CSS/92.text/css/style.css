@@ -3,42 +3,92 @@
 /*   */
 h1 { 
   color: red;
+  text-align: center;
 }
 * {
   margin: 0;
   padding: 0;
 }
-p {
-  background-color: aqua;
+.title {
+  border: blue ridge 4px;
+  padding: 10px 30px;
+  text-align: center;
 }
-
-.great {
-  background-color: purple;
-  color: black;
+div {
+  padding-top: 5px;
 }
 
 /*   */
-/*       Box Model      */
+/*       Font families      */
 /*   */
-.box {
-  background: #B4F3FE;
-  padding: 10px;
+
+/* .box { */
+  /* background: #B4F3FE; */
+  /* padding: 10px; */
+/* } */
+.box div {
+  font-size: 30px;
 }
-.box__bluebox {
+.box .bluebox {
   background-color: #3C5A9A;
-  color: black;
+  color: white;
   height: 100px;
   width: auto;
+  font-family: sans-serif;
 }
-.box__yellowbox {
+.box .yellowbox {
   background-color: rgb(206, 206, 68, 50%);
   color: hsl(300, 67%, 49%);
   height: 100px;
   width: auto;
+  font-family: "Times New Roman", Times, serif;
 }
-.box__greenbox {
+.box .greenbox {
   background-color: green;
   color: black;
   height: 100px;
   width: auto;
+  font-family: monospace;
+}
+
+/*   */
+/*       Text Effects       */
+/*   */
+.effects {
+  margin-top: 20px;
+}
+.effects .bluebox {
+  background-color: #3C5A9A;
+  color: white;
+  height: 100px;
+  width: auto;
+  font-family: sans-serif;
+}
+/*The three effects below must be applied directly to the specific element otherwise they will not work. */
+/* NOTE they must be together. You can't put the top to in the parent element. */
+.effects .bluebox p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.effects .bluebox p:hover {
+  overflow: visible;
+}
+.effects .yellowbox {
+  background-color: rgb(206, 206, 68, 50%);
+  color: hsl(300, 67%, 49%);
+  height: 100px;
+  width: 400px;
+  font-family: "Times New Roman", Times, serif;
+  /* word-break: break-all; */
+  /* word-break: keep-all; */
+  word-wrap: break-word;
+  overflow: hidden;
+}
+.effects .greenbox {
+  background-color: green;
+  color: black;
+  height: 100px;
+  width: auto;
+  font-family: monospace;
 }
