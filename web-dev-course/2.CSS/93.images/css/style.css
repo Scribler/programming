@@ -9,3 +9,13 @@ h1 {
   font-family: Arial;
   text-decoration: underline;
 }
+#image1 {
+  height: 190px;
+  width: 90px;
+  background: url(../../pictures/klx250s1.jpg) -700px -400px; 
+  position: fixed;
+  left: 720px;
+  top: 480px;
+  transform: scale(1.5);
+  outline: orange solid 3px;
+}
