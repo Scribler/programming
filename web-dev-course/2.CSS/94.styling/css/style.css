@@ -2,10 +2,57 @@ h1 {
   color: pink;
 }
 
-.list1 {
+ul.list1 {
   color: blue;
-
+  /* list-style: lower-roman; */
+  /* list-style: upper-roman; */
+  /* list-style: circle; */
+  /* list-style: square; */
+  list-style-image: url("../../pictures/small-icon.jpg");
 }
-.list2 {
+ul.list2 {
   color: green;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.list2 li {
+  background-image: url(../../pictures/site-icon.jpg);
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  background-position: 0px center;
+}
+a:link {
+  color: purple;
+}
+a:hover{
+  font-size: 2em;
+}
+
+div.blue {
+  margin-top: 10px;
+  background-color: blue;
+  color: #FB00F4;
+  height: 100px;
+  width: auto;
+}
+div.blue a:active {
+  font-size: 4em;
+}
+div.yellow {
+  margin-top: 10px;
+  background-color: yellow;
+  color: #FB00F4;
+  height: 100px;
+  width: auto;
+}
+div.yellow a:visited {
+  color: green;
+}
+div.green {
+  margin-top: 10px;
+  background-color: green;
+  color: #FB00F4;
+  height: 100px;
+  width: auto;
 }
