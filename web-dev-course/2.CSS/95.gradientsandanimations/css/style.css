@@ -1,3 +1,183 @@
+/* REUSABLE CODE */
 h1 {
   color: aqua;
+}
+p {
+  padding-top: 40px;
+  text-align: center;
+}
+
+/* GRADIENTS */
+
+.blue {
+  /* background-color: blue; */
+  text-align: center;
+  using transparency;
+  background: linear-gradient(to left, rgba(0,0,255,0.2), rgba(0,0,255,0.8));
+  /* background: linear-gradient(90deg, rgba(0,0,255,0), rgba(0,0,255,1)); */
+  /* background: -webkit-linear-gradient(blue, white); */
+  /* background: -o-linear-gradient(blue, white); */
+  /* background: -moz-linear-gradient(blue, white); */
+  height: 100px;
+  width: auto;
+}
+.yellow{
+  /* background-color: yellow; */
+  /* background: radial-gradient(white, yellow, green); */
+  /* background: radial-gradient(white 5%, yellow 15%, green 80%); */
+  background: radial-gradient(circle, white 5%, yellow 15%, green 80%);
+  height: 100px;
+  width: auto;
+}
+.green{
+  /* background-color: green; */
+  background: linear-gradient(to bottom right, green 10%, white 50%, blue 70%);
+  height: 100px;
+  width: auto;
+}
+
+/* GRADIENTS 2 */
+
+.blue2 {
+  /* background-color: blue; */
+  using transparency;
+  /* background: linear-gradient(to left, rgba(0,0,255,0.2), rgba(0,0,255,0.8)); */
+  background: linear-gradient(90deg, rgba(0,0,255,0), rgba(0,0,255,1));
+  /* background: -webkit-linear-gradient(blue, white); */
+  /* background: -o-linear-gradient(blue, white); */
+  /* background: -moz-linear-gradient(blue, white); */
+  height: 100px;
+  width: auto;
+}
+.yellow2 {
+  /* background-color: yellow; */
+  /* background: radial-gradient(white, yellow, green); */
+  background: radial-gradient(white 5%, yellow 15%, green 80%);
+  /* background: radial-gradient(circle, white 5%, yellow 15%, green 80%); */
+  height: 100px;
+  width: auto;
+}
+.green2 {
+  /* background-color: green; */
+  background: linear-gradient(40deg, green, white, blue, white, green, white, blue);
+  height: 100px;
+  width: auto;
+}
+
+/* TRANSFORMS */
+
+/* 2D TRANSFORMS */
+.transforms {
+  color: red;
+ }
+.blue3 {
+  background-color: blue;
+  height: 100px;
+  width: 150px;
+}
+.blue3:hover {
+  /* transform: rotate(30deg); */
+  /* transform: translate(20px, 20px); */
+  /* transform: scale(1.5, 3.5); */
+  /* transform: skewX(-10deg) skewY(-10deg);  */
+  transform: skew(10deg, 10deg) scale(1.2, 1.2) rotate(10deg) translate(10px, 10px);
+  /* -ms-transform: rotate(30deg); */
+  /* -webkit-transform: rotate(30deg); */
+}
+
+/* 3D TRANSFORMS */
+.yellow3 {
+  background-color: yellow;
+  text-shadow: 4px 4px grey;
+  height: 150px;
+  width: 150px;
+}
+.yellow3:hover {
+  /* transform: rotateX(120deg); */
+  transform: rotateY(80deg);
+}
+
+.green3 {
+  background-color: green;
+  height: 100px;
+  width: auto;
+}
+
+
+/* TRANSITIONS */
+.transitions{
+  color: green;
+ }
+
+.blue4 {
+  background-color: blue;
+  height: 100px;
+  width: 100px;
+  transition: width 1s;
+}
+.blue4:hover {
+  width: 300px;
+}
+.yellow4 {
+  background-color: yellow;
+  height: 100px;
+  width: 100px;
+  transition: width 1s, height 1s, transform 1s;
+}
+.yellow4:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotateX(180deg);
+
+}
+.green4 {
+  background-color: green;
+  height: 100px;
+  width: auto;
+}
+
+
+/* ANIMATIONS */
+.animations {
+  color: purple;
+}
+
+.blue5 {
+  background-color: blue;
+  height: 100px;
+  width: auto;
+  animation: myanimation 3s;
+}
+@keyframes myanimation {
+  from{background:green}
+  to{background:#3A5795}
+}
+.blue5:hover {
+}
+.yellow5 {
+  position: relative;
+  background-color: yellow;
+  height: 100px;
+  width: 100px;
+  animation: another 3s;
+}
+@keyframes another {
+  0% {background: red;left: 0px;top: 0px}
+  25% {background: yellow;left: 200px;top: 0px}
+  50% {background: blue;left: 200px;top: 200px}
+  75% {background: green;left: 0px;top: 200px}
+  100% {background: red;left: 0px;top: 0px}
+}
+label {
+  background-color: green;
+  display: block;
+  position: relative;
+  height: 100px;
+  width: 100px;
+}
+#anim {
+  display: none;
+}
+#anim:checked + label {
+  animation: another 3s;
 }
