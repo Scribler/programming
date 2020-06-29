@@ -1,3 +1,55 @@
-h1 {
-  color: green
+/* COLORS */
+
+/* #861BBF= purple */
+/* #FDC609 = yellow */
+/* #179B02 = green */
+/* #22FF19 = light green */
+
+/* Universal Styles */
+* {
+  margin: 0;
+  padding: 0;
 }
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: blue;
+}
+body {
+  width: 1050px;
+  margin: 0 auto;
+}
+footer {
+  text-align: center;
+}
+/* REUSABLE CODE */
+
+
+/* HEADER */
+.search {
+  display: right;
+}
+.brand a {
+    color: #861BBF;
+    font-size: 50px;
+    font-weight: 100px;
+    text-decoration: none;
+}
+.brand a:active {
+    color: #640094;
+}
+
+/* MAIN CONTAINER */
+
+.container {
+  border: 10px ridge blue;
+}
+.container footer {
+  background-color: #FDC609;
+}
+article main {
+  padding: 5px;
+}
+
+
