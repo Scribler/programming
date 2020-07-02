@@ -24,12 +24,12 @@ footer {
   text-align: center;
 }
 /* REUSABLE CODE */
+header {
+  padding-bottom: 20px;
+}
 
 
 /* HEADER */
-.search {
-  display: right;
-}
 .brand a {
     color: #861BBF;
     font-size: 50px;
