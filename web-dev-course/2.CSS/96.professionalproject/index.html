@@ -12,59 +12,68 @@
   <body>
 
 
-    <header>
+    <header class="header-main">
       <h1 class="brand"><a href="#">Maths the Fun Way</a></h1>
       <div class="searchBox">
         <form method="get">
-          <input type="text" class="text">
-          <input type="submit" value="search a topic">
+<!-- This will clear the text in the text box ONLY if it is not the original word search.  It will also only restore search, if the line is blank. -->
+          <input type="text" class="text" value="search" onfocus='if(this.value == "search") this.value=""' onfocusout='if(this.value == "") this.value = "search"'>
+          <input type="submit" value="search a topic" class="submit">
         </form>
       </div>
+      <div class="clear"></div>
     </header>
+
+    <nav class="navigation">
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Online Tutorials</a></li>
+        <li><a href="#">Get a Private Tutor</a></li>
+        <li><a href="#">Sign Up</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="clear"></div>
 
 
     <main class="container">
-      <article>
-        <header>
-          <h2>Article Title Here</h2>
-        </header>
-        <main>
-          <section>
-            <h3>First Section of Content</h3>
-            <p>First section content goes here</p>
-            <p>First section content goes here</p>
-            <p>First section content goes here</p>
-            <p>First section content goes here</p>
-            <p>First section content goes here</p>
-            <p>First section content goes here</p>
-          </section>
-          <section>
-            <h3>Second Section of Content</h3>
-            <p>Second section content goes here</p>
-            <p>Second section content goes here</p>
-            <p>Second section content goes here</p>
-            <p>Second section content goes here</p>
-          </section>
-          <section class="dataList">
-            <h3>Data Lists?</h3>
-            <dl>
-              <dt><dfn>dog</dfn></dt>
-              <dd>A furry four legged animal</dd>
-              <dd>A fuzzy friend.</dd>
-              <dd>Kinda smelly sometimes.</dd>
-              <dd>An animal that likes to roll around in poop. :P</dd>
-            </dl>
-          </section>
+      <section class="introduction">
+        <h2>Do You Need Help With Maths?</h2>
+        <p>
+        Our website uses an interactive methodology of teaching Maths using the latest web technologies. Your learning experience with us is guaranteed to be intuitive and fun. You will have fun while learning. This is the secret of our outstanding results. Check reviews from our students.
+        </p>
+      </section>
 
+      <section>
+        <h3>First Section of Content</h3>
+        <p>First section content goes here</p>
+        <p>First section content goes here</p>
+        <p>First section content goes here</p>
+        <p>First section content goes here</p>
+        <p>First section content goes here</p>
+        <p>First section content goes here</p>
+      </section>
 
-        </main>
-        <footer>
-          <address>
-            <span>Contact Info: email.com</span>
-          </address>
-        </footer>
-      </article>
+      <section>
+        <h3>Second Section of Content</h3>
+        <p>Second section content goes here</p>
+        <p>Second section content goes here</p>
+        <p>Second section content goes here</p>
+        <p>Second section content goes here</p>
+      </section>
+
+      <section class="dataList">
+        <h3>Data Lists?</h3>
+        <dl>
+          <dt><dfn>dog</dfn></dt>
+          <dd>A furry four legged animal</dd>
+          <dd>A fuzzy friend.</dd>
+          <dd>Kinda smelly sometimes.</dd>
+          <dd>An animal that likes to roll around in poop. :P</dd>
+        </dl>
+      </section>
     </main>
+
 
     <footer>
 <!-- Address Markup using "RDFa". See: "https://www.w3.org/TR/rdfa-primer/" for more information.-->
@@ -82,6 +91,7 @@
               </p>
               <p property="addressCountry">United States of America</p>
           </address>
+          <a href="../000.credits/index.html">Credits</a>
       </section>
     </footer>
 
