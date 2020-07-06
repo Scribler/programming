@@ -1,9 +1,12 @@
 /* COLORS */
 /* #B314DB = light purple */
 /* #861BBF = purple */
+/* #5d12e7 = dark purple */
 
 /* #22FF19 = light green */
 /* #B7E952 = dark green */
+/* #628F19 = LIGHT green text */
+/* #316901 = DARKER green text */
 
 /* #f8f594 = light yellow */
 /* #d5d533 = dark yellow */
@@ -31,6 +34,9 @@ body {
 }
 footer {
   text-align: center;
+}
+ul {
+  list-style: none;
 }
 
 /* REUSABLE CODE */
@@ -95,10 +101,6 @@ footer {
   background: linear-gradient(#f8f594, #d5d533);
   padding: 7px 0;
   height: 70px;
-  margin-bottom: 10px;
-}
-.navigation ul {
-  list-style: none;
 }
 .navigation li {
   float: left;
@@ -151,8 +153,94 @@ article main {
 .introduction {
   color: blue;
   background: linear-gradient(#E5F2BB, #B7E952);
+  padding: 30px;
+  margin: 16px 0;
+}
+.introduction h3 {
+  font-size: 45px;
+  font-weight: normal;
+  color: #316901;
+}
+.introduction p {
+  font-size: 25px;
+  color: #628F19;
+  text-align: justify;
+}
+
+/*  */
+/************* SIDEBARS *************/
+/*  */
+.sidebar {
+  height: 500px;
+  width: 450px;
+  border: 1px solid #BAF46F;
+  border-radius: 20px;
   padding: 10px 30px;
 }
+.sidebar h3 {
+  color: #B314DB;
+  font-size: 30px;
+}
+.sidebar a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #5d12e7;
+  transition: font-size 0.1s ease;
+  -webkit-transition: font-size 0.1s ease;
+  -mos-transition: font-size 0.1s ease;
+  -o-transition: font-size 0.1s ease;
+  -ms-transition: font-size 0.1s ease;
+}
+.sidebar a:hover {
+  color: #B314DB;
+  font-size: 20px;
+  font-weight: bold;
+}
+.sidebar li {
+}
+.sidebar img {
+  margin-right: 10px;
+  display: inline;
+}
+.sidebar ul {
+  padding-top: 8px;
+}
+
+/* LEFT SIDE BAR */
+.leftSideBar {
+  float: left;
+}
+
+.leftSideBar li {
+  padding: 4px 0 4px 10px;
+  list-style-image: url(../../pictures/arrow.png);
+}
+
+/* RIGHT SIDE BAR */
+.rightSideBar {
+  float: right;
+}
+.rightSideBar li {
+  /* padding-top: 10px; */
+  /* padding-bottom: 20px; */
+  /* padding-left: 70px; */
+  padding: 10px 0 20px 70px;
+/* using background instead of list-style-image centers the image in the element! */
+  background: url(../../pictures/tick.png) no-repeat;
+  /* list-style-image: url(../../pictures/tick.png); */
+}
+
+/*  */
+/************* FOOTER *************/
+/*  */
+.contact {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+
+
+
 
 
 
