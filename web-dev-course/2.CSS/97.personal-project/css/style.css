@@ -2,7 +2,27 @@
 /* ***************colors*************** */
 /*   */
 
+/*
+1blue - rgb(95, 145, 184)
+2blue - rgb(59, 115, 158)
+3blue - rgb(118, 109, 254)
+4blue - rgb(6, 57, 96)
 
+1red - #3E76A0
+2red - #F65551
+3red - 
+4red - 
+
+1green - 
+2green - 
+3green - 
+4green - 
+
+1orange - 
+2orange - 
+3orange - 
+4orange - 
+*/
 /*   */
 /* ***************universal-classes*************** */
 /*   */
@@ -58,7 +78,7 @@ h1 {
   border: 1px solid orange;
   border-radius: 30px;
   display: inline-block;
-  background: linear-gradient(#D1D6FE, #6A5FFE);
+  background: linear-gradient(rgb(95, 145, 184), rgb(59, 115, 158));
 }
 
 /*   */
