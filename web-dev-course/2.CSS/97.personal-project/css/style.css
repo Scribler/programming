@@ -1,0 +1,140 @@
+/*   */
+/* ***************colors*************** */
+/*   */
+
+
+/*   */
+/* ***************universal-classes*************** */
+/*   */
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  background-color: #F9FCFC;
+  color: #060606;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: fine;
+}
+body {
+  width: 1200px;
+  margin: auto;
+}
+.clear {
+  clear: both;
+}
+
+
+/*   */
+/* ***************reusable-classes*************** */
+/*   */
+h1 {
+  font-size: 40px;
+}
+
+
+/*   */
+/* ***************header*************** */
+/*   */
+.main-header {
+  border: 1px solid green;
+  padding: 20px;
+}
+.main-header-left {
+  display: inline-block;
+}
+.main-header-right {
+  float: right;
+}
+
+/*   */
+/* ***************introduction*************** */
+/*   */
+.introduction {
+  width: 700px;
+  margin-top: 20px;
+  padding: 80px;
+  color: black;
+  border: 1px solid orange;
+  border-radius: 30px;
+  display: inline-block;
+  background: linear-gradient(#D1D6FE, #6A5FFE);
+}
+
+/*   */
+/* ***************sidebar*************** */
+/*   */
+.sidebar {
+  float: right;
+  background-color: #FC6454;
+  padding-top: 20px;
+}
+.sidebar li {
+  list-style: none;
+  text-decoration: none;
+  padding: 10px;
+}
+
+
+/*   */
+/* ***************choices*************** */
+/*   */
+.choices .intro {
+  text-align: center;
+  margin: 60px 20px 60px -250px;
+}
+.sec-block {
+  padding: 20px;
+  background-color: #FDB5B0;
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 822px;
+}
+
+
+/*   */
+/* ***************dualsports*************** */
+/*   */
+.dual-sport {
+color: brown;
+}
+
+
+/*   */
+/* ***************adventure*************** */
+/*   */
+.adventure {
+color: orange;
+}
+
+
+/*   */
+/* ***************street-bikes*************** */
+/*   */
+.street-bikes{
+color: red;
+}
+
+/*   */
+/* ***************cruisers*************** */
+/*   */
+.cruisers {
+color: blue;
+}
+
+/*   */
+/* ***************footer*************** */
+/*   */
+footer {
+  text-align: center;
+  background: linear-gradient(#FDB877, #FD9D24)
+}
+
+
+
+
+
+
+
+
+

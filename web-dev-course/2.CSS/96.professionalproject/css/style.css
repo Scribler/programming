@@ -22,6 +22,9 @@
 html {
   background-color: #F0F3F3;
 }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 a {
   text-decoration: none;
 }
@@ -31,9 +34,6 @@ a:visited {
 body {
   width: 1050px;
   margin: 0 auto;
-}
-footer {
-  text-align: center;
 }
 ul {
   list-style: none;
@@ -82,8 +82,9 @@ ul {
   /* orange */
   color: #FC9209;
   border: solid 3px #C5EDFE;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   background: white url(../../pictures/search.png) right center no-repeat;
+  border: 2px solid #C8D03E;
 }
 .submit {
   float: right;
@@ -110,7 +111,6 @@ ul {
   text-decoration: none;
 }
 .navigation li a {
-  font-family: sans-serif;
   font-size: 17px;
   color: #640094;
 /* line-height is used to virtically align the text */
@@ -233,9 +233,17 @@ article main {
 /*  */
 /************* FOOTER *************/
 /*  */
-.contact {
-  margin-top: 10px;
-  padding-top: 10px;
+.footer {
+  height: 60px;
+  background: linear-gradient(#F6F390, #D5D533);
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+.footer p {
+  margin: 0;
+  padding: 10px 5px 0 0;
 }
 
 
