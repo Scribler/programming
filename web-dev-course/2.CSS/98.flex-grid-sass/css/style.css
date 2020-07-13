@@ -1,0 +1,132 @@
+/*   */
+/* ***************colors*************** */
+/*   */
+
+/*
+  background-color: #F2F5F5; (offwhite)
+  color: #07575B;   bluish (main background)
+  color: #F0F3F3;   off-white (apple)
+  color: #4267B2;   blue (facebook)
+  color: #403F6A;   purple (microsoft)
+  color: #1F35A1;   dark-blue (samsung)
+  color: #EA4335;   red (google)
+  color: #FF9900;   orange (amazon)
+
+
+
+  color: #FC942B;   orange (footer)
+ */
+
+/*   */
+/* ***************universal-classes*************** */
+/*   */
+* {
+  box-sizing: border-box;
+}
+html, body {
+  background-color: #F2F5F5;
+}
+
+
+/*   */
+/* ***************reusable-classes*************** */
+/*   */
+.clear {
+  clear: both;
+}
+h1 {
+  color: green;
+}
+.facebook {
+  font-size: 10px;
+}
+
+/*   */
+/* ***************header*************** */
+/*   */
+
+
+/*   */
+/* ***************main*************** */
+/*   */
+.container {
+  background-color: #07575B;
+  height: 250px;
+  margin: 10px;
+  display: flex;
+      /* 'flex-wrap' stops the items from overflowing */
+      /* now they will instead change size to fit */
+  flex-wrap: wrap;
+  /* flex-wrap: wrap-reverse; */
+/* 'flex-direction' changes the startpoint from  */
+/* which your items begin to be displayed */
+/* FLEX ROW OVERFLOWS DOWN */
+/* FLEX COLUMN OVERFLOWS TO THE SIDE */
+}
+.row {
+  flex-direction: row;
+  flex-direction: row-reverse;
+  /* justify-content: space-around; */
+  justify-content: center;
+  /* align-items: center; */
+  /* align-items: flex-start; */
+      /* stretch is the default */
+  /* align-items: stretch; */
+      /* based off of the first line */
+  align-items: baseline;
+
+}
+.column {
+  flex-direction: column;
+  /* flex-direction: column-reverse; */
+  justify-content: space-between;
+}
+  /* justify-content: flex-end; */
+  /* justify-content: flex-start; */
+
+.container div {
+  background-color: #66A5AD;
+  text-align: center;
+  padding: 20px;
+  margin: 1px;
+  border: 3px #c4dfe6 solid;
+}
+
+
+.apple {
+  color: #F0F3F3;
+}
+.facebook {
+  color: #4267B2;
+}
+.microsoft {
+  color: #403F6A;
+  
+}
+.samsung {
+  color: #1F35A1;
+}
+.google {
+  color: #EA4335;
+}
+.amazon {
+  color: #FF9900;
+}
+
+
+
+/*   */
+/* ***************sidebar*************** */
+/*   */
+
+
+
+/*   */
+/* ***************footer*************** */
+/*   */
+footer {
+background-color: #FC942B;
+padding: 20px;
+text-align: center;
+margin-top: 20px;
+}
