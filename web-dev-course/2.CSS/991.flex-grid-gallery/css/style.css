@@ -14,12 +14,7 @@
 /* ***************universal-classes*************** */
 /*   */
 * {
-  padding: 0;
-  margin: 0;
-}
-body {
-  width: 1200px;
-  margin: auto;
+  box-sizing: border-box;
 }
 
 
@@ -32,19 +27,26 @@ body {
 
 
 /*   */
-/* ***************header*************** */
+/* ***************Section row*************** */
 /*   */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.column {
+  flex: 1;
+}
 
-
-/*   */
-/* ***************sidebar*************** */
-/*   */
-
-
-
-/*   */
-/* ***************footer*************** */
-/*   */
-footer {
+.column:nth-child(1) {
+  background-color: skyblue;
+}
+.column:nth-child(2) {
+  background-color: palevioletred;
+}
+.column:nth-child(3) {
+  background-color: green;
+}
+.column:nth-child(4) {
+  background-color: lightcoral;
 }
