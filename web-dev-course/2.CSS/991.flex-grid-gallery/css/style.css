@@ -31,11 +31,15 @@
 /*   */
 .container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
 }
 
 .column {
   flex: 1;
+}
+img {
+  /* makes the images fit their alloted seciton of flexbox instead of displaying always their original size. */
+  width: 100%;
 }
 
 .column:nth-child(1) {
