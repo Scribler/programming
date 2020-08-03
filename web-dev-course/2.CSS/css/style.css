@@ -41,15 +41,23 @@ a {
 a:visited {
   color: blue;
 }
-.sublist li{
-  margin-left: 20px;
-}
 .main-list {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-around;
+   
+  /* width: 400px; */
+}
+.main-list-item {
+  /* margin-top: 10px; */
+  /* padding: 10px; */
   border: 2px solid purple;
   list-style: none;
+  width: 200px;
+}
+.sublist li{
+  margin-left: 20px;
 }
 
 /*   */
