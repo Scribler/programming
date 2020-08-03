@@ -1,5 +1,3 @@
-
-
 /*   */
 /* ***************colors*************** */
 /*   */
@@ -31,33 +29,11 @@ body {
 .clear {
   clear: both;
 }
-h1 {
-  font-family: "Arial";
-  color: purple;
-  font-weight: 100;
-}
-a {
-}
-a:visited {
-  color: blue;
-}
-.sublist li{
-  margin-left: 20px;
-}
-.main-list {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px;
-  border: 2px solid purple;
-  list-style: none;
-}
+
 
 /*   */
 /* ***************header*************** */
 /*   */
-header h1 {
-  color: green;
-}
 
 
 
