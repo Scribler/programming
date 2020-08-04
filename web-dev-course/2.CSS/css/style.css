@@ -18,6 +18,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 body {
   width: 1200px;
@@ -36,37 +37,60 @@ h1 {
   color: purple;
   font-weight: 100;
 }
-a {
-}
 a:visited {
   color: blue;
 }
+
+
+/*   */
+/* ***************header*************** */
+/*   */
+header {
+  /* border: 2px solid blue; */
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+header h1 {
+  color: green;
+  align-self: center;
+}
+.logo-one {
+  align-self: center;
+  margin-right: 10px;
+}
+
+
+/*   */
+/* ***************main*************** */
+/*   */
 .main-list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-content: space-around;
+  justify-content: center;
    
   /* width: 400px; */
 }
 .main-list-item {
-  /* margin-top: 10px; */
-  /* padding: 10px; */
-  border: 2px solid purple;
   list-style: none;
-  width: 200px;
+  width: 350px;
+  margin: 10px 10px 0 0;
+  padding: 20px;
+  border: 2px solid purple;
+  border-radius: 20px;
+}
+.main-list-item:hover {
+  border-color: red;
+  border-width: 5px;
+  padding: 17px;
 }
 .sublist li{
   margin-left: 20px;
 }
-
-/*   */
-/* ***************header*************** */
-/*   */
-header h1 {
-  color: green;
-}
-
 
 
 /*   */
