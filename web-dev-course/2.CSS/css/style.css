@@ -3,6 +3,8 @@
 /*   */
 /* ***************colors*************** */
 /*   */
+text dark grey      - #080808
+background blueish  - #E9FFF6
 
 /*
 
@@ -23,6 +25,8 @@
 body {
   width: 1200px;
   margin: auto;
+  background-color: #E9FFF6;
+  color: #080808;
 }
 
 
@@ -34,8 +38,8 @@ body {
 }
 h1 {
   font-family: "Arial";
-  color: purple;
   font-weight: 100;
+  color: #080808;
 }
 a:visited {
   color: blue;
@@ -54,7 +58,6 @@ header {
   align-content: center;
 }
 header h1 {
-  color: green;
   align-self: center;
 }
 .logo-one {
@@ -70,18 +73,18 @@ header h1 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  align-content: space-around;
-  justify-content: center;
-   
+  justify-content: space-around;
+  
   /* width: 400px; */
 }
 .main-list-item {
   list-style: none;
-  width: 350px;
-  margin: 10px 10px 0 0;
+  width: 250px;
+  /* margin: 10px 10px 0 0; */
   padding: 20px;
   border: 2px solid purple;
   border-radius: 20px;
+  margin-bottom: 10px;
 }
 .main-list-item:hover {
   border-color: red;
@@ -90,6 +93,9 @@ header h1 {
 }
 .sublist li{
   margin-left: 20px;
+}
+.main-list-item a {
+  target: _blank;
 }
 
 
@@ -103,4 +109,9 @@ header h1 {
 /* ***************footer*************** */
 /*   */
 footer {
+  display: flex;
+  justify-content: center;
+  /* align-content: center; */
+}
+.footer-container {
 }
