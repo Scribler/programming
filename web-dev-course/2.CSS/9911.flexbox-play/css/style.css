@@ -51,20 +51,22 @@ h1 {
 /*   */
 /* ***************main*************** */
 /*   */
-/* .first-container { */
-  /* background-color:grey; */
-  /* height: 500px; */
-  /* width: auto; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-/* } */
+.first-container {
+  background-color:grey;
+  height: 500px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .second-container {
   height: 200px;
+  flex: 0 1 800px;
   margin: 10px;
   background-color: yellow;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .second-container div{
@@ -88,6 +90,18 @@ h1 {
 }
 .brown {
   background-color: brown;
+  flex: 0 1 auto;
+}
+.teal {
+  background-color: teal;
+  flex: 0 1 auto;
+}
+.orange {
+  background-color: orange;
+  flex: 0 1 auto;
+}
+.purple {
+  background-color: purple;
   flex: 0 1 auto;
 }
 
