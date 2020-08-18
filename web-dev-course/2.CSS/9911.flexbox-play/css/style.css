@@ -60,29 +60,42 @@ h1 {
   align-items: center;
 }
 .second-container {
-  height: 200px;
-  flex: 0 1 800px;
+  height: 190px;
+  flex: 0 1 950px;
   margin: 10px;
   background-color: yellow;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  /* align-content: space-around; */
 }
 
-.second-container div{
+.second-container .inner{
   padding: 20px;
   margin: 1px;
   color: aliceblue;
   border: 3px grey solid;
+  /* flex: 0 1 100px; */
 }
 
 .blue {
   background-color: blue;
-  flex: 0 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+.blueinside {
+  color: aliceblue;
+  border: 3px grey solid;
+  padding: 20px;
+  margin: 1px;
+  flex 0 1 10px;
 }
 .green{
   background-color: green;
   flex: 0 1 auto;
+  font-size: 9px;
 }
 .red {
   background-color: red;
