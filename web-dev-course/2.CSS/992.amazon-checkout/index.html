@@ -11,16 +11,15 @@
   <body>
 
     <header>
-      <h2>This is the header</h2>
       <h1>Amazon Checkout</h1>
     </header>
 
 
     <main>
-
-        <form>
-
-          <div class="form-content">
+      <form class="main-container">
+        <div class="second-container">
+          <div class="information">
+            <h3>Information</h3>
             <label for="address">Address:</label>
             <input type="text" name="address" id="address" placeholder="Address" size="30px" maxlength="100">
             <br />
@@ -32,9 +31,9 @@
             <p>Choose your shipping method:</p>
 
             <select name="shipping" id="shipping">
-                <option value="Free super saver shipping">Free super saver shipping</option>
-                <option value="Two-Day shipping">Two-Day shipping</option>
-                <option value="One-Day shipping">One-Day shipping</option>
+              <option value="Free super saver shipping">Free super saver shipping</option>
+              <option value="Two-Day shipping">Two-Day shipping</option>
+              <option value="One-Day shipping">One-Day shipping</option>
             </select>
 
             <p>Choose your payment method:</p>
@@ -42,24 +41,24 @@
             <label>Debit Card<input type="radio" name="payment" value="debit card"></label>
             <label>Credit Card<input type="radio" name="payment" value="credit card"></label>
 
-            <br />
-            <label for="comments">Comments:</label>
-            <textarea rows="4" cols="40" name="comments" id="comments"></textarea>
-
-            <br />
+            <br>
             <label>Sign me up for email updates<input type="checkbox" name="email updates" checked="checked"></label>
-
             <br />
             <label>Securely save my payment details<input type="checkbox" name="save payment"  checked="checked"></label>
           </div>
 
 
-          <div class="form-submit">
-            <input type="submit" value="Submit">
+          <div class="comments">
+            <label for="comments">Comments:</label>
+            <textarea rows="4" cols="30" name="comments" id="comments"></textarea>
           </div>
+        </div>
 
-        </form>               
+        <div class="demo-submit">
+          <input type="submit" value="Submit">
+        </div>
 
+      </form>
     </main>
 
 
