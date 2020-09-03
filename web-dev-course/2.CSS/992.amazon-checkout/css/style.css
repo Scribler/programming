@@ -16,12 +16,13 @@
 /* ***************universal-classes*************** */
 /*   */
 * {
+ box-sizing: border-box;
+}
+body, html {
   padding: 0;
   margin: 0;
 }
-body {
-  /* width: 1200px; */
-  /* margin: auto; */
+html {
   background-color: #F6F6F6;
 }
 
@@ -29,20 +30,51 @@ body {
 /*   */
 /* ***************reusable-classes*************** */
 /*   */
+h1 {
+  padding: 10px;
+}
 
 /*   */
 /* ***************header*************** */
 /*   */
 
-/*   */
-/* ***************main-demo*************** */
-/*   */
 
 /*   */
 /* ***************main*************** */
 /*   */
+form {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 10px;
+}
+.containter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/* 1.1 details */
+.details {
+  background-color: greenyellow;
+  flex: 3;
+}
+/* 1.1.1. address */
+.address .form-group {
+  display: flex;
+}
+/* 1.2 details */
+.comments {
+  background-color: deepskyblue;
+  flex: 1;
+}
 
 
+
+.submit {
+  background-color: darkred;
+/* setting the margin to auto will push the element all the way to the opposite side of the div if you are using flexbox as illustrated below */
+  margin-top: auto;
+}
 
 /*   */
 /* ***************sidebar*************** */
