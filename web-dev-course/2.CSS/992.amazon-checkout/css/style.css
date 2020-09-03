@@ -47,6 +47,7 @@ form {
   flex-direction: column;
   height: 100vh;
   padding: 10px;
+  font-size: 24px;
 }
 .containter {
   display: flex;
@@ -59,8 +60,16 @@ form {
   flex: 3;
 }
 /* 1.1.1. address */
-.address .form-group {
+.form-group {
   display: flex;
+  margin: 1em; 
+}
+.form-group label{
+  flex: 1;
+  text-align: right;
+}
+.form-group input{
+  flex: 3;
 }
 /* 1.2 details */
 .comments {
