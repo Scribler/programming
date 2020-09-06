@@ -79,13 +79,51 @@ form {
   background-color: deepskyblue;
   flex: 1;
 }
+/* 2.0 shipping */
+.shipping {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.shipping p {
+  font-size: .8em;
+}
+select {
+  font-size: .9em;
+  padding: 0 10px;
+}
+/* 3.0 payment */
+.payment {
+  text-align: center;
+  font-size: .8em;
+}
+.payment-radio {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap row;
+  justify-content: space-around;
+}
+/* 4.0 extra options */
+.options {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-
-
+/* 5.0 submit */
 .submit {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   background-color: darkred;
 /* setting the margin to auto will push the element all the way to the opposite side of the div if you are using flexbox as illustrated below */
   margin-top: auto;
+}
+.submit input {
+  background-color: blue;
+  padding: 20px;
+  font-size: 1.1em;
+  color: white;
 }
 
 /*   */
