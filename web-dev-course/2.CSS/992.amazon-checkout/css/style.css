@@ -77,6 +77,8 @@ form {
 /* 1.2 details */
 .comments {
   background-color: deepskyblue;
+  display: flex;
+  flex-direction: column;
   flex: 1;
 }
 /* 2.0 shipping */
@@ -85,29 +87,49 @@ form {
   flex-direction: column;
   align-items: center;
 }
-.shipping p {
-  font-size: .8em;
-}
 select {
-  font-size: .9em;
-  padding: 0 10px;
+  font-size: 1em;
+  margin-top: 0.5em;
 }
 /* 3.0 payment */
 .payment {
+  flex-direction: column;
+  justify-content: space-around;
   text-align: center;
-  font-size: .8em;
 }
+.payment div:nth-child(1){
+  margin-top: 1em;
+}
+.payment div:nth-child(2){
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+}
+.payment div:nth-child(2) label{
+  flex: 1;
+  margin-top: 0.5em;
+}
+ 
 .payment-radio {
   display: flex;
   flex-direction: row;
   flex-flow: wrap row;
   justify-content: space-around;
+  margin-bottom: 1em;
 }
 /* 4.0 extra options */
 .options {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+}
+/* This makes both of the labels take up the same amount of space */
+.options label{
+  flex: 1;
+}
+.options label:nth-child(1){
+  order: 2;
+}
+.options label:nth-child(2){
+  order: 1;
 }
 
 /* 5.0 submit */
