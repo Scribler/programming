@@ -133,6 +133,8 @@ select {
 /* 4.0 extra options */
 .options {
   display: flex;
+  text-align: center;
+  margin-top: 1em;
 }
 /* This makes both of the labels take up the same amount of space */
 .options label{
@@ -147,7 +149,6 @@ select {
 
 /* 5.0 submit */
 .submit {
-  /* background-color: darkred; */
 /* setting the margin to auto will push the element all the way to the opposite side of the div if you are using flexbox as illustrated below */
   margin-top: auto;
   text-align: center;
@@ -157,6 +158,8 @@ select {
   width: 100%;
   color: azure;
   font-size: 1.7em;
+/* buttons have a border by default so it must be removed if you want that look. */
+  border: none;
 }
 
 /*   */
