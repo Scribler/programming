@@ -1,0 +1,73 @@
+
+/* ***************Colors***************
+PURPLES
+#861BBF = purple
+#5d12e7 = dark purple
+#B314DB = light purple
+
+GREENS
+#628F19 = LIGHT green text
+#22FF19 = light green
+#B7E952 = dark green
+#316901 = DARKER green text
+
+YELLOWS
+#f8f594 = light yellow
+#d5d533 = dark yellow
+***************Colors***************/
+
+/* ***************Fonts***************
+  font-family: Arial, Helvetica, sans-serif;
+***************Fonts************** */
+
+/*   */
+/* ***************universal-classes*************** */
+/*   */
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 1200px;
+  margin: auto;
+}
+/* ***************universal-classes*************** */
+
+
+/*   */
+/* ***************reusable-classes*************** */
+/*   */
+.clear {
+  clear: both;
+}
+/* ***************reusable-classes*************** */
+
+
+
+
+/*   */
+/* ***************header*************** */
+/*   */
+
+/* ***************header*************** */
+
+
+
+
+/*   */
+/* ***************sidebar*************** */
+/*   */
+
+/* ***************sidebar*************** */
+
+
+
+
+/*   */
+/* ***************footer*************** */
+/*   */
+footer {
+}
+
+/* ***************footer*************** */
