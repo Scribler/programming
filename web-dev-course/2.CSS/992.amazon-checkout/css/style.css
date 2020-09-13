@@ -4,6 +4,7 @@
 /* green #8EDD6E */
 /* background grey #F6F6F6; */
 
+  /* green background - background-color: rgba(138, 230, 81, 0.7); */
 /*
 
 
@@ -42,6 +43,11 @@ h1 {
 /*   */
 /* ***************main*************** */
 /*   */
+.infoheading {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2em;
+}
 form {
   display: flex;
   flex-direction: column;
@@ -49,14 +55,18 @@ form {
   padding: 10px;
   font-size: 24px;
 }
-.containter {
+input, textarea, select{
+  background-color: rgba(138, 230, 81, 0.7);
+  border-radius: 10px;
+}
+.container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 1em;
 }
 /* 1.1 details */
 .details {
-  background-color: greenyellow;
   flex: 3;
 }
 /* 1.1.1. address */
@@ -76,9 +86,12 @@ form {
 }
 /* 1.2 details */
 .comments {
-  background-color: deepskyblue;
   display: flex;
   flex-direction: column;
+  margin: 1em;
+  flex: 1;
+}
+.comments textarea{
   flex: 1;
 }
 /* 2.0 shipping */
@@ -134,18 +147,16 @@ select {
 
 /* 5.0 submit */
 .submit {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  background-color: darkred;
+  /* background-color: darkred; */
 /* setting the margin to auto will push the element all the way to the opposite side of the div if you are using flexbox as illustrated below */
   margin-top: auto;
+  text-align: center;
 }
-.submit input {
-  background-color: blue;
-  padding: 20px;
-  font-size: 1.1em;
-  color: white;
+.submit button{
+  background-color: deepskyblue;
+  width: 100%;
+  color: azure;
+  font-size: 1.7em;
 }
 
 /*   */
