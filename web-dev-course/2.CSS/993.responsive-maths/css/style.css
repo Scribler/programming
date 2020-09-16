@@ -1,254 +1,163 @@
-/* COLORS */
-/* #B314DB = light purple */
-/* #861BBF = purple */
-/* #5d12e7 = dark purple */
 
-/* #22FF19 = light green */
-/* #B7E952 = dark green */
-/* #628F19 = LIGHT green text */
-/* #316901 = DARKER green text */
+/* ***************Colors***************
+=====PURPLES=====
+purple
+#861BBF
 
-/* #f8f594 = light yellow */
-/* #d5d533 = dark yellow */
+darkpurple
+#5d12e7
 
-/* FONTS */
-
-/* sans serif */
+light purple
+#B314DB
 
 
-/*  */
-/************* UNIVERSAL STYLES *************/
-/*  */
+======GREENS=====
+light green text
+#628F19
+
+darker green text
+#316901
+
+light green
+#E5F2BB
+
+dark green
+#B7E952
+
+
+=====YELLOWS=====
+
+light yellow
+#f8f594
+
+dark yellow
+#d5d533
+***************Colors***************/
+
+
+
+
+/* ***************Fonts***************
+  font-family: Arial, Helvetica, sans-serif;
+***************Fonts************** */
+
+
+
+
+/*   */
+/* ***************universal-classes*************** */
+/*   */
+* {
+  padding: 0;
+  margin: 0;
+}
 html {
   background-color: #F0F3F3;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
-}
-a {
-  text-decoration: none;
-}
-a:visited {
-  color: blue;
-}
-body {
+  font-size: 16px;
   width: 1050px;
   margin: 0 auto;
 }
-ul {
-  list-style: none;
-}
+/* ***************universal-classes*************** */
 
-/* REUSABLE CODE */
+
+
+
+/*   */
+/* ***************reusable-classes*************** */
+/*   */
 .clear {
   clear: both;
 }
+/* ***************reusable-classes*************** */
 
-/*  */
-/************* HEADER *************/
-/*  */
-.header-main {
-  /* border: red solid 2px; */
+
+
+
+/*   */
+/* ***************header*************** */
+/*   */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   padding: 10px 0;
   height: 100px;
 }
-.brand {
-  /* display: inline; */
-  float: left;
+header h1 {
+  margin-top: 10px;
+  font-size: 3.13em;
+  color: #861BBF;
 }
-.brand a {
-    color: #861BBF;
-    font-size: 50px;
-    font-weight: 100px;
-    text-decoration: none;
+.search {
+  background-image: linear-gradient(#E5F2BB, #B7E952);
+  padding: 20px;
+  flex: 0 1 300px;
 }
-.brand a:active {
-    color: #640094;
+.search input{
+  width: 100px;
 }
-.searchBox {
-  float: right;
-  background: linear-gradient(#E5F2BB, #B7E952);
-  width: 400px;
-  height: 50px;
-  padding: 15px 15px 0 15px;
-  margin: 10px 0;
 
-}
-.text {
-  float: left;
-  width: 200px;
-  padding: 5px;
-  font-size: 15px;
-  /* orange */
-  color: #FC9209;
-  border: solid 3px #C5EDFE;
-  /* border-radius: 5px; */
-  background: white url(../../pictures/search.png) right center no-repeat;
-  border: 2px solid #C8D03E;
-}
-.submit {
-  float: right;
-  padding: 5px;
-  font-weight: bold;
-  font-size: 15px;
-  color: #F7FAFA;
-  background: #861BBF;
-} 
+/* ***************header*************** */
 
-/*  */
-/************* NAV *************/
-/*  */
+
+
+
+
+/*   */
+/* ***************nav*************** */
+/*   */
 .navigation {
-  background: linear-gradient(#f8f594, #d5d533);
-  padding: 7px 0;
-  height: 70px;
+  padding: 30px;
+  background-image: linear-gradient(#f8f594, #d5d533);
 }
-.navigation li {
-  float: left;
+.navigation ul {
+  display: flex;
+  justify-content: baseline;
+  list-style-type: none;
+}
+.navigation ul li a {
+  border-right: solid #5d12e7 1px;
   padding: 0 30px;
-  height: 30px;
-  border-right: 1px #640094 solid;
-  text-decoration: none;
-}
-.navigation li a {
-  font-size: 17px;
   color: #640094;
-/* line-height is used to virtically align the text */
-  line-height: 30px;
-  text-transform: uppercase;
-  transition: font-size 0.1s ease;
-  -webkit-transition: font-size 0.1s ease;
-  -mos-transition: font-size 0.1s ease;
-  -o-transition: font-size 0.1s ease;
-  -ms-transition: font-size 0.1s ease;
-  /* transition: font-size 0.1s linear; */
 }
-/* can use a comma here so that we don't need another definition  */
-.navigation li a:hover, .navigation li a.active {
+.navigation ul li:first-child a {
   color: #B314DB;
-  font-size: 20px;
+  font-size: 1.3em;
   font-weight: bold;
 }
-/* remove right border for last item in list */
 .navigation ul li:last-child {
   border-right: none;
 }
-
-/*  */
-/************* MAIN CONTAINER *************/
-/*  */
-.container {
-  /* border: 10px ridge blue; */
-  /* padding: 10px; */
-}
-.container footer {
-  background-color: #FDC609;
-}
-article main {
-  padding: 5px;
-}
-/*  */
-/************* INTRODUCTION *************/
-/*  */
-.introduction {
-  color: blue;
-  background: linear-gradient(#E5F2BB, #B7E952);
-  padding: 30px;
-  margin: 16px 0;
-}
-.introduction h3 {
-  font-size: 45px;
-  font-weight: normal;
-  color: #316901;
-}
-.introduction p {
-  font-size: 25px;
-  color: #628F19;
-  text-align: justify;
-}
-
-/*  */
-/************* SIDEBARS *************/
-/*  */
-.sidebar {
-  height: 500px;
-  width: 450px;
-  border: 1px solid #BAF46F;
-  border-radius: 20px;
-  padding: 10px 30px;
-}
-.sidebar h3 {
-  color: #B314DB;
-  font-size: 30px;
-}
-.sidebar a {
+.navigation ul li a {
   text-decoration: none;
-  font-size: 17px;
-  color: #5d12e7;
-  transition: font-size 0.1s ease;
-  -webkit-transition: font-size 0.1s ease;
-  -mos-transition: font-size 0.1s ease;
-  -o-transition: font-size 0.1s ease;
-  -ms-transition: font-size 0.1s ease;
 }
-.sidebar a:hover {
+.navigation ul li a:hover {
   color: #B314DB;
-  font-size: 20px;
+  font-size: 1.3em;
   font-weight: bold;
 }
-.sidebar li {
-}
-.sidebar img {
-  margin-right: 10px;
-  display: inline;
-}
-.sidebar ul {
-  padding-top: 8px;
-}
 
-/* LEFT SIDE BAR */
-.leftSideBar {
-  float: left;
-}
 
-.leftSideBar li {
-  padding: 4px 0 4px 10px;
-  list-style-image: url(../../pictures/arrow.png);
-}
+/* ***************nav*************** */
 
-/* RIGHT SIDE BAR */
-.rightSideBar {
-  float: right;
-}
-.rightSideBar li {
-  /* padding-top: 10px; */
-  /* padding-bottom: 20px; */
-  /* padding-left: 70px; */
-  padding: 10px 0 20px 70px;
-/* using background instead of list-style-image centers the image in the element! */
-  background: url(../../pictures/tick.png) no-repeat;
-  /* list-style-image: url(../../pictures/tick.png); */
+
+/*   */
+/* ***************sidebar*************** */
+/*   */
+
+/* ***************sidebar*************** */
+
+
+
+
+/*   */
+/* ***************footer*************** */
+/*   */
+footer {
 }
 
-/*  */
-/************* FOOTER *************/
-/*  */
-.footer {
-  height: 60px;
-  background: linear-gradient(#F6F390, #D5D533);
-  padding: 10px 30px;
-  border: none;
-  border-radius: 10px;
-  margin: 10px 0;
-}
-.footer p {
-  margin: 0;
-  padding: 10px 5px 0 0;
-}
-
-
-
-
-
-
-
+/* ***************footer*************** */
