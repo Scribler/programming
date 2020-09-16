@@ -84,11 +84,12 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin: 20px 0;
+  padding: 10px 0;
+  height: 100px;
 }
 header h1 {
   margin-top: 10px;
-  font-size: 3.1em;
+  font-size: 3.13em;
   color: #861BBF;
 }
 .search {
@@ -118,9 +119,10 @@ header h1 {
   justify-content: baseline;
   list-style-type: none;
 }
-.navigation ul li {
+.navigation ul li a {
   border-right: solid #5d12e7 1px;
   padding: 0 30px;
+  color: #640094;
 }
 .navigation ul li:first-child a {
   color: #B314DB;
