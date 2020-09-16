@@ -1,19 +1,46 @@
-/* COLORS */
-/* #B314DB = light purple */
-/* #861BBF = purple */
-/* #5d12e7 = dark purple */
 
-/* #22FF19 = light green */
-/* #B7E952 = dark green */
-/* #628F19 = LIGHT green text */
-/* #316901 = DARKER green text */
+/* ***************Colors***************
+=====PURPLES=====
+purple
+#861BBF
 
-/* #f8f594 = light yellow */
-/* #d5d533 = dark yellow */
+darkpurple
+#5d12e7
 
-/* FONTS */
+light purple
+#B314DB
 
-/* sans serif */
+
+======GREENS=====
+light green text
+#628F19
+
+darker green text
+#316901
+
+light green
+#E5F2BB
+
+dark green
+#B7E952
+
+
+=====YELLOWS=====
+light yellow
+#f8f594
+
+dark yellow
+#d5d533
+
+***************Colors***************/
+
+
+
+
+/* ***************Fonts***************
+  font-family: Arial, Helvetica, sans-serif;
+***************Fonts************** */
+
 
 
 /*  */
@@ -43,6 +70,9 @@ ul {
 .clear {
   clear: both;
 }
+/* ***************universal-classes*************** */
+
+
 
 /*  */
 /************* HEADER *************/
