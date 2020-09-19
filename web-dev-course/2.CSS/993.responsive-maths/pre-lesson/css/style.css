@@ -4,6 +4,9 @@
 purple
 #861BBF
 
+darkpurpe heading
+#640094;
+
 darkpurple
 #5d12e7
 
@@ -88,19 +91,23 @@ header {
   padding: 10px 0;
   height: 100px;
 }
-header h1 {
+.brand {
+  flex: 50%;
   margin-top: 10px;
   font-size: 3.13em;
-  color: #861BBF;
 }
-.search {
+.brand a {
+  color: #640094;
+  text-decoration: none;
+}
+.searchBox {
+  flex: 50%;
   background-image: linear-gradient(#E5F2BB, #B7E952);
   padding: 20px;
-  flex: 0 1 300px;
 }
-.search input{
-  width: 100px;
-}
+/* .search input{ */
+  /* width: 100px; */
+/* } */
 
 /* ***************header*************** */
 

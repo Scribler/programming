@@ -84,38 +84,42 @@ ul {
 /*  */
 .header {
   /* border: red solid 2px; */
-  padding: 10px 0;
-  height: 100px;
+  /* padding: 10px 0; */
+  /* height: 100px; */
   display: flex;
   flex-wrap: wrap;
 }
 .brand {
-  /* display: inline; */
-  /* float: left; */
+  /* flex: 1; */
+  /* flex: 50%; sets the flex basis to 50%. */
+  /* at 50% of screen size the items start growing. */
+  /* default flex-basis is 0 */
   flex: 50%;
-  /* flex: 1 1; (this does the same thing as flex: 50%;) */
 }
-.brand a {
+h1 a {
     color: #861BBF;
     font-size: 50px;
     font-weight: 100px;
     text-decoration: none;
 }
-.brand a:active {
+h1 a:active {
     color: #640094;
 }
 .searchBox {
   /* float: right; */
+  display: flex;
   flex: 50%;
   background: linear-gradient(#E5F2BB, #B7E952);
-  width: 400px;
-  height: 50px;
-  padding: 15px 15px 0 15px;
+  /* 'width' is not compatible with flexbox. Use "min-width"  */
+  /* width: 400px; */
+  min-width: 400px;
+  /* height: 100px; */
+  padding: 20px;
   margin: 10px 0;
-
+  justify-content: center;
+  align-items: center;
 }
 .text {
-  float: left;
   width: 200px;
   padding: 5px;
   font-size: 15px;
@@ -127,7 +131,6 @@ ul {
   border: 2px solid #C8D03E;
 }
 .submit {
-  float: right;
   padding: 5px;
   font-weight: bold;
   font-size: 15px;
@@ -139,9 +142,10 @@ ul {
 /************* NAV *************/
 /*  */
 .navigation {
+  display: flex;
   background: linear-gradient(#f8f594, #d5d533);
   padding: 7px 0;
-  height: 70px;
+  /* height: 70px; */
 }
 .navigation li {
   float: left;
