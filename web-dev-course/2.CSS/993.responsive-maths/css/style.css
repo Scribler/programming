@@ -187,7 +187,7 @@ h1 a:active {
 .menu {
   display: flex;
   background: linear-gradient(#f8f594, #d5d533);
-  padding: 20px 0 20px 40px;
+  padding: 30px 0;
   flex-wrap: wrap;
   text-transform: uppercase;
   transition: font-size 0.1s ease;
