@@ -16,10 +16,9 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 body {
-  width: 1200px;
-  margin: auto;
 }
 h1 {
   color: green;
@@ -33,6 +32,11 @@ h1 {
   clear: both;
 }
 
+.containerAll {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 
 /*   */
 /* ***************header*************** */
@@ -44,8 +48,17 @@ header {
 /*   */
 /* ***************main-content*************** */
 /*   */
-.mainContent {
-  background-color: orange;
+.container {
+  background-color: #07575B;
+  display: grid;
+}
+.container > div {
+  background-color: #66A5AD;
+  color: aliceblue;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  margin: 2px;
 }
 
 
@@ -54,4 +67,5 @@ header {
 /*   */
 footer {
   background-color: lightblue;
+  margin-top: auto;
 }
