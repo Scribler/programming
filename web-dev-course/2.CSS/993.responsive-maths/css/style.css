@@ -269,14 +269,16 @@ article main {
   margin-bottom: 15px;
 }
 .sidebar {
-  flex: 48%;
   min-width: 350px;
-  /* height: 500px; */
-  /* width: 450px; */
+  height: 100%;
+  width: 100%;
   border: 1px solid #BAF46F;
   border-radius: 20px;
   padding: 10px 30px;
-  margin: 5px;
+}
+.sidebarWrapper {
+  padding: 5px;
+  flex: 50%;
 }
 .sidebar h3 {
   color: #B314DB;
