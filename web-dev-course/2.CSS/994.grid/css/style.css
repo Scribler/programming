@@ -50,7 +50,18 @@ header {
 /*   */
 .container {
   background-color: #07575B;
+  
   display: grid;
+/* rows height */
+  grid-template-rows: 30px 30px 30px 30px;
+/* columns width */
+/* instead of setting pixels we can use a #fr designation which is short for 'freespace' */
+  /* grid-template-columns: 100px 100px 100px 100px; */
+/* you can mix unit types as shown below */
+  grid-template-columns: 25% 100px 2fr 3fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+/* gutter */
+  grid-gap: 5px;
 }
 .container > div {
   background-color: #66A5AD;
@@ -58,7 +69,8 @@ header {
   text-align: center;
   font-size: 20px;
   padding: 5px;
-  margin: 2px;
+/* instead of margin, we will be using 'gutter' "grid-gap: ####" (part of grid) */
+  /* margin: 2px; */
 }
 
 
