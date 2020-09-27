@@ -50,18 +50,50 @@ header {
 /*   */
 .container {
   background-color: #07575B;
+  height: 350px;
   
   display: grid;
 /* rows height */
-  grid-template-rows: 30px 30px 30px 30px;
+  /* grid-template-rows: 30px 30px 30px 30px; */
+
+
+/* This will have no effect on hight as we have no hight specified for the container. Once a height is specified for the container, it has something to relate too.*/
+  /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+
+
+/* When you use repeat the extra rows will expand to fill the space instead of shrinking to the minimum size. */
+  grid-template-rows: repeat(4, 45px);
+
 /* columns width */
 /* instead of setting pixels we can use a #fr designation which is short for 'freespace' */
   /* grid-template-columns: 100px 100px 100px 100px; */
+
+
 /* you can mix unit types as shown below */
-  grid-template-columns: 25% 100px 2fr 3fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: 25% 100px 2fr 3fr; */
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+
+
+/* this does the same as putting 1fr 4 times. */
+  /* grid-template-columns: repeat(4, 1fr); */
+  /* grid-template-columns: repeat(4, 20%); */
+
+
+/* This will fill all space */
+  /* grid-template-columns: repeat(4, minmax(400px, 1fr)); */
+
+
+/* This will act as though there are 'infinite' number of following items and leave space for them */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+
 /* gutter */
   grid-gap: 5px;
+  padding: 7px;
+  /* setting the height of the extra rows outside of the template aka -> rows inside of the 'implicit grid' */
+  grid-auto-rows: 80px;
+  grid-auto-flow: column;
+  grid-auto-columns: 200px;
 }
 .container > div {
   background-color: #66A5AD;
@@ -73,6 +105,19 @@ header {
   /* margin: 2px; */
 }
 
+/* ****div's**** */
+.firstSet {
+  background-image: radial-gradient(blue, green);
+}
+.secondSet {
+  background-image: radial-gradient(yellow, green);
+}
+.thirdSet {
+  background-image: radial-gradient(purple, green);
+}
+.forthSet {
+  background-image: radial-gradient(orange, green);
+}
 
 /*   */
 /* ***************footer*************** */
