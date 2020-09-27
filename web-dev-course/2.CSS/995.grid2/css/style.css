@@ -4,18 +4,23 @@
 
 /*
 
-JigglyPuff pink (first-set)
-#ff9ff3
+Dark Purple
+#6A48A1
 
-Joust Blue (second-set)
-#54a0ff
+Light Purple
+#903E9B
 
-Cassandora yellow(third-set)
-#feca57
+Bright Green
+#D4E65A
 
-Nasu Purple (forth-set)
-#5f27cd
+Bright Yellow
+#FFF7B5
 
+Dark Grey
+#161616
+
+Light Grey
+#f2f2f2
 
 
  */
@@ -27,11 +32,12 @@ Nasu Purple (forth-set)
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: #f2f2f2;
 }
 body {
 }
 h1 {
-  color: green;
+  color: #903E9B;
 }
 
 
@@ -59,22 +65,54 @@ header {
 /* ***************main-content*************** */
 /*   */
 .container {
-  background-color: #07575B;
-  height: 350px;
+  background-color: #D4E65A;
+  height: 100vh;
   
   display: grid;
-  grid-template-rows: repeat(4, 45px);
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-
-
+  grid-template-rows: 50px 1fr 50px;
+  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+  grid-template-columns: 20% 1fr 20%;
 /* gutter */
   grid-gap: 5px;
   padding: 7px;
-  grid-auto-rows: 80px;
+  /* grid areas */
+  grid-template-areas: 
+  "apple apple apple"
+  "facebook microsoft samsung"
+  "google google google";
+}
+/* grid areas */
+#apple {
+  grid-area: apple;
+}
+#facebook {
+  grid-area: facebook;
+}
+#microsoft {
+  grid-area: microsoft;
+}
+#samsung {
+  grid-area: samsung;
+}
+#google {
+  grid-area: google;
+}
+
+@media all and (max-width: 700px) {
+  .container {
+    grid-template-areas:
+    "facebook facebook facebook"
+    "apple apple apple"
+    "microsoft microsoft microsoft"
+    "samsung samsung samsung"
+    "google google google"
+  }
+    grid-template-rows: 50px 100px 1fr 100px 50px;
 }
 .container > div {
+  border: 5px solid #FFF7B5;
   background-color: #66A5AD;
-  color: aliceblue;
+  color: #f2f2f2
   text-align: center;
   font-size: 20px;
   padding: 5px;
@@ -82,21 +120,17 @@ header {
 
 /* ****div's**** */
 .container .firstSet {
-  /* pink */
-  background-color: #ff9ff3;
+  background-color: #6A48A1;
 }
 .container .secondSet {
-  /* blue */
-  background-color: #54a0ff;
+  background-color: #903E9B;
 }
-.container .thirdSet {
-  /* yellow */
-  background-color: #feca57;
-}
-.container .forthSet {
-  /* purple */
-  background-color: #5f27cd;
-}
+/* .container .thirdSet { */
+  /* background-color: #6A48A1; */
+/* } */
+/* .container .forthSet { */
+  /* background-color: #903E9B; */
+/* } */
 
 /*   */
 /* ***************footer*************** */
