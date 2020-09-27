@@ -32,14 +32,22 @@ Light Grey
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
 }
 body {
 }
 h1 {
   color: #903E9B;
 }
-
+img {
+  float: left;
+  height: 8em;
+  width: 8em;
+  margin: 10px 20px 10px 0;
+}
+ul {
+  list-style-type: none;
+}
 
 /*   */
 /* ***************reusable-classes*************** */
@@ -51,7 +59,7 @@ h1 {
 .containerAll {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 /*   */
@@ -66,10 +74,10 @@ header {
 /*   */
 .container {
   background-color: #D4E65A;
-  height: 100vh;
+  /* height: 100vh; */
   
   display: grid;
-  grid-template-rows: 50px 1fr 50px;
+  grid-template-rows: 100px 1fr 80px;
   /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
   grid-template-columns: 20% 1fr 20%;
 /* gutter */
@@ -105,9 +113,10 @@ header {
     "apple apple apple"
     "microsoft microsoft microsoft"
     "samsung samsung samsung"
-    "google google google"
-  }
+    "google google google";
     grid-template-rows: 50px 100px 1fr 100px 50px;
+    grid-template-columns: 1fr;
+  }
 }
 .container > div {
   border: 5px solid #FFF7B5;
@@ -125,9 +134,10 @@ header {
 .container .secondSet {
   background-color: #903E9B;
 }
-/* .container .thirdSet { */
+.container .thirdSet {
   /* background-color: #6A48A1; */
-/* } */
+  padding: 10px;
+}
 /* .container .forthSet { */
   /* background-color: #903E9B; */
 /* } */
