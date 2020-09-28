@@ -1,0 +1,135 @@
+/*   */
+/* ***************colors*************** */
+/*   */
+
+/*
+
+
+
+
+
+ */
+
+/*   */
+/* ***************universal-classes*************** */
+/*   */
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 1200px;
+  margin: auto;
+}
+:root {
+  --text-main: #1a202c;
+  --text-secondary: #5e6d87;
+  --text-secondary-dark: #4a5568;
+  --text-result: #0f51cd;
+  
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  background: #edf2f7;
+  color: var(--text-main);
+  box-sizing: border-box;
+}
+
+/*   */
+/* ***************reusable-classes*************** */
+/*   */
+.clear {
+  clear: both;
+}
+main {
+  display: flex;
+}
+section.fields {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-right: 1rem;
+}
+@media (max-width: 600px) {
+main {
+    flex-direction: column;
+  }
+}
+.main-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+/*   */
+/* ***************header*************** */
+/*   */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem 2rem 0;
+}
+
+
+.range-labels {
+  display: flex;
+}
+
+#initial-amount-display .dollar-sign {
+  font-size: 0.5em;
+  margin-top: 0.2rem;
+  margin-right: 0.5rem;
+
+}
+
+.compound-selector legend {
+  font-size: 0.9rem;
+  padding: 1rem 0 0;
+  color: var(--text-secondary-darker);
+}
+
+.result {
+  background: white;
+  align-self: baseline;
+  color: var(--text-result);
+  border-radius: 5px;
+  margin: 3rem 0 0 1rem;
+  box-shadow: 0 20px 25px -5px;
+}
+
+.result p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+
+#final-amount {
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+#final-amount .dolar-sign {
+  font-size: 0.3em;
+  margin-top: 0.6rem;
+}
+
+.calculate-botton {
+  background: red;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 20px 25px -5px;
+  transform: traslate(75px);
+}
+
+/*   */
+/* ***************sidebar*************** */
+/*   */
+
+
+
+/*   */
+/* ***************footer*************** */
+/*   */
+footer {
+}

@@ -59,7 +59,7 @@ ul {
 .containerAll {
   display: flex;
   flex-direction: column;
-  /* height: 100vh; */
+  height: 100vh;
 }
 
 /*   */
@@ -74,10 +74,10 @@ header {
 /*   */
 .container {
   background-color: #D4E65A;
-  /* height: 100vh; */
+  height: 100vh;
   
   display: grid;
-  grid-template-rows: 100px 1fr 80px;
+  grid-template-rows: 50px 1fr 50px;
   /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
   grid-template-columns: 20% 1fr 20%;
 /* gutter */

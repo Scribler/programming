@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
+    <title>Title</title>
+    <link href="../pictures/site-icon.jpg" rel="shortcut icon">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+
+
+  <body>
+
+    <main>
+      <section class="fields">
+        <div class="input-group">
+          <h1>Super Interest Calculator</h1>
+
+          <label for="initial-amount">Initial amount</label>
+          <p id="initial-amount-display">
+          <span class="dollar-sign">$</span><span class="amount"></span>
+          </p>
+          <input type="range" id="initial-amount" value="5000" min="100" max="50000"/>
+          <div id="range-labels"><span class="amount">$100</span><span>$5000</span></div>
+        </div>
+        
+
+
+        <div class="input-group">
+          <label for="interest-rate">Interest Rate (APV: %)</label>
+          <input type="number" id="interest-rate" value="3.94" step="0.01" min="0"/>
+          
+          <label for="years">Years</label>
+          <input type="number" id="years" value="1" />
+        </div>
+
+
+
+        <fieldset>
+          <label>
+            <input type="radio" name="period" id="monthly" checked />
+            monthly
+         </label>
+          <label>
+            <input type="radio" name="period" id="yearly" />
+            yearly
+         </label>
+        </fieldset>
+      </section>
+
+      <section class="result">
+        <p>After <span class="num-years"></span> year<span class="plural"></span> you will have 100$</p>
+
+        <button>Calculate</button>
+      </section>
+
+    </main>
+
+    <a href="../index.html">Back To CSS Projects Page</a>
+    <script src="js/index.js"></script>
+  </body>
+</html>
