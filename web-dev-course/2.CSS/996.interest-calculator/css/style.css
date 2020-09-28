@@ -1,32 +1,11 @@
 /*   */
-/* ***************colors*************** */
-/*   */
-
-/*
-
-
-
-
-
- */
-
-/*   */
 /* ***************universal-classes*************** */
 /*   */
-* {
-  padding: 0;
-  margin: 0;
-}
-body {
-  width: 1200px;
-  margin: auto;
-}
 :root {
   --text-main: #1a202c;
   --text-secondary: #5e6d87;
   --text-secondary-dark: #4a5568;
   --text-result: #0f51cd;
-  
   font-size: 16px;
   font-family: 'Lato', sans-serif;
   background: #edf2f7;
@@ -34,15 +13,15 @@ body {
   box-sizing: border-box;
 }
 
-/*   */
-/* ***************reusable-classes*************** */
-/*   */
-.clear {
-  clear: both;
+.main-container {
+  max-width: 900px;
+  margin: 0 auto;
 }
+
 main {
   display: flex;
 }
+
 section.fields {
   display: flex;
   flex-direction: column;
@@ -54,29 +33,33 @@ main {
     flex-direction: column;
   }
 }
-.main-container {
-  max-width: 900px;
-  margin: 0 auto;
-}
-/*   */
-/* ***************header*************** */
-/*   */
+
 .input-group {
   display: flex;
   flex-direction: column;
   padding: 1rem 2rem 2rem 0;
 }
 
+.input-group label {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary-darker);
+}
 
-.range-labels {
+#initial-amount-display {
   display: flex;
+  margin: 0.5rem 0;
+  font-size: 2.1rem;
 }
 
 #initial-amount-display .dollar-sign {
-  font-size: 0.5em;
+  font-size: 0.6em;
   margin-top: 0.2rem;
   margin-right: 0.5rem;
+}
 
+.slider {
+  margin: 0;
 }
 
 .compound-selector legend {
@@ -92,6 +75,10 @@ main {
   border-radius: 5px;
   margin: 3rem 0 0 1rem;
   box-shadow: 0 20px 25px -5px;
+}
+
+.range-labels {
+  display: flex;
 }
 
 .result p {
@@ -120,16 +107,4 @@ main {
   cursor: pointer;
   box-shadow: 0 20px 25px -5px;
   transform: traslate(75px);
-}
-
-/*   */
-/* ***************sidebar*************** */
-/*   */
-
-
-
-/*   */
-/* ***************footer*************** */
-/*   */
-footer {
 }
