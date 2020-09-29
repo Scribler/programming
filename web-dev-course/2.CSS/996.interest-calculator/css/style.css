@@ -62,6 +62,21 @@ main {
   margin: 0;
 }
 
+.range-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--text-secondary-darker);
+}
+
+.row {
+  display: flex;
+}
+
+.compound-selector {
+  border: 0;
+}
+
 .compound-selector legend {
   font-size: 0.9rem;
   padding: 1rem 0 0;
@@ -69,25 +84,24 @@ main {
 }
 
 .result {
-  background: white;
+  flex: 1;
   align-self: baseline;
+  background: white;
   color: var(--text-result);
   border-radius: 5px;
   margin: 3rem 0 0 1rem;
-  box-shadow: 0 20px 25px -5px;
-}
-
-.range-labels {
-  display: flex;
+  padding: 3rem 4rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .result p {
-  font-size: 1.2rem;
   margin: 0;
+  font-size: 1.2rem;
 }
 
-
 #final-amount {
+  display: flex;
+  margin: 1.5rem 0 -2rem 0;
   font-size: 4.5rem;
   font-weight: bold;
 }
@@ -97,14 +111,21 @@ main {
   margin-top: 0.6rem;
 }
 
-.calculate-botton {
-  background: red;
+.calculate-button {
+  background: #e80000;
   color: white;
   border: 0;
   border-radius: 5px;
   padding: 1rem 2rem;
   font-size: 1.2rem;
+  box-shadow: 0 20px 25px -5px rgba(223, 21, 21, 0.37), 0 10px 10px -5px rgba(220, 21, 21, 0.64);
   cursor: pointer;
-  box-shadow: 0 20px 25px -5px;
-  transform: traslate(75px);
+  transform: translateY(75px);
 }
+
+.calculate-button: hover {
+  background: #be0000;
+}
+
+
+
