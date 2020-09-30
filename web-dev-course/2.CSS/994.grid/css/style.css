@@ -107,16 +107,16 @@ header {
 
 /* ****div's**** */
 .firstSet {
-  background-image: radial-gradient(blue, green);
+  background-color: blue;
 }
 .secondSet {
-  background-image: radial-gradient(yellow, green);
+  /* background-image: radial-gradient(yellow, green); */
 }
 .thirdSet {
-  background-image: radial-gradient(purple, green);
+  /* background-image: radial-gradient(purple, green); */
 }
 .forthSet {
-  background-image: radial-gradient(orange, green);
+  /* background-image: radial-gradient(orange, green); */
 }
 
 /*   */
