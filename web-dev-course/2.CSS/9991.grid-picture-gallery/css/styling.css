@@ -1,0 +1,12 @@
+/*Let's make sure that the dimensions of any box includes its border and padding, this gives us an easy way of sizing our elements*/
+* {
+    box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(100px, 1fr));
+}
+.container img {
+  max-width: 100%;
+}
