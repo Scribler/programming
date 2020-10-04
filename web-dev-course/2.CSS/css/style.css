@@ -1,27 +1,16 @@
 
 
-/*   */
 /* ***************colors*************** */
-/*   */
 text dark grey      - #080808
 background blueish  - #E9FFF6
 
-/*
-
-
-
-
-
- */
-
-/*   */
 /* ***************universal-classes*************** */
-/*   */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   width: 1200px;
   margin: auto;
@@ -29,26 +18,22 @@ body {
   color: #080808;
 }
 
-
-/*   */
 /* ***************reusable-classes*************** */
-/*   */
 .clear {
   clear: both;
 }
+
 h1 {
   font-family: "Arial";
   font-weight: 100;
   color: #080808;
 }
+
 a:visited {
   color: blue;
 }
 
-
-/*   */
 /* ***************header*************** */
-/*   */
 header {
   /* border: 2px solid blue; */
   height: 100px;
@@ -57,26 +42,24 @@ header {
   justify-content: center;
   align-content: center;
 }
+
 header h1 {
   align-self: center;
 }
+
 .logo-one {
   align-self: center;
   margin-right: 10px;
 }
 
-
-/*   */
 /* ***************main*************** */
-/*   */
 .main-list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-  
-  /* width: 400px; */
 }
+
 .main-list-item {
   list-style: none;
   width: 250px;
@@ -86,29 +69,18 @@ header h1 {
   border-radius: 20px;
   margin-bottom: 10px;
 }
+
 .main-list-item:hover {
   border-color: red;
   border-width: 5px;
   padding: 17px;
 }
+
 .sublist li{
   margin-left: 20px;
 }
 
-
-/*   */
-/* ***************sidebar*************** */
-/*   */
-
-
-
-/*   */
-/* ***************footer*************** */
-/*   */
 footer {
   display: flex;
   justify-content: center;
-  /* align-content: center; */
-}
-.footer-container {
 }
