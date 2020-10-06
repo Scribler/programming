@@ -2,3 +2,29 @@
 * {
     box-sizing: border-box;
 }
+
+
+.div-span-page h1 { color: blue; }
+
+.div-span-page .bluebox {
+  background-color: #3C5A9A;
+  color: white;
+  height: 100px;
+  width: auto;
+}
+.div-span-page .yellowbox {
+  background-color: rgb(206, 206, 68);
+  color: hsl(300, 67%, 49%);
+  height: 100px;
+  width: auto;
+}
+.div-span-page .greenbox {
+  background-color: green;
+  color: white;
+  height: 100px;
+  width: auto;
+}
+.div-span-page .great {
+  background-color: #F7FF42;
+  color: black;
+}
