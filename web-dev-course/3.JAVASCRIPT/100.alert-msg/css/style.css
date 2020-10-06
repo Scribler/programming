@@ -28,3 +28,29 @@
   background-color: #F7FF42;
   color: black;
 }
+
+
+.variables-and-data-types h1 { color: aqua; }
+
+.variables-and-data-types .bluebox {
+  background-color: #3C5A9A;
+  color: white;
+  height: 100px;
+  width: auto;
+}
+.variables-and-data-types .yellowbox {
+  background-color: rgb(206, 206, 68);
+  color: hsl(300, 67%, 49%);
+  height: 100px;
+  width: auto;
+}
+.variables-and-data-types .greenbox {
+  background-color: green;
+  color: white;
+  height: 100px;
+  width: auto;
+}
+.variables-and-data-types .great {
+  background-color: #F7FF42;
+  color: black;
+}
