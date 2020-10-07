@@ -102,6 +102,36 @@ window.console.log(typeof(myArray)); //Array is an object
 
 
 
+//
+// CHANGE HTML USING VARIABLES
+//
+
+
+var color = 'rgb(118, 149, 68)';
+
+document.getElementById("button6").onclick = function(){
+  document.getElementById("secondfacebook").style.backgroundColor = color;
+}
+
+var x;
+x = Math.round(Math.random()*256);
+window.alert(x);
+
+var x, y, z, appleColor;
+
+document.getElementById('button7').onclick = function(){
+  x = Math.round(Math.random()*256);
+  y = Math.round(Math.random()*256);
+  z = Math.round(Math.random()*256);
+  appleColor = 'rgb(' + x + ', ' + y + ', ' + z + ')';
+  document.getElementById('secondapple').style.backgroundColor = appleColor;
+  document.getElementById('secondapple').innerHTML = '<p>' + appleColor + '</p>';
+}
+
+
+
+
+
                         // DON'T START HERE! 
 
       // You already accomplished your coding goal! CONGRATS!
