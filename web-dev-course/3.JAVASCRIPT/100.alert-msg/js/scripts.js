@@ -63,6 +63,45 @@ document.getElementById("button5").ondblclick = function(){
 //
 
 
+var x = 3;
+window.console.log(x);
+
+var y;
+y = 5;
+window.console.log(y);
+
+var z;
+window.console.log('The value of z is ' + z);
+z = x + y;
+window.console.log('the type of z is ' + typeof(z));
+
+window.console.log('The value of z is ' + z);
+window.console.log('the type of z is ' + typeof(z));
+z = x + ' ' +  y;
+
+window.console.log('The value of z is ' + z);
+window.console.log('the type of z is ' + typeof(z));
+
+
+var greeting = "hello";
+var firstname = "john";
+var message = greeting + " " + firstname;
+window.console.log("the value of message is: " + message + ".");
+window.console.log("the value of message is: " + typeof(message)+ ".");
+
+var check =(x == 3);
+var check =(x == 5);
+window.console.log("the value of check is: " + check);
+window.console.log("the value of check is: " + typeof(check));
+
+
+
+var myArray = [1,2,3];
+window.console.log(myArray);
+window.console.log(typeof(myArray)); //Array is an object
+
+
+
                         // DON'T START HERE! 
 
       // You already accomplished your coding goal! CONGRATS!
