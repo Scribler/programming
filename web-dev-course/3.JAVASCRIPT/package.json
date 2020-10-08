@@ -1,0 +1,17 @@
+{
+  "name": "3.javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile_base": "node-sass sass/style.sass css/style.css -w",
+    "compile_100": "node-sass 100.alert-msg/sass/style.sass 100.alert-msg/css/style.css -w",
+    "compile_101": "node-sass 100.alert-msg/sass/style.sass 101.functions/css/style.css -w",
+    "compile_102": "node-sass 100.alert-msg/sass/style.sass 102.objects/css/style.css -w"
+  },
+  "author": "me",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
