@@ -1,27 +1,45 @@
-console.log("hello world");
 
-function greeting1(){
-  window.alert('Hello');
-}
+// creating an object "myPhone"
+var myPhone = {
+  make : "Apple",
+  model : "Iphone 4",
+  warranty : 12,
+  color : "white"
+};
 
-// this calls the function. MUST HAVE PARENTHESIS OR NOTHING WILL HAPPEN
-// greeting1();
+window.console.log(myPhone);
 
-// This also doesn't work. It prints out the content definition in the alert
-// --- window.alert(greeting1);
+// deleting a property of the object
+delete myPhone.warranty;
 
-function greeting2(firstname){
-  window.alert('Hello ' + firstname + '!');
-}
+window.console.log(myPhone);
+window.console.log("My phone is an: " + myPhone.make);
 
-// greeting2('Steven');
+myPhone.make = "Samsung";
 
-function sum(a, b){
-  return a+b;
-}
+window.console.log(myPhone.make);
 
-let x = 3 + 7;
 
-console.log(x);
+
+
+
+// This var definition links the two objects
+// CHANGES TO ONE OBJECT WILL CHANGE THE OTHER OBJECT AS WELL!
+var myOtherPhone = myPhone;
+window.console.log(myOtherPhone);
+
+
+// This will actually change the model in the original object as well. 
+myOtherPhone.model = "Iphone 5";
+window.console.log(myPhone);
+window.console.log(myOtherPhone);
+
+
+
+
+
+
+
+
 
 
