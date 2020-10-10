@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <title>Javascript NOtes</title>
+    <link href="../images/site-icon.jpg" rel="shortcut icon">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <header>
+      <div class="header-container">
+        <img src="images/main-logo.png">
+        <div>
+          <h1>Javascript Notes</h1>
+          <p>Lessons and basic descriptions</p>
+        </div>
+      </div>
+    </header>
+
+
+    <main>
+      <nav class="siderbar">
+        <!-- <search></search> -->
+        <h2>Topics</h2>
+        <div class="topics">
+          <a href="#">HOME</a>
+          <a href="#window-vs-console-scope">Window vs Console - Scope</a>
+          <a href="#">Topic1</a>
+          <a href="#">Topic1</a>
+          <a href="#">Topic1</a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+        </div>
+      </nav>
+
+
+      <section class="content">
+        <h3 id="window-vs-console-scope">Window vs Console - Scope</h3>
+
+        <p>// creating an object &quot;myPhone&quot;
+        <br>var myPhone = {
+        <br>make : &quot;Apple&quot;,
+        <br>model : &quot;Iphone 4&quot;,
+        <br>warranty : 12,
+        <br>color : &quot;white&quot;
+        <br>};
+        <br>
+        <br>window.console.log(myPhone);
+        <br>
+        <br>// deleting a property of the object
+        <br>delete myPhone.warranty;
+        <br>
+        <br>window.console.log(myPhone);
+        <br>window.console.log(&quot;My phone is an: &quot; + myPhone.make);
+        <br>
+        <br>myPhone.make = &quot;Samsung&quot;;
+        <br>
+        <br>window.console.log(myPhone.make);
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>var myOtherPhone = myPhone;
+        <br>window.console.log(myOtherPhone);
+        <br>
+        <br>
+        <br>This will actually change the model in the original object as well.
+        <br>myOtherPhone.model = &quot;Iphone 5&quot;;
+        <br>window.console.log(myPhone);
+        <br>window.console.log(myOtherPhone);
+        <br>
+        <br>window.console.log(window);
+        <br>window.console.log(console);
+        <br>
+        <br>function nope(){
+        <br>// If using &quot;console&quot; as a variable?
+        <br>// NO LONGER - use &apos;console.log();&apos;
+        <br>// INSTEAD - use &apos;window.console.log();&apos;
+        <br>var console = 42;
+        <br>try {
+        <br>// this won&apos;t work because &apos;console&apos; has been shadowed by the previous variable
+        <br>console.log(&quot;you won&apos;t see this&quot;);
+        <br>} catch (e) {
+        <br>}
+        <br>try {
+        <br>window.console.log(&quot;you will see this&quot;);
+        <br>} catch (e) {
+        <br>}
+        <br>}
+        <br>nope();
+        <br>
+        <br>//wiindow is the global variable in this case. Although, it isn&apos;t always. Aparently in NODEJS &apos;global&apos; is the global variable, so don&apos;t bother to keep using window.console.log() that could bite you later on.
+        <br>
+        <br>
+        <br>// console.log(console);
+        <br>console.log(&apos;As long as console was only used as a variable in a function and not outside of the function, console.log will still work. So there is no reason to use window.console.log() unless you are using it within a function that has console as a variable. You do not need to worry about if it is used as a variable outside of a function because then it would disable &quot;window.console.log();&quot; as well as &quot;console.log()&quot; so it is irrelevant.&apos;);
+        <br>
+        <br>
+      </p>
+    </section>
+  </main>
+
+
+    <footer>
+      <div class="footer-container">
+        <!-- Address Markup using "RDFa". See: "https://www.w3.org/TR/rdfa-primer/" for more information.-->
+        <section class="contact item" vocab="http://schema.org/" typeof="LocalBusiness">
+            <h2>Contact us!</h2>
+            <address property="email">
+                <a href="mailto:us@example.com">us@example.com</a>
+            </address>
+            <address property="address" typeof="PostalAddress">
+                <p property="streetAddress">123 Main St., Suite 404</p>
+                <p>
+                    <span property="addressLocality">Yourtown</span>,
+                    <span property="addressRegion">AK</span>,
+                    <span property="postalCode">12345</span>   
+                </p>
+                <p property="addressCountry">United States of America</p>
+            </address>
+            <a href="000.credits/index.html">Credits</a>
+            <p>Created my free logo at LogoMakr.com</p>
+        </section>
+        <a href="../index.html" class="item">Back To JS Projects Page</a>
+      </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

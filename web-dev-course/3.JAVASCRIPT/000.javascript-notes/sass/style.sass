@@ -1,0 +1,81 @@
+// Imports - uncomment when needed
+
+@import "utils/variables"
+@import "base/base"
+// @import "base/typography"
+// @import "components/buttons"
+// @import "components/carousels"
+// @import "components/navigation"
+// @import "layout/header"
+// @import "layout/footer"
+// @import "layout/grid"
+// @import "utils/functions>"
+// @import "utils/mixins"
+
+body 
+  display: flex
+  flex-direction: column
+  // min-height: 100vh
+
+header 
+  display: flex
+  justify-content: center
+  padding: 10px 0 10px 0
+  border-bottom: 5px solid $green4
+
+
+.header-container
+  display: flex
+  align-items: center
+
+header img
+  width: 3em
+  height: 3em
+  margin: 5px 10px 5px 5px
+  align-self: flex-start
+
+header h1
+  padding: 10px 0 5px 0
+  color: $blue2
+
+main 
+  margin-top: 30px
+  margin-left: 10px;
+  display: grid
+  /* overflow: hidden */
+
+  /* minimum width should be 210px */
+  grid-template-columns: 10% 85%
+  grid-auto-rows: 100%
+  grid-row-gap: 5px 
+  grid-column-gap: 5px 
+  /* max-width: 1300px */
+
+  .sidebar
+    display: flex
+    flex-direction: column
+
+  .content
+    display: flex
+    flex-direction: column
+  .topics
+    display: flex
+    flex-direction: column
+    margin-top: 10px
+
+
+footer
+  display: flex
+  flex-direction: column;
+  margin-top: auto
+  justify-content: center
+  background-color: $yellow2
+  bottom: 0
+  .item
+    display: flex
+    flex-direction: column
+    /* justify-content: center */
+    align-items: center
+    background-color: $yellow2
+  a 
+    margin-top: 5px
