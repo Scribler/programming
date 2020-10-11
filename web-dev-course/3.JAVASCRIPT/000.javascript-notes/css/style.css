@@ -10,6 +10,7 @@ body {
 header {
   display: flex;
   justify-content: center;
+  background-color: #e8e8e8;
   padding: 10px 0 10px 0;
   border-bottom: 5px solid #14D100; }
 
@@ -25,7 +26,7 @@ header img {
 
 header h1 {
   padding: 10px 0 5px 0;
-  color: #7472D6; }
+  color: #39378F; }
 
 main {
   margin-top: 30px;
@@ -33,10 +34,10 @@ main {
   display: grid;
   /* overflow: hidden */
   /* minimum width should be 210px */
-  grid-template-columns: 10% 85%;
+  grid-template-columns: 10% 75% 10%;
   grid-auto-rows: 100%;
   grid-row-gap: 5px;
-  grid-column-gap: 5px;
+  grid-column-gap: 20px;
   /* max-width: 1300px */ }
   main .sidebar {
     display: flex;
@@ -44,7 +45,7 @@ main {
   main .content {
     display: flex;
     flex-direction: column; }
-  main .topics {
+  main .article-highlights {
     display: flex;
     flex-direction: column;
     margin-top: 10px; }
