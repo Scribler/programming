@@ -61,6 +61,72 @@ nope();
 console.log('As long as console was only used as a variable in a function and not outside of the function, console.log will still work.  So there is no reason to use window.console.log() unless you are using it within a function that has console as a variable.  You do not need to worry about if it is used as a variable outside of a function because then it would disable "window.console.log();" as well as "console.log()" so it is irrelevant.');
 
 
+var myBananaPhone = new Object();
+
+myBananaPhone.make = "Samsung";
+myBananaPhone.model = "Galaxy S4";
+myBananaPhone.waranty = 12;
+myBananaPhone.color = "black";
+myBananaPhone.waranty = 0;
+
+console.log(myBananaPhone);
+
+var mycar = new Object();
+
+mycar.make = "Ford"
+mycar.model = "mustang"
+mycar.speed = 170;
+
+console.log(mycar);
+
+console.log(mycar.make);
+
+// making objects using constructors
+
+function phone(make, model, warranty, color){
+  this.make = make;
+  this.model = model;
+  this.warranty = warranty;
+  this.color = color;
+  this.extendWarranty = function(x){
+    // this.warranty = this.warranty + x;
+    this.warranty += x; // This synax does the same as above but more efficiently
+  }
+  this.changeColor = function(y){
+    this.color = y;
+  }
+}
+
+var myOldPhone = new phone('apple', 'iphone5', 12, 'white');
+
+console.log(myOldPhone);
+
+myOldPhone.extendWarranty(12);
+myOldPhone.changeColor('blue');
+
+console.log(myOldPhone.warranty);
+console.log(myOldPhone.color);
+
+myOldPhone.condition = "like new";
+
+console.log(myOldPhone.condition);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
