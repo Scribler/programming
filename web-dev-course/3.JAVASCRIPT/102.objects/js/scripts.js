@@ -21,6 +21,11 @@ window.console.log(myPhone.make);
 
 
 
+//
+//
+//
+//
+//
 
 
 // This var definition links the two objects
@@ -61,6 +66,14 @@ nope();
 console.log('As long as console was only used as a variable in a function and not outside of the function, console.log will still work.  So there is no reason to use window.console.log() unless you are using it within a function that has console as a variable.  You do not need to worry about if it is used as a variable outside of a function because then it would disable "window.console.log();" as well as "console.log()" so it is irrelevant.');
 
 
+//
+//
+//
+//
+//
+//
+
+// creating new object called 'myBananaPhone'
 var myBananaPhone = new Object();
 
 myBananaPhone.make = "Samsung";
@@ -82,7 +95,8 @@ console.log(mycar);
 console.log(mycar.make);
 
 // making objects using constructors
-
+// first build the constructor.  In this case the constructor is 'phone' and it is a
+// function that you call in order to make new 'PHONE' objects.
 function phone(make, model, warranty, color){
   this.make = make;
   this.model = model;
@@ -96,7 +110,13 @@ function phone(make, model, warranty, color){
     this.color = y;
   }
 }
+//
+//
+//
+//
+//
 
+// creating a new 'phone' object called 'myOldPhone'
 var myOldPhone = new phone('apple', 'iphone5', 12, 'white');
 
 console.log(myOldPhone);
@@ -107,9 +127,76 @@ myOldPhone.changeColor('blue');
 console.log(myOldPhone.warranty);
 console.log(myOldPhone.color);
 
+// changing the value of 'condition' for the 'myOldPhone' object
 myOldPhone.condition = "like new";
 
 console.log(myOldPhone.condition);
+
+
+//
+//
+//
+//
+//
+
+
+
+// this still creates an object, but all of the values will have a value of undefined
+// var myBrothersPhone = new phone();
+// console.log(myBrothersPhone);
+
+
+var myBrothersPhone = new phone('apple', 'iphone 4', 6, 'black');
+console.log(myBrothersPhone);
+
+// use 'prototype' to add new values to the constructor.
+phone.prototype.condition = 'new';
+console.log(myBrothersPhone);
+
+console.log(myBrothersPhone.condition);
+console.log(myOldPhone.condition);
+
+var testPhone = new phone();
+console.log(testPhone.condition);
+
+
+//
+//
+//
+//
+
+// ARRAYS
+
+var shoppingList = ['bread', 'eggs', 'milk'];
+// don't use a constructor for a list like this :P
+// var shoppingList = new Array('bread', 'eggs', 'milk');
+
+// document.getElementById('myParagraph').innerHTML += '<br />' + shoppingList;
+// document.getElementById('myParagraph').innerHTML += '<br />' + shoppingList[0];
+// document.getElementById('myParagraph').innerHTML += '<br />' + shoppingList[2];
+// document.getElementById('myParagraph').innerHTML += '<br />' + shoppingList[1];
+
+
+// you could do it this way, but it isn't very readable!!!
+function si(x){
+  document.getElementById('myParagraph').innerHTML += '<br />' + shoppingList[x];
+}
+si(1)
+si(2)
+si(0)
+
+// This is better!!!
+// While it IS a bit more verbose, the code itself and the variables used describe
+// what the function actually does and is therefore much better.
+
+function showResult(x){
+  document.getElementById('myParagraph').innerHTML += '<br />' + x;
+}
+
+showResult(shoppingList[1]);
+showResult(shoppingList[2]);
+showResult(shoppingList[0]);
+
 
 
 
