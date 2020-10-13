@@ -16,7 +16,8 @@
 body
   display: grid
   height: 100vh
-  grid-template-columns: 1.5fr 5fr 1.5fr
+
+  grid-template-columns: 1fr
   grid-template-rows: 180px 35fr 200px
 
 
@@ -40,16 +41,17 @@ header
       padding: 10px 0 5px 0
       color: $blue1
 
+main
+  display: flex
+  flex-wrap: wrap
+
 .sidebar
-  // display: flex
-  // flex-direction: column
-  padding-top: 10px
   padding-left: 10px
+  flex: 0.5 0 180px
 
 .sidebar-left
   display: flex
   flex-direction: column
-  border-right: 3px solid $blue2
   grid-column-start: 1
   grid-column-end: 2
   grid-row-start: 2
@@ -62,10 +64,13 @@ header
   grid-column-end: 4
   grid-row-start: 2
   grid-row-end: 3
-  border-left: 3px solid $blue2
 
 .article
-  padding: 10px
+  padding: 10px 50px 10px 20px
+  flex: 4 0 400px
+  border-left: 3px solid $blue2
+  border-right: 3px solid $blue2
+
 
 footer
   grid-column-start: 1
@@ -85,20 +90,9 @@ footer
   a 
     margin-top: 5px
 
-@media screen and (max-width: 750px)
-  body
-    grid-template-columns: 1fr
-    grid-template-rows: 1fr
-
-  .sidebar-left, .sidebar-right, .article, footer, header
-    grid-column-start: 1
-    grid-column-end: span 4
-    grid-row: auto
-    border: none;
-
-  header
-    height: 180px
-    
-  footer
-    height: 230px
-
+@media screen and (max-width: 789px)
+  .article
+    border-right: none
+    border-left: none
+  main
+    flex-direction: column
