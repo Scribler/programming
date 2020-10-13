@@ -8,7 +8,8 @@
     "compile_000": "node-sass 000.javascript-notes/sass/style.sass 000.javascript-notes/css/style.css -w",
     "compile_100": "node-sass 100.alert-msg/sass/style.sass 100.alert-msg/css/style.css -w",
     "compile_101": "node-sass 101.functions/sass/style.sass 101.functions/css/style.css -w",
-    "compile_102": "node-sass 102.objects/sass/style.sass 102.objects/css/style.css -w"
+    "compile_102": "node-sass 102.objects/sass/style.sass 102.objects/css/style.css -w",
+    "compile_103": "node-sass 103.if-and-switch/sass/style.sass 103.if-and-switch/css/style.css -w"
   },
   "author": "me",
   "license": "ISC",

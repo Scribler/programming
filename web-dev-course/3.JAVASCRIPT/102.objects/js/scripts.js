@@ -198,6 +198,111 @@ showResult(shoppingList[2]);
 showResult(shoppingList[0]);
 
 
+shoppingList[2] = "yogurt";
+shoppingList[1] = "orange";
+
+
+showResult(shoppingList);
+
+// delete an item
+// item is now undefined but there is still a space for an item.
+// That slot in the array does not disapper.  If you want to do that see the next
+// section below
+delete shoppingList[1];
+showResult(shoppingList);
+
+console.log(shoppingList);
+
+shoppingList[1] = "orange";
+showResult(shoppingList);
+
+// The code below will totally remove the item.
+// shoppingList.splice('arrayItemToSplice', 'HowManyOfThatArrayItemToSplice')
+// in this exampel you can only remove one item from the item, but if you had nested arrays, then you could specifiy the specific amount you wanted to remove from the nested array or perhaps the specific item you wanted to remove from that nested array.
+shoppingList.splice(1, 1);
+showResult(shoppingList);
+
+// (start-at-1, delete0, add'banana','apple')
+shoppingList.splice(1, 0, "banana", "apple");
+showResult(shoppingList);
+
+
+//
+//
+//
+//
+//
+//
+
+// sorting items
+
+// sorts the items alphabetically
+shoppingList.sort();
+showResult(shoppingList);
+// reverse the order of the items
+shoppingList.reverse();
+showResult(shoppingList);
+
+
+var showConsole = function(x){
+  console.log(x);
+}
+
+// how to create an array from a string
+// split() - will create an array with one item that is a string
+// split('') - will create an array of strings with an item for every character(including space)
+// split(' ') - will create an array of strings for every group of items (or
+// group of items) separated by a space
+
+var myString = 'A  BCD';
+var mySecondString = 'what is weather 4 like?';
+
+var myArray = myString.split('');
+var myArrayNoQ = myString.split();
+var myArraytwo = mySecondString.split(' ');
+var myArrayNoQtwo = mySecondString.split();
+
+showResult(myArray);
+showConsole(myArray);
+showResult(myArrayNoQ);
+showConsole(myArrayNoQ);
+
+showResult(myArraytwo);
+showConsole(myArraytwo);
+showResult(myArrayNoQtwo);
+showConsole(myArrayNoQtwo);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

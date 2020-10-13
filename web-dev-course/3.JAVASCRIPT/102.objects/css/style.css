@@ -1,9 +1,29 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box; }
 
-h1 {
-  color: blue; }
+html {
+  background-color: #edf2f7; }
+
+header {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 5px solid #14D100; }
+  header h1 {
+    color: blue;
+    text-decoration: underline; }
+
+main {
+  padding: 10px; }
 
 .great {
-  background-color: #F7FF42;
+  background-color: #edf2f7;
   color: black; }
+
+.added h3 {
+  text-decoration: underline;
+  color: teal; }
+
+.added p {
+  color: green; }
