@@ -5,12 +5,14 @@ window.console.log(hello);
 
 
 
-var speed = 80;
+var speed = 30;
 
 if (speed > 70){
-  alert("You're going to fast!");
+  console.log("You're going to fast!");
+} else if (speed < 40){
+  console.log("You're going to slow!");
 } else {
-  alert("You're speed is fine");
+  console.log("You're speed is fine");
 }
 
 
