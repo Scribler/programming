@@ -37,7 +37,26 @@ function speedCheck(){
 
 // switch statements
 
-
+function checkSeason(){
+  var x = document.getElementById("season").value;
+  switch(x){
+    case "summer": 
+      console.log("It is summer time!");
+      break;
+    case "winter": 
+      console.log("it is winter time!");
+      break;
+    case "spring":
+      console.log("it is spring time!");
+      break;
+    case "autumn": 
+      console.log("it is autumn!");
+      break;
+    default: 
+      console.log("I do not recognize this!");
+      break;
+  }
+}
 
 
 
