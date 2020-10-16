@@ -38,7 +38,7 @@ function speedCheck(){
 // switch statements
 
 function checkSeason(){
-  var x = document.getElementById("season").value;
+  var x = document.getElementById("season").value.toLowerCase();
   switch(x){
     case "summer": 
       console.log("It is summer time!");
@@ -58,5 +58,6 @@ function checkSeason(){
   }
 }
 
+// could use this for a textbased game ^
 
 
