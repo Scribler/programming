@@ -60,4 +60,15 @@ function checkSeason(){
 
 // could use this for a textbased game ^
 
+// document.getElementById("myParagraph").innerHTML += "<br />" + 0;
+// document.getElementById("myParagraph").innerHTML += "<br />" + 1;
+// document.getElementById("myParagraph").innerHTML += "<br />" + 2;
+// document.getElementById("myParagraph").innerHTML += "<br />" + 3;
+// document.getElementById("myParagraph").innerHTML += "<br />" + 4;
 
+var i =0;
+
+for (i = 0; i > 5; i++) {
+  // document.getElementById("#myParagraph").innerHTML += "<br />" + i;
+  console.log(i);
+}
