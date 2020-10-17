@@ -37,6 +37,7 @@ function speedCheck(){
 
 // switch statements
 
+// could use this for a textbased game ?
 function checkSeason(){
   var x = document.getElementById("season").value.toLowerCase();
   switch(x){
@@ -58,17 +59,74 @@ function checkSeason(){
   }
 }
 
-// could use this for a textbased game ^
 
-// document.getElementById("myParagraph").innerHTML += "<br />" + 0;
-// document.getElementById("myParagraph").innerHTML += "<br />" + 1;
-// document.getElementById("myParagraph").innerHTML += "<br />" + 2;
-// document.getElementById("myParagraph").innerHTML += "<br />" + 3;
-// document.getElementById("myParagraph").innerHTML += "<br />" + 4;
 
-var i =0;
+//forLoops
 
-for (i = 0; i > 5; i++) {
-  // document.getElementById("#myParagraph").innerHTML += "<br />" + i;
-  console.log(i);
+let text = ""
+let i;
+
+// prints '0 - 4'
+for(i = 0; i < 5; i++){
+  document.getElementById("myParagraph").innerHTML += i + "<br />";
 }
+
+// prints 7'squared' to 0 (decreasing)
+for(i=7; i>0; i--){
+  document.getElementById("myParagraph").innerHTML += "<br />" + Math.pow(i,2);
+}
+
+var shoppingList = ["bread", "milk", "eggs"];
+
+for(let i=0; i < shoppingList.length; i++){
+  document.getElementById("myParagraph").innerHTML += "<br />" +shoppingList[i] + "<br />";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
