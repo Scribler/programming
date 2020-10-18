@@ -1,0 +1,11 @@
+{
+  "name": "budgetapp",
+  "version": "1.0.0",
+  "description": "budget and financial tracking application",
+  "main": "index.js",
+  "scripts": {
+    "compile_base": "node-sass sass/style.sass css/style.css -w"
+  },
+  "author": "Steven McIntyre",
+  "license": "ISC"
+}

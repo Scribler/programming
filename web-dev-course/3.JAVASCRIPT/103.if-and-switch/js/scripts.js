@@ -79,7 +79,11 @@ for(i=7; i>0; i--){
 var shoppingList = ["bread", "milk", "eggs"];
 
 for(let i=0; i < shoppingList.length; i++){
-  document.getElementById("myParagraph").innerHTML += "<br />" +shoppingList[i] + "<br />";
+  if(i === 0){
+    document.getElementById("myParagraph").innerHTML += "<br />" + shoppingList[i] + "<br />";
+  } else {
+  document.getElementById("myParagraph").innerHTML += shoppingList[i] + "<br />";
+  }
 }
 
 
