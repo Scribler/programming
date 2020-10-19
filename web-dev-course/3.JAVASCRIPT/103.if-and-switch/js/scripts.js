@@ -96,15 +96,14 @@ for(i = 0; i < numList.length; i++){
 
 document.getElementById("myParagraph").innerHTML += "<br />" + numList 
 
-var j = [];
-
 // While Loops
-while(j.length < 10){
-  j.push(Math.floor(random() * 100));
+
+var j = 0;
+
+while(j<5){
+document.getElementById("while").innerHTML += "<br />" + j;
 }
 
-
-document.getElementById("while").innerHTML += "<br />" + j;
 
 
 
