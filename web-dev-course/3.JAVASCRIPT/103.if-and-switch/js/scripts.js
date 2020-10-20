@@ -120,7 +120,7 @@ function initiateGame(){
   document.getElementById("balance").innerHTML += "<p>Items Bought: " + itemsBought + "</p>";
 }
 
-
+// Regular Expressions
 
 
 
