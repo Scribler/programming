@@ -101,11 +101,24 @@ document.getElementById("myParagraph").innerHTML += "<br />" + numList
 var j = 0;
 
 while(j<5){
-document.getElementById("while").innerHTML += "<br />" + j;
+  document.getElementById("while").innerHTML += "<br />" + j;
+  j++;
 }
 
+var balance = 1000;
+var itemsBought = 0;
 
-
+function initiateGame(){
+  while(balance>0){
+    var itemPrice = Math.floor(Math.random()*100);
+    if(itemPrice <= balance){
+    itemsBought++
+    balance -= itemPrice;
+      document.getElementById("balance").innerHTML += "<p>Item Price: $" + itemPrice + ", Current Balance: $" + balance + "</p>";
+    }
+  }
+  document.getElementById("balance").innerHTML += "<p>Items Bought: " + itemsBought + "</p>";
+}
 
 
 
