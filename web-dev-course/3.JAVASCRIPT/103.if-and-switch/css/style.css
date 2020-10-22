@@ -1,7 +1,32 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 16px; }
+
+h1 {
+  font-size: 1.8em; }
+
+h2 {
+  font-size: 1.7em; }
+
+h3 {
+  font-size: 1.5em; }
+
+h4 {
+  font-size: 1.3em; }
+
+h5 {
+  font-size: 1.2em; }
+
+h6 {
+  font-size: 1.1em; }
+
+p {
+  font-size: 1em; }
+
+sub {
+  font-size: .7em; }
 
 body {
   display: grid;
@@ -82,3 +107,14 @@ footer {
     border-left: none; }
   main {
     flex-direction: column; } }
+
+.forLoops {
+  color: #0F9B00; }
+
+.whileLoops {
+  color: #4947B8; }
+
+.regularExpressions {
+  color: #BD8F00; }
+  .regularExpressions #regexmatch {
+    color: #FFC000; }

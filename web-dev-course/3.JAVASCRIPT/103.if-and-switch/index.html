@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-    <title>Javascript Notes</title>
+    <title>Javascript Misc</title>
     <link href="../images/site-icon.jpg" rel="shortcut icon">
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
@@ -13,7 +13,7 @@
       <div class="header-container">
         <img src="images/main-logo.png">
         <div>
-          <h1>If and Switch Statements</h1>
+          <h1>General Javascript Operations</h1>
           <p>Lessons and basic descriptions</p>
         </div>
       </div>
@@ -28,33 +28,63 @@
       </nav>
 
       <article class="article">
-        <h1>If and Switch Statements</h1>
-        <br />
-        <p>speed on the motorway:<input id="speed" type="number"><button onclick="speedCheck()" id=speed-check>Check</button></p>
-        <p>speed assesment: <span id=speedAssess></span></p>
-        <br />
-        <!-- FUNCTIONS > must have '()' for the "onclick" to actually work -->
-        <!-- doesn't-work ex. onclick="foo"     works ex. onclick="bar()" -->
-        <p>Your Season now:<input id="season"><button onclick="checkSeason()" id=myInput>Check Season</button></p>
-        <br />
-        <br />
-        <br />
-        <h1>For Loops</h1>
-        <p id="myParagraph">javascript</p>
+        <section class="forLoops">
+          <h1>If and Switch Statements</h1>
+          <br />
+          <p>speed on the motorway:<input id="speed" type="number"><button onclick="speedCheck()" id=speed-check>Check</button></p>
+          <p>speed assesment: <span id=speedAssess></span></p>
+          <br />
+          <!-- FUNCTIONS > must have '()' for the "onclick" to actually work -->
+          <!-- doesn't-work ex. onclick="foo"     works ex. onclick="bar()" -->
+          <p>Your Season now:<input id="season"><button onclick="checkSeason()" id=myInput>Check Season</button></p>
+        </section>
 
         <br />
 
-        <h1>While Loops</h1>
-        <p id="while">paragraph start</p>
-        <br />
-        <button onclick="initiateGame()">Click to Make Purchases</button>
-        <div id="balance">Current Balance: $1000</div>
-        <br />
-        <p>Paragraph End</p>
+        <section class="forLoops">
+          <h1>For Loops</h1>
+          <p id="myParagraph">javascript</p>
+        </section>
+
         <br />
 
-        <h1>Regular Expressions</h1>
-        <p>Content Below</p>
+        <section class="whileLoops">
+          <h1>While Loops</h1>
+          <p id="while">paragraph start</p>
+          <br />
+          <!-- <button onclick="initiateGame()">Click to Make Purchases</button> -->
+          <!-- <div id="balance">Current Balance: $1000</div> -->
+          <button onclick="initiateGame()">Click to Make Purchases</button>
+          <div>Current Balance: $1000
+            <p id="balance"></p>
+          </div>
+          <br />
+          <p>Paragraph End</p>
+        </section>
+
+        <br />
+
+        <section class='regularExpressions'>
+          <h1>Regular Expressions (regex)</h1>
+          <p>Regular expressions can be used to validate a users input.</p>
+          <br />
+
+          <div id="regexSearch">
+            <h2>Regex 'Search'</h2>
+            <h3>Modifiers</h3>
+            <ul>
+              <li>'i' case insensitive search</li>
+              <li>'g' global search (case sensitive)</li>
+            </ul>
+          </div>
+          <br />
+
+          <div id="regexmatch">
+            <h3>Regex 'match'</h3>
+          </div>
+          <div id="regex#"></div>
+        </section>
+
 
 
       </article>
