@@ -20,13 +20,25 @@
     </header>
 
     <main>
+
+      <!-- instead of divs use FORMS -->
       <div class="appContainer">
         <h1>Overall</h1>
-        <div>Remaining Total: </div><input type="number" id="remainingTotal">
-        <div>Remaining Spending: <input type="number" id="remainingSpending"></div>
-        <div>Income: <input type="number" id="income"></div>
+        <div class="inputs inputs-primary">
+          <div>Remaining Total: $</div><input type="number" id="remainingTotal">
+          <div>Remaining Spending: $</div><input type="number" id="remainingSpending">
+          <div>Income: $</div><input type="number" id="income" value=1450>
+        </div>
         <h1>Expenses</h1>
-        <div>: <input type="number" id="remainingTotal"></div>
+        <div class="inputs inputs-secondary">
+          <div>Rent: $</div><input type="number" id="rent" value=1350>
+          <div>Internet: $</div><input type="number" id="internet" value=78.35>
+          <div>Phone: $</div><input type="number" id="phone" value=67.20>
+          <div>Laundry: $</div><input type="number" id="laundry" value=45.00>
+          <div>Hydro: $</div><input type="number" id="hydro" value=25.50>
+          <div>Account Fee: $</div><input type="number" id="accountFee" value=10.95>
+          <div>Savings: $</div><input type="number" id="savings" value=350.00>
+        </div>
       </div>
     </main>
     <footer>
