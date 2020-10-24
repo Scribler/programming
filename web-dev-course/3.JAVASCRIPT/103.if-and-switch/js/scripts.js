@@ -170,10 +170,28 @@ document.getElementById('regexMatch').innerHTML += "Global, Case insensitive 'ma
 
 var tester = "Atlantic";
 var patternTester = /a/g;
+var patternTesterSecond = /z/g;
 
-console.log(patternTester.test(tester));
+var result = (patternTester.test(tester));
+var resultSecond = (patternTesterSecond.test(tester));
 
+document.getElementById("regexTest").innerHTML += "<p>The result of running .test on the function will show if the function found a match and return a boolean. Now we will do a global, noncase-sensitive check for the letter 'a' in the word Atlantic. The result of the first test is: " + result + "</p>" + "<br />";
+document.getElementById("regexTest").innerHTML += "<p>The result of running .test on the function will show if the function found a match and return a boolean. Now we will do a global, noncase-sensitive check for the letter 'z' in the word Atlantic. The result of the second test is: " + resultSecond + "</p>";
 
+// using different types of tests
+
+var third = "Atlanta";
+var patternThird = /a/g;
+document.getElementById("string").innerHTML = third;
+document.getElementById("pattern").innerHTML = patternThird;
+document.getElementById("search").innerHTML = third.search(patternThird);
+document.getElementById("match").innerHTML = third.match(patternThird);
+document.getElementById("test").innerHTML = patternThird.test(third);
+
+//
+// REGEX CONSTRUCTOR
+//
+// An easier way to create patterns for checking
 
 
 
