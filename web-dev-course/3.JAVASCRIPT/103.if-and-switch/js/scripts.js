@@ -158,16 +158,20 @@ var pattern2 = /a/i;
 var pattern2g = /a/g;
 var pattern2gi = /a/gi;
 
-document.getElementById('regexmatch').innerHTML += "Case insensitive 'match' for 'a' in word 'Atlanta': " + matstr.match(pattern2) + "<br />";
-document.getElementById('regexmatch').innerHTML += "<sub>This returns 'a,a' because there are 2 lower case a's in 'Atlanta'.</sub>" + "<br />";
-document.getElementById('regexmatch').innerHTML += "Global 'match' for 'a' in word 'Atlanta': " + matstr.match(pattern2g) + "<br />";
-document.getElementById('regexmatch').innerHTML += "<sub>This returns 'A,a,a' because the global search is now also case insensitive.</sub>" + "<br />";
-document.getElementById('regexmatch').innerHTML += "Global, Case insensitive 'match' for 'a' in word 'Atlanta': " + matstr.match(pattern2gi);
+document.getElementById('regexMatch').innerHTML += "Case insensitive 'match' for 'a' in word 'Atlanta': " + matstr.match(pattern2) + "<br />";
+document.getElementById('regexMatch').innerHTML += "<sub>This returns 'a,a' because there are 2 lower case a's in 'Atlanta'.</sub>" + "<br />";
+document.getElementById('regexMatch').innerHTML += "Global 'match' for 'a' in word 'Atlanta': " + matstr.match(pattern2g) + "<br />";
+document.getElementById('regexMatch').innerHTML += "<sub>This returns 'A,a,a' because the global search is now also case insensitive.</sub>" + "<br />";
+document.getElementById('regexMatch').innerHTML += "Global, Case insensitive 'match' for 'a' in word 'Atlanta': " + matstr.match(pattern2gi);
 
 //
 // TEST
 //
 
+var tester = "Atlantic";
+var patternTester = /a/g;
+
+console.log(patternTester.test(tester));
 
 
 

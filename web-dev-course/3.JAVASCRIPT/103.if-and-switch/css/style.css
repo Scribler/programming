@@ -116,5 +116,9 @@ footer {
 
 .regularExpressions {
   color: #BD8F00; }
-  .regularExpressions #regexmatch {
+  .regularExpressions #regexSearch {
+    color: #FFD248; }
+  .regularExpressions #regexMatch {
     color: #FFC000; }
+  .regularExpressions #regexTest {
+    color: #CDA939; }
