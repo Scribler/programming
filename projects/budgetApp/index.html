@@ -25,34 +25,22 @@
       <!-- instead of div's(in the form) use LABELS -->
       <div class="appContainer">
         <h1>Overall</h1>
-        <div class="inputs inputs-primary">
-          <div>Remaining Total: $</div><input type="number" id="remainingTotal">
-          <div>Remaining Spending: $</div><input type="number" id="remainingSpending">
-          <div>Income: $</div><input type="number" id="income" value=1450>
-        </div>
+        <form class="inputs inputs-primary">
+          <label for="remainingTotal" type="text">Remaining Total: </label><input type="number" id="remainingTotal" value="">
+          <label for="remainingSpending" type="text">Remaining Spending: </label><input type="number" id="remainingSpending" value="">
+          <label for="incomeTotal" type="text">Income: </label><input type="number" id="incomeTotal" value="">
+          <label for="incomeBiWeekly" type="text">Income Bi Weekly: </label><input type="number" id="incomeBiWeekly" value="">
+        </form>
         <h1>Expenses</h1>
-        <div class="inputs inputs-secondary">
-          <!-- example -->
-          <label for="savingsTwo" type="number">Savings Two: </label><input type="number" id="savingsTwo" value="250">
-          <!-- fill these out with proper names, etc. -->
-          <!-- set up a button to get unique values and replace base values with _blank -->
-          <!-- figure out database? -->
-          <label for="savingsTwo" type="number">Savings Two: </label><input type="number" id="savingsTwo" value="250">
-          <label for="savingsTwo" type="number">Savings Two: </label><input type="number" id="savingsTwo" value="250">
-          <label for="savingsTwo" type="number">Savings Two: </label><input type="number" id="savingsTwo" value="250">
-          <label for="savingsTwo" type="number">Savings Two: </label><input type="number" id="savingsTwo" value="250">
-          <label for="savingsTwo" type="number">Savings Two: </label><input type="number" id="savingsTwo" value="250">
-          <label for="savingsTwo" type="number">Savings Two: </label><input type="number" id="savingsTwo" value="250">
-          <label for="savingsTwo" type="number">Savings Two: </label><input type="number" id="savingsTwo" value="250">
-
-          <div>Rent: $</div><input type="number" id="rent" value=1350>
-          <div>Internet: $</div><input type="number" id="internet" value=78.35>
-          <div>Phone: $</div><input type="number" id="phone" value=67.20>
-          <div>Laundry: $</div><input type="number" id="laundry" value=45.00>
-          <div>Hydro: $</div><input type="number" id="hydro" value=25.50>
-          <div>Account Fee: $</div><input type="number" id="accountFee" value=10.95>
-          <div>Savings: $</div><input type="number" id="savings" value=350.00>
-        </div>
+        <form class="inputs inputs-secondary">
+          <label for="rent" type="text">Rent : </label><input type="number" id="rent" value="1350.00">
+          <label for="internet" type="text">Internet: </label><input type="number" id="internet" value="78.35">
+          <label for="phone" type="text">Phone: </label><input type="number" id="phone" value="67.20">
+          <label for="laundry" type="text">Laundry: </label><input type="number" id="laundry" value="45.00">
+          <label for="hydro" type="text">Hydro: </label><input type="number" id="hydro" value="25.50">
+          <label for="accountFee" type="text">Account Fee: </label><input type="number" id="accountFee" value="10.95">
+          <label for="savings" type="text">Savings: </label><input type="number" id="savings" value="350.00">
+        </form>
       </div>
     </main>
     <footer>
