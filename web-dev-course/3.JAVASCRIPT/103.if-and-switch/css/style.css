@@ -129,3 +129,6 @@ footer {
     color: #FFC000; }
   .regularExpressions #regexTest {
     color: #CDA939; }
+
+#errorMsg {
+  color: red; }

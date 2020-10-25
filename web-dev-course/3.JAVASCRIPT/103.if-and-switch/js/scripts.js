@@ -233,8 +233,6 @@ var patternForth = /^A/g
 // linebreak?
 var patternForth = /\n/g
 
-
-
 // below is the way to create a pattern using RegEx.
 // var patternFifth = new RegEx("a", "g");
 
@@ -244,6 +242,31 @@ document.getElementById("searchTwo").innerHTML = forth.search(patternForth);
 document.getElementById("matchTwo").innerHTML = forth.match(patternForth);
 document.getElementById("testTwo").innerHTML = patternForth.test(forth);
 
+
+//
+// ERRORS
+//
+
+
+try{
+  document.getElementById("badCode").innerHTML = "sum(3, 4);";
+sum(3, 4);
+}
+catch(err){
+  // if you do not put '.message' after, then the description of the type of error will print before the message.
+  // document.getElementById("errorMsg").innerHTML = err;
+  document.getElementById("errorMsg").innerHTML = err.message;
+}
+
+
+// PASSWORD VALIDATION
+
+
+
+function verifyPassword(){
+  var pass = document.getElementById("password").value;
+  document.getElementById("passwordCheck").innerHTML = pass;
+}
 
 
 
