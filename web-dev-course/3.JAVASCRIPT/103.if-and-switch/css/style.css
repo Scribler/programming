@@ -114,8 +114,15 @@ footer {
 .whileLoops {
   color: #4947B8; }
 
+.lessonSection {
+  margin: 10px 0; }
+
 .regularExpressions {
+  padding-top: 10px;
+  border-top: 3px #7472D6 solid;
   color: #BD8F00; }
+  .regularExpressions h1 {
+    text-decoration: underline; }
   .regularExpressions #regexSearch {
     color: #FFD248; }
   .regularExpressions #regexMatch {

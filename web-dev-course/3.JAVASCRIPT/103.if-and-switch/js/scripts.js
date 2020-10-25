@@ -193,8 +193,56 @@ document.getElementById("test").innerHTML = patternThird.test(third);
 //
 // An easier way to create patterns for checking
 
+// \n is 'linebreak'
+var forth = "Atlanta3Wt\na456 78G892 1574%$##";
+
+//this looks for lowercase letters from a-z
+var patternForth = /[a-z]/g;
+// the '^' symbole makes the search for anything that is not the specified group
+// this looks for letters that are not a, t, or n 
+// CAPITALS CAN BE FOUND BECAUSE THIS IS ONLY ABOUT EXCLUDING CERTAIN CHARACTERS
+var patternForth = /[^atn]/g;
+
+// looks for nubers from 4-7
+var patternForth = /[4-7]/g;
+
+//looks for numbers that are not 4 through 7
+var patternForth = /[^4-7]/g;
+
+// checks for 'digits' (numbers)
+var patternForth = /\d/g;
+
+// checks for alphanumeric characters
+var patternForth = /\w/g;
+
+// checks for NON-alphanumeric characters
+var patternForth = /\W/g;
+
+// checks for spaces
+var patternForth = /\s/g;
+
+// checks for a specific number of digits in a row
+var patternForth = /\d{3}/g;
+
+// Are these specific letters in this specific order, and if case-inspecific, it will judge case as well
+var patternForth = /ta/gi;
+
+// Is A the first character?
+var patternForth = /^A/g
+
+// linebreak?
+var patternForth = /\n/g
 
 
+
+// below is the way to create a pattern using RegEx.
+// var patternFifth = new RegEx("a", "g");
+
+document.getElementById("stringTwo").innerHTML = forth;
+document.getElementById("patternTwo").innerHTML = patternForth;
+document.getElementById("searchTwo").innerHTML = forth.search(patternForth);
+document.getElementById("matchTwo").innerHTML = forth.match(patternForth);
+document.getElementById("testTwo").innerHTML = patternForth.test(forth);
 
 
 
