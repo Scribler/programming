@@ -272,10 +272,10 @@ function verifyPassword(){
     if(password.length<6){
       errorToThrow = "<br /> Password too Short.";
     }
-    if([A-Z/g.test(pass1) == false]){
+    if([A-Z]/g.test(pass1) == false){
       errorToThrow = "<br /> Password should include at least one capital letter.";
     }
-    if([/\d/g.test(pass1) == false]){
+    if(/\d/g.test(pass1) == false){
       errorToThrow = "<br /> Password should include at least one digit.";
     }
   }
