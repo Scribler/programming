@@ -109,8 +109,26 @@
 
           <h3>Password Validation</h3>
           <p>Your password should contain at least 6 characters, 1 capital, and 1 capital letter:</p>
-          <p>Enter Password:<br /><input type="text" id="password"><button id="enterPassword" onclick="verifyPassword()">Enter</button></p>
-          <p><span id="passwordCheck"></span></p>
+          <p>Enter Password:<br /><input type="password" id="password" name="password"></p>
+          <p>Re-enter Password:<br /><input type="password" id="password2" name="password">
+          <button id="enterPassword" onclick="verifyPassword()">Submit</button></p>
+          <p>Your password is: <span id="passwordCheck"></span></p>
+          <p id="error"></p>
+          <br />
+
+          <form class="color-picker" id="colors">
+            <input type="radio" id="blue" name="option">
+            <label type="text" for="blue">blue</label><br />
+            <input type="radio" id="green" name="option">
+            <label type="text" for="green">green</label><br />
+            <input type="radio" id="yellow" name="option">
+            <label type="text" for="yellow">yellow</label><br />
+            <input type="radio" id="teal" name="option" value="teal">
+            <label type="text" for="teal">teal</label><br />
+            <input type="submit" value="submit">
+          </form>
+          <p>Your color is: <span id="color"></span></p>
+
         </section>
 
 

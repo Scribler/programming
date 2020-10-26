@@ -264,12 +264,35 @@ catch(err){
 
 
 function verifyPassword(){
-  var pass = document.getElementById("password").value;
-  document.getElementById("passwordCheck").innerHTML = pass;
+  var pass1 = document.getElementById("password").value;
+  var pass2 = document.getElementById("password2").value;
+  var errorMessage = document.getElementById("error").value;
+  var errorToThrow = "";
+  try{
+    if(password.length<6){
+      errorToThrow = "<br /> Password too Short.";
+    }
+    if([A-Z/g.test(pass1) == false]){
+      errorToThrow = "<br /> Password should include at least one capital letter.";
+    }
+    if(/\d/g.test(pass1) == false){
+      errorToThrow = "<br /> Password should include at least one digit.";
+    }
+  }
+  catch(err){
+  }
+
+  document.getElementById("passwordCheck").innerHTML = pass2 || pass1;
 }
 
 
+// Color Picker
 
+function chooseColor(){
+  var color = document.getElementsByName('option');
+  console.log(color);
+  document.getElementById('color').innerHTML = color;
+} 
 
 
 
