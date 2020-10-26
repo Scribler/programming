@@ -275,7 +275,7 @@ function verifyPassword(){
     if([A-Z/g.test(pass1) == false]){
       errorToThrow = "<br /> Password should include at least one capital letter.";
     }
-    if(/\d/g.test(pass1) == false){
+    if([/\d/g.test(pass1) == false]){
       errorToThrow = "<br /> Password should include at least one digit.";
     }
   }
