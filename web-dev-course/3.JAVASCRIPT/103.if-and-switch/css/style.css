@@ -130,5 +130,10 @@ footer {
   .regularExpressions #regexTest {
     color: #CDA939; }
 
+.errors {
+  color: green; }
+  .errors #passwordCheck {
+    color: blue; }
+
 #errorMsg {
   color: red; }

@@ -281,7 +281,6 @@ function verifyPassword(){
   }
   catch(err){
   }
-
   document.getElementById("passwordCheck").innerHTML = pass2 || pass1;
 }
 
