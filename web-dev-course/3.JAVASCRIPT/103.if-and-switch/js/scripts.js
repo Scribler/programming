@@ -253,7 +253,13 @@ try{
 sum(3, 4);
 }
 catch(err){
-  // if you do not put '.message' after, then the description of the type of error will print before the message.
+  // default behavior of catch will catch error objects when someting goes wrong
+  
+  // by default 'err' is an object if you don't 'throw' it something else.  if you threw it a string instead 
+  // of letting it just catch errors, then you wouldn't call 'err.message' on it as is done below.
+  
+  // if you do not put '.message' after, then the description of the type of error will print before the 
+  // message.
   // document.getElementById("errorMsg").innerHTML = err;
   document.getElementById("errorMsg").innerHTML = err.message;
 }
@@ -263,28 +269,25 @@ catch(err){
 function verifyPassword(){
   var pass1 = document.getElementById("password").value;
   var pass2 = document.getElementById("password2").value;
-  var errorMessage = document.getElementById("error").value;
+  var errorMessage = document.getElementById("error");
   var errorToThrow = "";
   try{
     if(pass1 != pass2){
       errorToThrow += "<br /> Your passwords don't match!";
-      throw errorToThrow;
     }
     if(pass1.length<6){
       errorToThrow += "<br /> Password too Short.";
-      throw errorToThrow;
     }
     if(/[A-Z]/g.test(pass1) == false){
       errorToThrow += "<br /> Password should include at least one capital letter.";
-      throw errorToThrow;
     }
     if(/\d/g.test(pass1) == false){
       errorToThrow += "<br /> Password should include at least one digit.";
-      throw errorToThrow;
     }
+      throw errorToThrow;
   }
   catch(err){
-    document.getElementById("error").innerHTML = errorToThrow;
+    errorMessage.innerHTML = err;
   }
   document.getElementById("passwordCheck").innerHTML = pass2 || pass1;
 }
