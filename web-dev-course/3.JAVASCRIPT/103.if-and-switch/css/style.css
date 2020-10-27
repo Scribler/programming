@@ -132,8 +132,9 @@ footer {
 
 .errors {
   color: green; }
-  .errors #passwordCheck {
-    color: blue; }
+
+#passwordCheck {
+  color: blue; }
 
 #errorMsg {
   color: red; }

@@ -260,26 +260,31 @@ catch(err){
 
 
 // PASSWORD VALIDATION
-
-
-
 function verifyPassword(){
   var pass1 = document.getElementById("password").value;
   var pass2 = document.getElementById("password2").value;
   var errorMessage = document.getElementById("error").value;
   var errorToThrow = "";
   try{
-    if(password.length<6){
-      errorToThrow = "<br /> Password too Short.";
+    if(pass1 != pass2){
+      errorToThrow += "<br /> Your passwords don't match!";
+      throw errorToThrow;
     }
-    if([A-Z]/g.test(pass1) == false){
-      errorToThrow = "<br /> Password should include at least one capital letter.";
+    if(pass1.length<6){
+      errorToThrow += "<br /> Password too Short.";
+      throw errorToThrow;
+    }
+    if(/[A-Z]/g.test(pass1) == false){
+      errorToThrow += "<br /> Password should include at least one capital letter.";
+      throw errorToThrow;
     }
     if(/\d/g.test(pass1) == false){
-      errorToThrow = "<br /> Password should include at least one digit.";
+      errorToThrow += "<br /> Password should include at least one digit.";
+      throw errorToThrow;
     }
   }
   catch(err){
+    document.getElementById("error").innerHTML = errorToThrow;
   }
   document.getElementById("passwordCheck").innerHTML = pass2 || pass1;
 }
