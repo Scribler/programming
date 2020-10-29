@@ -42,7 +42,7 @@ header h1
 
 main 
   margin-top: 30px
-  margin-left: 10px;
+  margin-left: 10px
   display: grid
   /* overflow: hidden */
 
@@ -66,10 +66,16 @@ main
     margin-top: 10px
 
 footer
+  grid-column-start: 1
+  grid-column-end: 4
+  grid-row-start: 3
+  grid-row-end: 4
+  
   display: flex
-  flex-direction: column;
-  margin-top: auto
+  flex-direction: column
   justify-content: center
+  align-items: center
+  margin-top: auto
   background-color: $yellow2
   bottom: 0
   .item
