@@ -55,8 +55,7 @@ main {
 .article {
   padding: 10px 50px 10px 20px;
   flex: 4 0 400px;
-  border-left: 3px solid #7472D6;
-  border-right: 3px solid #7472D6; }
+  border-left: 3px solid #7472D6; }
 
 footer {
   grid-column-start: 1;
