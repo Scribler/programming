@@ -1,24 +1,16 @@
-
+//Course version of counter
 var counter = document.getElementById("counter");
 var x = 0;
+
+  // simply setting the variable makes the counter start on page load
 var myCounter = setInterval(function(){x++; counter.innerHTML = x}, 1000);
 
-function restartCounter() {
-  var myCounter = setInterval(function(){x++; counter.innerHTML = x}, 1000);
-
-  function restopCounter(x) {
-    if(document.getElementById("stop").click == true){
-      clearInterval(myCounter);
-    }
-  }
-}
 
 
 
 
-// timeout
 
-
+// My own version of a timer
 var myTimer;
 
 function clock() {
@@ -31,4 +23,16 @@ function clock() {
       alert("reached 50");
     }
   }
+}
+
+
+// timeout
+
+var delayedWelcomeMessage = setTimeout(function(){
+  document.getElementById("delay").innerHTML = "Welcome to our page!";
+  console.log("Welcome message should have posted now");
+}, 3000);
+
+function confirmation(){
+  console.log("button clicked, if before 3 seconds, then the timed message was prevented!");
 }

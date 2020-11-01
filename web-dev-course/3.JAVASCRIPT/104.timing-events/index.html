@@ -29,20 +29,30 @@
       </nav>
 
       <article class="article">
-        <section id="timer">
+
+        <!-- course timer design -->
+        <section class="timer">
           <h1>Set Interval & Set Timeout</h1>
           <p id="counter">0</p>
           <button onclick="clearInterval(myCounter)">Stop Counting</button>
-          <button onclick="restartCounter()">Restart Counting</button>
-          <button id="stop">STOPPPPP</button>
         </section>
 
-        <section id="demotimer">
+        <!-- my timer design -->
+        <section class="demotimer">
           <h1>Test of other method for timer</h1>
           <p id="demo">0</p>
           <button onclick="clock()">Start</button>
           <button onclick="clearInterval(myTimer);">Stop</button>
         </section>
+
+        <section class="delay">
+          <h1>Run a piece of code after 3 seconds</h1>
+          <p id="delay"></p>
+          <!-- clearInterval also works in place of clearTimeout -->
+          <button id="preventMessage" onclick="clearTimeout(delayedWelcomeMessage), confirmation()">Click To Prevent Welcome Message</button>
+
+        </section>
+
       </article>
 
       
