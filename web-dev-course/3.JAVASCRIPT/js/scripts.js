@@ -1,1 +1,2 @@
-console.log("This is my main file")
+console.log("This is my main file");
+
