@@ -1,0 +1,6 @@
+backgroundColors = ['green', 'orange', 'red', 'purple'];
+var x = 0;
+
+var background = setInterval(x++; function(){ console.log(x); },1000);
+
+  // document.getElementById('articleColor').style.backgroundColor = backgroundColors[x];

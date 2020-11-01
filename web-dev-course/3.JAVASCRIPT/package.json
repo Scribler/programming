@@ -7,6 +7,7 @@
     "compile_base": "node-sass sass/style.sass css/style.css -w",
     "compile_0": "node-sass 0.basic-template/sass/style.sass 0.basic-template/css/style.css -w",
     "compile_000": "node-sass 000.javascript-notes/sass/style.sass 000.javascript-notes/css/style.css -w",
+    "compile_010": "node-sass 010.javascript-scrap/sass/style.sass 010.javascript-scrap/css/style.css -w",
     "compile_100": "node-sass 100.alert-msg/sass/style.sass 100.alert-msg/css/style.css -w",
     "compile_101": "node-sass 101.functions/sass/style.sass 101.functions/css/style.css -w",
     "compile_102": "node-sass 102.objects/sass/style.sass 102.objects/css/style.css -w",
