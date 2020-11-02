@@ -7,7 +7,7 @@ body {
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr;
-  grid-template-rows: 180px 35fr 200px; }
+  grid-template-rows: 180px 35fr 240px; }
 
 header {
   background-color: #e8e8e8;
@@ -61,6 +61,18 @@ section {
   padding: 10px 50px 10px 20px;
   flex: 4 0 400px;
   border-left: 3px solid #7472D6; }
+
+#div1 {
+  background-color: #4947B8; }
+
+#div2 {
+  background-color: #FB4750; }
+
+#div3 {
+  background-color: #0F9B00; }
+
+#div4 {
+  background-color: #FFD248; }
 
 footer {
   grid-column-start: 1;

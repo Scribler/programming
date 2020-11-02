@@ -74,6 +74,37 @@ document.getElementById("screenHeight").innerHTML = screenHeight;
 console.log(screenWidth);
 document.getElementById("screenWidth").innerHTML = screenWidth;
 
+// available height (hight minus windows task bar or top bar in mac, etc)
+
+var availableScreenHeight = window.screen.availHeight;
+console.log("Available screen height: " + availableScreenHeight);
+
+
+
+// FOURDIVS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
