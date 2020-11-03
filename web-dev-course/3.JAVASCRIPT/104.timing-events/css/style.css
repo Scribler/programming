@@ -58,9 +58,12 @@ section {
   grid-row-end: 3; }
 
 .article {
-  padding: 10px 50px 10px 20px;
+  padding: 10px 10px 10px 10px;
   flex: 4 0 400px;
   border-left: 3px solid #7472D6; }
+
+.equalBox {
+  float: left; }
 
 #div1 {
   background-color: #4947B8; }

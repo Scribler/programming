@@ -9,24 +9,25 @@
   </head>
 
   <body>
-    <header class="header">
+     <header class="header" id="articleColor">
       <div class="header-container">
         <img src="images/main-logo.png">
         <div>
           <h1 id=headerHeading>Timing Events</h1>
           <p>Lessons and basic descriptions</p>
+          <button onclick="clearInterval(backgroundRotate)">Stop Color change</button>
         </div>
       </div>
     </header>
 
     <main>
-      <nav class="sidebar sidebar-left">
-        <h2>Article Highlights</h2>
-        <a href="#">HOME</a>
-        <a href="#">Highlight 1</a>
-        <a href="#">Highlight 2</a>
-        <a href="#">Highlight 3</a>
-      </nav>
+      <!-- <nav class="sidebar sidebar-left"> -->
+        <!-- <h2>Article Highlights</h2> -->
+        <!-- <a href="#">HOME</a> -->
+        <!-- <a href="#">Highlight 1</a> -->
+        <!-- <a href="#">Highlight 2</a> -->
+        <!-- <a href="#">Highlight 3</a> -->
+      <!-- </nav> -->
 
       <article class="article">
 
@@ -53,7 +54,7 @@
           <button id="preventMessage" onclick="clearTimeout(delayedWelcomeMessage), confirmation()">Click To Prevent Welcome Message</button>
         </section>
 
-        <section class="windowScreen">
+        <section class="windowScreen" id="colorChange">
           <h1>Window and Screen Objects</h1>
           <p>Window height is: <span id="windowHeight"></span></p>
           <p>Window width is: <span id="windowWidth"></span></p>
@@ -62,10 +63,10 @@
         </section>
 
         <section class="fourDivs">
-          <div id="div1">Div 1</div>
-          <div id="div2">Div 2</div>
-          <div id="div3">Div 3</div>
-          <div id="div4">Div 4</div>
+          <div class="equalBox" id="div1">Div 1</div>
+          <div class="equalBox" id="div2">Div 2</div>
+          <div class="equalBox" id="div3">Div 3</div>
+          <div class="equalBox" id="div4">Div 4</div>
         </section>
 
       </article>

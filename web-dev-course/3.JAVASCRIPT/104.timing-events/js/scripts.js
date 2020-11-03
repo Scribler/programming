@@ -9,21 +9,6 @@ var counterStop = setTimeout(function(){
   document.getElementById("counterFinished").innerHTML = "Stoped Counter. It has exeded 50 seconds";
 }, 51000);
 
-// CHANGING BACKGROUND COLORS
-var colors = ["\"$blue1\"", "\"$green1\"", "\"$yellow1\"", "\"$red1\""];
-console.log(colors[1])
-var x = 0;
-var backgroundColors = setInterval(function(x){
-  // document.getElementById("headerHeading").style.color = colors[x];
-  x++;
-  console.log(colors[x]);
-  if(x > 3){
-    x = 0;
-  }
-}, 1000);
-
-
-
 
 // MY OWN VERSION OF A TIMER
 var myTimer;
@@ -80,8 +65,81 @@ var availableScreenHeight = window.screen.availHeight;
 console.log("Available screen height: " + availableScreenHeight);
 
 
+// CHANGING BACKGROUND COLORS
+
+
+// DOESN'T WORK
+// THESE COLORS HAVE TO BE HEXIDEC OR EQUIV. SASS VARIABLES WILL NOT WORK
+// var colors = ["\"$blue1\"", "\"$green1\"", "\"$yellow1\"", "\"$red1\""];
+// console.log(colors[1])
+// var x = 0;
+// var backgroundColors = setInterval(function(x){
+  // document.getElementById("headerHeading").style.color = colors[x];
+  // x++;
+  // console.log(colors[x]);
+  // if(x > 3){
+    // x = 0;
+  // }
+// }, 1000);
+// ^DOESN'T WORK
+
+// COLORS CAN-NOT BE SASS VARIABLES
+// This will rotate through these colors and stop on the last one.
+backgroundColors = ['#74E668', '#39378F', '#C9383F', '#CDA939','#e8e8e8'];
+var y = 0;
+var backgroundRotate = setInterval(function(){
+  if(y === -1){
+    clearInterval(this);
+  } else {
+    y++;
+    document.getElementById('articleColor').style.backgroundColor = backgroundColors[y];
+    if(y >= 4){
+      y = -1;
+    }
+  }
+},1000);
+
+// $header-background: #e8e8e8// dark grey
+// $green1: #74E668; // green
+// $blue1: #39378F; // blue
+// $red1: #C9383F; // red
+// $yellow1: #CDA939; // yellow
+
 
 // FOURDIVS
+
+document.getElementById("div1").style.width = window.innerWidth / 4 - 10 + "px";
+document.getElementById("div2").style.width = window.innerWidth / 4 - 10 + "px";
+document.getElementById("div3").style.width = window.innerWidth / 4 - 10 + "px";
+document.getElementById("div4").style.width = window.innerWidth / 4 - 10 + "px";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
