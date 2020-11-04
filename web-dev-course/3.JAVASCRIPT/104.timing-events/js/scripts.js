@@ -108,15 +108,27 @@ var backgroundRotate = setInterval(function(){
 
 // FOURDIVS
 
-document.getElementById("div1").style.width = window.innerWidth / 4 - 10 + "px";
-document.getElementById("div2").style.width = window.innerWidth / 4 - 10 + "px";
-document.getElementById("div3").style.width = window.innerWidth / 4 - 10 + "px";
-document.getElementById("div4").style.width = window.innerWidth / 4 - 10 + "px";
+// px is added to the value:  calculated # + "px" = #px
+//
+// this is the manual long way, but it can also be done with a for loop.
+// document.getElementById("div1").style.width = window.innerWidth / 4 - 10 + "px";
+// document.getElementById("div1").style.height = window.innerHeight + "px";
+//
+// document.getElementById("div2").style.width = window.innerWidth / 4 - 10 + "px";
+// document.getElementById("div2").style.height = window.innerHeight + "px";
+//
+// document.getElementById("div3").style.width = window.innerWidth / 4 - 10 + "px";
+// document.getElementById("div3").style.height = window.innerHeight + "px";
+//
+// document.getElementById("div4").style.width = window.innerWidth / 4 - 10 + "px";
+// document.getElementById("div4").style.height = window.innerHeight + "px";
 
+// same as above but using for loop
 
-
-
-
+for(i = 1; i < 5; i++){
+document.getElementById("div1" + i).style.width = window.innerWidth / 4 - 10 + "px";
+document.getElementById("div1" + i).style.height = window.innerHeight + "px";
+}
 
 
 
