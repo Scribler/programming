@@ -126,8 +126,8 @@ var backgroundRotate = setInterval(function(){
 // same as above but using for loop
 
 for(i = 1; i < 5; i++){
-document.getElementById("div1" + i).style.width = window.innerWidth / 4 - 10 + "px";
-document.getElementById("div1" + i).style.height = window.innerHeight + "px";
+document.getElementById("div" + i).style.width = window.innerWidth / 4 - 20 + "px";
+  document.getElementById("div" + i).style.height = window.innerHeight = 190 + "px";
 }
 
 

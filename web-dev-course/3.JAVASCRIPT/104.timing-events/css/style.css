@@ -63,7 +63,11 @@ section {
   border-left: 3px solid #7472D6; }
 
 .equalBox {
-  float: left; }
+  float: left;
+  margin-left: 5px; }
+
+.clearfix {
+  overflow: auto; }
 
 #div1 {
   background-color: #4947B8; }
