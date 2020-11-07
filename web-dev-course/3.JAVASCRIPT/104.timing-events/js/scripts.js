@@ -131,8 +131,41 @@ document.getElementById("div" + i).style.width = window.innerWidth / 4 - 20 + "p
 }
 
 
+// ALERT BOXES
+
+var acceptCookies = window.confirm("Please confirm you want to accept cookies?")
+// window.alert(acceptCookies);
+
+if(acceptCookies == true){
+  console.log("Cookies Accepted");
+  document.getElementById("cookies").innerHTML = "yes";
+  window.alert(acceptCookies + ": " + "We will collect your cookies");
+} else {
+  console.log("We will not collect your cookies");
+  document.getElementById("cookies").innerHTML = "no";
+  window.alert(acceptCookies + ": " + "We will not collect your cookies");
+}
+console.log("acceptCookies is: " + acceptCookies);
 
 
+// get user input from alert box
+
+
+var visitor = prompt("please enter your name");
+// make sure the name is capitalized before pushing it to the rest of the code
+visitor = visitor.charAt(0).toUpperCase() + visitor.slice(1) 
+
+window.alert("Hi " + visitor + ", we wish you a nice experience on our page. Don't forget to like us on Facebook!");
+
+document.getElementById("name").innerHTML = visitor;
+
+// COOKIES
+
+document.cookie = "username = buenosdias";
+document.cookie = "age = 33";
+document.cookie = "country= Spain";
+
+alert(document.cookie);
 
 
 
