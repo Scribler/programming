@@ -1,0 +1,101 @@
+// Imports - uncomment when needed
+
+@import "utils/variables"
+@import "base/base"
+// @import "base/typography"
+// @import "components/buttons"
+// @import "components/carousels"
+// @import "components/navigation"
+// @import "layout/header"
+// @import "layout/footer"
+// @import "layout/grid"
+// @import "utils/functions>"
+// @import "utils/mixins"
+
+
+body
+  display: grid
+  height: 100vh
+
+  grid-template-columns: 1fr
+  grid-template-rows: 180px 35fr 200px
+
+
+
+header
+  background-color: $header-background
+  grid-column-start: 1
+  grid-column-end: 4
+  display: flex
+  justify-content: center
+  align-items: center
+  border-bottom: 5px solid $green4
+  .header-container
+    display: flex
+    img
+      width: 3em
+      height: 3em
+      align-self: flex-start
+      margin-right: 10px
+    h1
+      padding: 10px 0 5px 0
+      color: $blue1
+
+main
+  display: flex
+  flex-wrap: wrap
+
+.sidebar
+  padding-left: 10px
+  flex: 0.5 0 180px
+
+.sidebar-left
+  display: flex
+  flex-direction: column
+  grid-column-start: 1
+  grid-column-end: 2
+  grid-row-start: 2
+  grid-row-end: 3
+
+.sidebar-right
+  display: flex
+  flex-direction: column
+  grid-column-start: 3
+  grid-column-end: 4
+  grid-row-start: 2
+  grid-row-end: 3
+
+.article
+  padding: 10px 50px 10px 20px
+  flex: 4 0 400px
+  // border-left: 3px solid $blue2
+  // border-right: 3px solid $blue2
+
+
+footer
+  grid-column-start: 1
+  grid-column-end: 4
+  grid-row-start: 3
+  grid-row-end: 4
+  
+  display: flex
+  // margin-top: auto
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  background-color: $yellow2
+  bottom: 0
+  .item
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: $yellow2
+  a 
+    margin-top: 5px
+
+@media screen and (max-width: 789px)
+  .article
+    border-right: none
+    border-left: none
+  main
+    flex-direction: column

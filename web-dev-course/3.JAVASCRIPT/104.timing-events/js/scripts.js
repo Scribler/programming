@@ -161,14 +161,26 @@ document.getElementById("name").innerHTML = visitor;
 
 // COOKIES
 
-document.cookie = "username = buenosdias";
-document.cookie = "age = 33";
-document.cookie = "country= Spain";
+window.alert(document.cookie);
+// document.cookie = "username = buenosdia; SameSite=Lax";
+// document.cookie = "age = 33; SameSite=Lax";
+// document.cookie = "country= Spain; SameSite=Lax";
+//
+// alert(document.cookie);
+//
+//
+// var mycookie = document.cookie.split(';');
+//
+// window.alert(mycookie);
+//
+// for(i=0; i<mycookie.length; i++){
+  // document.getElementById("cookieStuff").innerHTML += mycookie[i] + "<br />";
+// }
 
-alert(document.cookie);
 
-
-
+// even after the above is commented out the below call will work, because the cookies are stored in the browser.
+var cookieTest = document.cookie;
+document.getElementById("cookieStuff").innerHTML = cookieTest;
 
 
 
