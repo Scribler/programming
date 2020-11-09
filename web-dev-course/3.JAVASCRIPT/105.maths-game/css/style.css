@@ -56,6 +56,17 @@ main {
   padding: 10px 50px 10px 20px;
   flex: 4 0 400px; }
 
+.mathsGame {
+  background-color: #DEDEDE; }
+  .mathsGame #yellow {
+    color: #F2F795; }
+  .mathsGame #light-blue {
+    color: #98CEE9; }
+  .mathsGame #purple {
+    color: #B68AD8; }
+  .mathsGame #darkPurple {
+    color: #9BA4EA; }
+
 footer {
   grid-column-start: 1;
   grid-column-end: 4;
