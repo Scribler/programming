@@ -13,6 +13,12 @@
 // @import "utils/mixins"
 
 
+
+// UNIVERSAL ELEMENTS
+html
+  height: 100%
+  background: radial-gradient(circle, #fff, #7E8181)
+
 body
   display: grid
   height: 100vh
@@ -20,10 +26,8 @@ body
   grid-template-columns: 1fr
   grid-template-rows: 180px 35fr 200px
 
-
-
 header
-  background-color: $header-background
+  // background-color: $header-background
   grid-column-start: 1
   grid-column-end: 4
   display: flex
@@ -41,63 +45,35 @@ header
       padding: 10px 0 5px 0
       color: $blue1
 
-main
-  display: flex
-  flex-wrap: wrap
-
-.sidebar
-  padding-left: 10px
-  flex: 0.5 0 180px
-
-.sidebar-left
-  display: flex
-  flex-direction: column
-  grid-column-start: 1
-  grid-column-end: 2
-  grid-row-start: 2
-  grid-row-end: 3
-
-.sidebar-right
-  display: flex
-  flex-direction: column
-  grid-column-start: 3
-  grid-column-end: 4
-  grid-row-start: 2
-  grid-row-end: 3
+// UNIVERSAL ELEMENTS END
 
 
 
+// MATHS GAME
+
+// INSTEAD OF CENTERING LIKE THIS - use "margin: 100px auto;" This will keep it centered.
+// main
+  // display: flex
+  // align-items: center
+  // justify-content: center
+
+#container
+  height: 400px
+  width: 550px
+  background-color: #98CEE9
+  margin: 100px auto
+  padding: 20px
+  border-radius: 10px
+  box-shadow: 0px 4px hsl(180, 1%, 71%)
+// BOX SHADOW LAYOUT LIKE THIS
+// box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]
+// box shadow needs a minimum of horizontal and vertical input. If only one, nothing will appear
 
 
-// MAIN CONTENT GOES IN ARTICLE
-
-.article
-  padding: 10px 50px 10px 20px
-  flex: 4 0 400px
-  // border-left: 3px solid $blue2
-  // border-right: 3px solid $blue2
-
-.mathsGame
-  background-color: $background-grey-math;
-  #yellow
-    color: $yellow-math
-  #light-blue
-    color: $light-blue-math
-  #purple
-    color: $light-purple-math
-  #darkPurple
-    color: $dark-purple-math
+// MATHS GAME END
 
 
-
-
-
-// MAIN CONTENT END
-
-
-
-
-
+// FOOTER
 footer
   grid-column-start: 1
   grid-column-end: 4
@@ -118,10 +94,11 @@ footer
     background-color: $yellow2
   a 
     margin-top: 5px
+// FOOTER END
 
-@media screen and (max-width: 789px)
-  .article
-    border-right: none
-    border-left: none
-  main
-    flex-direction: column
+
+// $background-gre-math: #DEDEDE;
+// $yello-math: #F2F795;
+// $light-blu-math: #98CEE9;
+// $light-purpl-math: #B68AD8;
+// $dark-purpl-math: #9BA4EA;

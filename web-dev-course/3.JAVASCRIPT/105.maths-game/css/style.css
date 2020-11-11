@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box; }
 
+html {
+  height: 100%;
+  background: radial-gradient(circle, #fff, #7E8181); }
+
 body {
   display: grid;
   height: 100vh;
@@ -10,7 +14,6 @@ body {
   grid-template-rows: 180px 35fr 200px; }
 
 header {
-  background-color: #e8e8e8;
   grid-column-start: 1;
   grid-column-end: 4;
   display: flex;
@@ -28,44 +31,14 @@ header {
       padding: 10px 0 5px 0;
       color: #39378F; }
 
-main {
-  display: flex;
-  flex-wrap: wrap; }
-
-.sidebar {
-  padding-left: 10px;
-  flex: 0.5 0 180px; }
-
-.sidebar-left {
-  display: flex;
-  flex-direction: column;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3; }
-
-.sidebar-right {
-  display: flex;
-  flex-direction: column;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3; }
-
-.article {
-  padding: 10px 50px 10px 20px;
-  flex: 4 0 400px; }
-
-.mathsGame {
-  background-color: #DEDEDE; }
-  .mathsGame #yellow {
-    color: #F2F795; }
-  .mathsGame #light-blue {
-    color: #98CEE9; }
-  .mathsGame #purple {
-    color: #B68AD8; }
-  .mathsGame #darkPurple {
-    color: #9BA4EA; }
+#container {
+  height: 400px;
+  width: 550px;
+  background-color: #98CEE9;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px #b4b6b6; }
 
 footer {
   grid-column-start: 1;
@@ -85,10 +58,3 @@ footer {
     background-color: #FFDD74; }
   footer a {
     margin-top: 5px; }
-
-@media screen and (max-width: 789px) {
-  .article {
-    border-right: none;
-    border-left: none; }
-  main {
-    flex-direction: column; } }
