@@ -33,7 +33,8 @@ header
   display: flex
   justify-content: center
   align-items: center
-  border-bottom: 5px solid $green4
+
+  border-bottom: 5px solid #14d100 // green4
   .header-container
     display: flex
     img
@@ -43,7 +44,7 @@ header
       margin-right: 10px
     h1
       padding: 10px 0 5px 0
-      color: $blue1
+      color: #39378F // blue1
 
 // UNIVERSAL ELEMENTS END
 
@@ -51,23 +52,31 @@ header
 
 // MATHS GAME
 
-// INSTEAD OF CENTERING LIKE THIS - use "margin: 100px auto;" This will keep it centered.
-// main
-  // display: flex
-  // align-items: center
-  // justify-content: center
 
-#container
+
+
+// Changed 'container' to a class. Change later if needed.
+.container
   height: 400px
   width: 550px
-  background-color: #98CEE9
+  background-color: #98CEE9 //background
+  // margin centers the container
   margin: 100px auto
   padding: 20px
   border-radius: 10px
-  box-shadow: 0px 4px hsl(180, 1%, 71%)
+  box-shadow: 0px 4px 0px 0px #009de4 // blue-shadow
+
 // BOX SHADOW LAYOUT LIKE THIS
 // box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]
 // box shadow needs a minimum of horizontal and vertical input. If only one, nothing will appear
+
+//Changed 'score' to a class. Changer later if needed.
+.score
+  background-color: #F2F795
+  color: #888e5f
+  padding: 10px
+
+#score-value
 
 
 // MATHS GAME END
@@ -85,20 +94,33 @@ footer
   flex-direction: column
   justify-content: center
   align-items: center
-  background-color: $yellow2
+  // 
+  background-color: #FFDD74
   bottom: 0
   .item
     display: flex
     flex-direction: column
     align-items: center
-    background-color: $yellow2
+    background-color:  #FFDD74
   a 
     margin-top: 5px
 // FOOTER END
 
 
-// $background-gre-math: #DEDEDE;
-// $yello-math: #F2F795;
-// $light-blu-math: #98CEE9;
-// $light-purpl-math: #B68AD8;
-// $dark-purpl-math: #9BA4EA;
+//Maths Game Colors
+// $background-grey-math: #DEDEDE
+// $score-yellow: #F2F795
+// $score-text: #888e5f
+// $light-blue-math: #98CEE9
+// $blue-shadow: #009de4
+// $light-purple-math: #B68AD8
+// $dark-purple-math: #9BA4EA
+//
+
+// Footer $yellow2: #FFDD74;
+
+
+
+
+
+

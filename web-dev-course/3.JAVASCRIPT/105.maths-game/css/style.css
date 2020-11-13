@@ -19,7 +19,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 5px solid #14D100; }
+  border-bottom: 5px solid #14d100; }
   header .header-container {
     display: flex; }
     header .header-container img {
@@ -31,14 +31,19 @@ header {
       padding: 10px 0 5px 0;
       color: #39378F; }
 
-#container {
+.container {
   height: 400px;
   width: 550px;
   background-color: #98CEE9;
   margin: 100px auto;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 4px #b4b6b6; }
+  box-shadow: 0px 4px 0px 0px #009de4; }
+
+.score {
+  background-color: #F2F795;
+  color: #888e5f;
+  padding: 10px; }
 
 footer {
   grid-column-start: 1;
