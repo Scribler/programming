@@ -57,7 +57,7 @@ header
 
 // Changed 'container' to a class. Change later if needed.
 .container
-  height: 400px
+  height: 450px
   width: 550px
   background-color: #98CEE9 //background
   // margin centers the container
@@ -65,6 +65,7 @@ header
   padding: 20px
   border-radius: 10px
   box-shadow: 0px 4px 0px 0px #009de4 // blue-shadow
+  position: relative
 
 // BOX SHADOW LAYOUT LIKE THIS
 // box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]
@@ -74,9 +75,95 @@ header
 .score
   background-color: #F2F795
   color: #888e5f
-  padding: 10px
+  padding: 11px
+  position: absolute
+  left: 500px
+  box-shadow: 0px 4px #9da853 // yellow-green-shadow
 
 #score-value
+
+.correct
+  background-color: green
+  color: #F8FBFB
+  position: absolute
+  left: 240px
+  padding: 20px
+  width: 80px
+  text-align: center
+  box-shadow: 0px 4px #0B4800
+  display: none
+
+.wrong
+  background-color: red
+  color: #F8FBFB
+  position: absolute
+  left: 240px
+  padding: 20px
+  width: 80px
+  text-align: center
+  box-shadow: 0px 4px #A90805
+  display: none // make it disapear untill called by javascript
+
+.question
+  display: flex
+  height: 150px
+  width: 450px
+  background-color: #9da0ea
+  box-shadow: 0px 4px #3F3F64
+  margin: 60px auto 10px auto
+  font-size: 100px
+  font-family: "Comic Sans MS", cursive, sans-serif
+  justify-content: center
+  align-items: center
+
+.instructions
+  display: flex
+  height: 50px
+  width: 450px
+  background-color: #9E7DCE
+  box-shadow: 0px 4px #6D4F97
+  margin: 10px auto 10px auto
+  text-align: center
+  font-size: 17px
+  justify-content: center
+  align-items: center
+
+.answers
+  display: flex
+  justify-content: space-between
+  margin: 5px auto
+  height: 100px
+  width: 450px
+
+.answer
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #DEDEDE
+  height: 90px
+  width: 90px
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.2)
+  border-radius: 3px
+  cursor: pointer
+  &:hover
+    background-color: #9c89f6
+    box-shadow: 0px 4px #392F60
+
+
+    color: #DEDEDE
+
+    // transform: translate(0px, -4px)
+
+
+
+.answerone
+
+.answertwo
+
+.answerthree
+
+.answerfour
+
 
 
 // MATHS GAME END
@@ -108,14 +195,15 @@ footer
 
 
 //Maths Game Colors
+// Text-off-White: #F8FBFB
 // $background-grey-math: #DEDEDE
 // $score-yellow: #F2F795
+// $yelowgreen-shadow: #9da853
 // $score-text: #888e5f
 // $light-blue-math: #98CEE9
 // $blue-shadow: #009de4
 // $light-purple-math: #B68AD8
 // $dark-purple-math: #9BA4EA
-//
 
 // Footer $yellow2: #FFDD74;
 
