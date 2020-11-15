@@ -15,6 +15,15 @@
 
 
 // UNIVERSAL ELEMENTS
+// @mixin vendor-prefix($name, $value) {
+  // @each $vendor in ('-webkit-', '-moz-', '-ms-', '-o-', '') {
+    // #{$vendor}#{$name}: #{$value};
+  // }
+// }
+//
+// *
+  // @include vendor-prefix('flex', 'box-shadow')
+
 html
   height: 100%
   background: radial-gradient(circle, #fff, #7E8181)
@@ -34,7 +43,7 @@ header
   justify-content: center
   align-items: center
 
-  border-bottom: 5px solid #14d100 // green4
+  border-bottom: 5px solid #14d100
   .header-container
     display: flex
     img
