@@ -10,7 +10,7 @@
 // @import "layout/footer"
 // @import "layout/grid"
 // @import "utils/functions>"
-// @import "utils/mixins"
+@import "utils/mixins"
 
 
 
@@ -36,13 +36,12 @@ body
   grid-template-rows: 180px 35fr 200px
 
 header
-  background-color: $header-background
+  // background-color: $header-background
   grid-column-start: 1
   grid-column-end: 4
   display: flex
   justify-content: center
   align-items: center
-
   border-bottom: 5px solid #14d100
   .header-container
     display: flex
@@ -73,9 +72,7 @@ header
   margin: 100px auto
   padding: 20px
   border-radius: 10px
-  box-shadow: 0px 4px 0px 0px #009de4 // blue-shadow
-  -moz-box-shadow: 0px 4px 0px 0px #009de4 // blue-shadow
-  -webkit-box-shadow: 0px 4px 0px 0px #009de4 // blue-shadow
+  @include shadowkit()
   position: relative
 
 // BOX SHADOW LAYOUT LIKE THIS
@@ -89,9 +86,10 @@ header
   padding: 11px
   position: absolute
   left: 500px
-  box-shadow: 0px 4px #9da853 // yellow-green-shadow
-  -moz-box-shadow: 0px 4px #9da853 // yellow-green-shadow
-  -webkit-box-shadow: 0px 4px #9da853 // yellow-green-shadow
+  @include shadowkit(0px, 4px, 0px, 0px, $yellowgreen-shadow)
+  // box-shadow: 0px 4px #9da853 // yellow-green-shadow
+  // -moz-box-shadow: 0px 4px #9da853 // yellow-green-shadow
+  // -webkit-box-shadow: 0px 4px #9da853 // yellow-green-shadow
 
 #score-value
 
@@ -158,7 +156,7 @@ header
   display: flex
   justify-content: center
   align-items: center
-  background-color: #DEDEDE
+  background-color: $background-grey-math
   height: 90px
   width: 90px
   box-shadow: 0px 4px rgba(0, 0, 0, 0.2)
@@ -172,14 +170,14 @@ header
   -ms-transition: all 0.2s
   &:hover
     background-color: #9c89f6
-    box-shadow: 0px 4px #392F60
-    -moz-box-shadow: 0px 4px #392F60
-    -webkit-box-shadow: 0px 4px #392F60
-    color: #DEDEDE
+    box-shadow: 0px 4px $dark-box-shadow
+    -moz-box-shadow: 0px 4px $dark-box-shadow
+    -webkit-box-shadow: 0px 4px $dark-box-shadow
+    color: $background-grey-math
   &:active
-    box-shadow: 0px 0px #392F60
-    -moz-box-shadow: 0px 0px #392F60
-    -webkit-box-shadow: 0px 0px #392F60
+    box-shadow: 0px 0px $dark-box-shadow
+    -moz-box-shadow: 0px 0px $dark-box-shadow
+    -webkit-box-shadow: 0px 0px $dark-box-shadow
     position: relative
     top: 4px
     // transform: translate(0px, 4px)
@@ -213,33 +211,15 @@ footer
   justify-content: center
   align-items: center
   // 
-  background-color: #FFDD74
+  background-color: $footer-yellow
   bottom: 0
   .item
     display: flex
     flex-direction: column
     align-items: center
-    background-color:  #FFDD74
+    background-color:  $footer-yellow
   a 
     margin-top: 5px
 // FOOTER END
-
-
-//Maths Game Colors
-// Text-off-White: #F8FBFB
-// $background-grey-math: #DEDEDE
-// $score-yellow: #F2F795
-// $yelowgreen-shadow: #9da853
-// $score-text: #888e5f
-// $light-blue-math: #98CEE9
-// $blue-shadow: #009de4
-// $light-purple-math: #B68AD8
-// $dark-purple-math: #9BA4EA
-
-// Footer $yellow2: #FFDD74;
-
-
-
-
 
 

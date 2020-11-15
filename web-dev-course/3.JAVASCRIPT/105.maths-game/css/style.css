@@ -13,7 +13,6 @@ body {
   grid-template-rows: 180px 35fr 200px; }
 
 header {
-  background-color: #e8e8e8;
   grid-column-start: 1;
   grid-column-end: 4;
   display: flex;
@@ -49,9 +48,9 @@ header {
   padding: 11px;
   position: absolute;
   left: 500px;
-  box-shadow: 0px 4px #9da853;
-  -moz-box-shadow: 0px 4px #9da853;
-  -webkit-box-shadow: 0px 4px #9da853; }
+  box-shadow: 0px 4px 0px 0px #9da853;
+  -moz-box-shadow: 0px 4px 0px 0px #9da853;
+  -webkit-box-shadow: 0px 4px 0px 0px #9da853; }
 
 .correct {
   background-color: green;
