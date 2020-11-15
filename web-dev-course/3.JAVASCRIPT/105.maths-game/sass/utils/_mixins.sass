@@ -2,3 +2,9 @@
   box-shadow: $set1 $set2 $set3 $set4 $color
   -moz-box-shadow: $set1 $set2 $set3 $set4 $color
   -webkit-box-shadow: $set1 $set2 $set3 $set4 $color
+
+@mixin transform-duration-all($set: all, $duration: 0.3s)
+  transition: $set $duration
+  -webkit-transition: $set $duration
+  -moz-transition: $set $duration
+  -ms-transition: $set $duration

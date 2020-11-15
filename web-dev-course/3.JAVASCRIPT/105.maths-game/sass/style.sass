@@ -36,13 +36,13 @@ body
   grid-template-rows: 180px 35fr 200px
 
 header
-  // background-color: $header-background
+  background-color: $header-darker-background
   grid-column-start: 1
   grid-column-end: 4
   display: flex
   justify-content: center
   align-items: center
-  border-bottom: 5px solid #14d100
+  border-bottom: 5px solid $green4
   .header-container
     display: flex
     img
@@ -52,7 +52,7 @@ header
       margin-right: 10px
     h1
       padding: 10px 0 5px 0
-      color: #39378F // blue1
+      color: $blue1
 
 // UNIVERSAL ELEMENTS END
 
@@ -67,7 +67,7 @@ header
 .container
   height: 450px
   width: 550px
-  background-color: #98CEE9 //background
+  background-color: $light-blue-math
   // margin centers the container
   margin: 100px auto
   padding: 20px
@@ -81,50 +81,43 @@ header
 
 //Changed 'score' to a class. Changer later if needed.
 .score
-  background-color: #F2F795
-  color: #888e5f
+  background-color: $score-yellow
+  color: $score-text
   padding: 11px
   position: absolute
   left: 500px
   @include shadowkit(0px, 4px, 0px, 0px, $yellowgreen-shadow)
-  // box-shadow: 0px 4px #9da853 // yellow-green-shadow
-  // -moz-box-shadow: 0px 4px #9da853 // yellow-green-shadow
-  // -webkit-box-shadow: 0px 4px #9da853 // yellow-green-shadow
 
 #score-value
 
 .correct
-  background-color: green
-  color: #F8FBFB
+  background-color: $green
+  color: $text-color-white
   position: absolute
   left: 240px
-  padding: 20px
+  padding: 10px 20px
   width: 80px
   text-align: center
-  box-shadow: 0px 4px #0B4800
-  -moz-box-shadow: 0px 4px #0B4800
-  -webkit-box-shadow: 0px 4px #0B4800
+  @include shadowkit(0px, 4px, 0px, 0px, $dgreen-shadow)
   display: none
 
 .wrong
-  background-color: red
-  color: #F8FBFB
+  background-color: $red
+  color: $text-color-white
   position: absolute
   left: 240px
-  padding: 20px
+  padding: 10px 20px
   width: 80px
   text-align: center
-  box-shadow: 0px 4px #A90805
-  -moz-box-shadow: 0px 4px #A90805
-  -webkit-box-shadow: 0px 4px #A90805
+  @include shadowkit(0px, 4px, 0px, 0px, $red-shadow)
   display: none // make it disapear untill called by javascript
 
 .question
   display: flex
   height: 150px
   width: 450px
-  background-color: #9da0ea
-  box-shadow: 0px 4px #3F3F64
+  background-color: $question
+  @include shadowkit(0px, 4px, 0px, 0px, $question-shadow)
   margin: 60px auto 10px auto
   font-size: 100px
   font-family: "Comic Sans MS", cursive, sans-serif
@@ -135,10 +128,8 @@ header
   display: flex
   height: 50px
   width: 450px
-  background-color: #9E7DCE
-  box-shadow: 0px 4px #6D4F97
-  -moz-box-shadow: 0px 4px #6D4F97
-  -webkit-box-shadow: 0px 4px #6D4F97
+  background-color: $instructions
+  @include shadowkit(0px, 4px, 0px, 0px, $instructions-shadow)
   margin: 10px auto 10px auto
   text-align: center
   font-size: 17px
@@ -159,28 +150,18 @@ header
   background-color: $background-grey-math
   height: 90px
   width: 90px
-  box-shadow: 0px 4px rgba(0, 0, 0, 0.2)
-  -moz-box-shadow: 0px 4px rgba(0, 0, 0, 0.2)
-  -webkit-box-shadow: 0px 4px rgba(0, 0, 0, 0.2)
+  @include shadowkit(0px, 4px, 0px, 0px, $clear-shadow)
   border-radius: 3px
   cursor: pointer
-  transition: all 0.2s
-  -webkit-transition: all 0.2s
-  -moz-transition: all 0.2s
-  -ms-transition: all 0.2s
+  @include transform-duration-all()
   &:hover
-    background-color: #9c89f6
-    box-shadow: 0px 4px $dark-box-shadow
-    -moz-box-shadow: 0px 4px $dark-box-shadow
-    -webkit-box-shadow: 0px 4px $dark-box-shadow
+    background-color: $answer
+    @include shadowkit(0px, 4px, 0px, 0px, $dark-box-shadow)
     color: $background-grey-math
   &:active
-    box-shadow: 0px 0px $dark-box-shadow
-    -moz-box-shadow: 0px 0px $dark-box-shadow
-    -webkit-box-shadow: 0px 0px $dark-box-shadow
+    @include shadowkit(0px, 0px, 0px, 0px, $dark-box-shadow)
     position: relative
     top: 4px
-    // transform: translate(0px, 4px)
 
 
 
