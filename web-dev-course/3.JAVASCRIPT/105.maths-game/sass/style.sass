@@ -90,6 +90,7 @@ header
 
 #score-value
 
+// Answer Confirmations
 .correct
   background-color: $green
   color: $text-color-white
@@ -112,6 +113,7 @@ header
   @include shadowkit(0px, 4px, 0px, 0px, $red-shadow)
   display: none // make it disapear untill called by javascript
 
+// Quesion container
 .question
   display: flex
   height: 150px
@@ -124,6 +126,7 @@ header
   justify-content: center
   align-items: center
 
+// instructions section
 .instructions
   display: flex
   height: 50px
@@ -136,43 +139,109 @@ header
   justify-content: center
   align-items: center
 
-.answers
+// container for answer buttons
+.answers-containter
   display: flex
   justify-content: space-between
   margin: 5px auto
   height: 100px
   width: 450px
 
+
+// answer buttons general
 .answer
-  display: flex
-  justify-content: center
-  align-items: center
-  background-color: $background-grey-math
+  @extend %btnbase
   height: 90px
   width: 90px
-  @include shadowkit(0px, 4px, 0px, 0px, $clear-shadow)
-  border-radius: 3px
-  cursor: pointer
-  @include transform-duration-all()
+
+// individual answer buttons
+.answerone
   &:hover
-    background-color: $answer
-    @include shadowkit(0px, 4px, 0px, 0px, $dark-box-shadow)
-    color: $background-grey-math
+    background-color: $green0
+
+.answertwo
+  &:hover
+    background-color: $blue1
+
+.answerthree
+  &:hover
+    background-color: $yellow1
+
+.answerfour
+  &:hover
+    background-color: $red1
+
+
+
+
+
+// start reset button & Timer Container
+.btn-and-timer
+  display: flex
+  justify-content: flex-end
+  flex-direction: row
+  height: 40px
+  width: 450px
+  margin: 0px auto
+
+
+
+//Start/Reset Button
+.start-reset
+  @extend %btnrs
+
+.start
+  background-color: $green3
+  @include shadowkit(0px, 4px, 0px, 0px, $green0)
+  &:hover
+    background-color: $green3
+    @include shadowkit(0px, 6px, 0px, 0px, $green0)
+    position: relative
+    top: -2px
   &:active
-    @include shadowkit(0px, 0px, 0px, 0px, $dark-box-shadow)
+    @include shadowkit(0px, 0px, 0px, 0px, $green0)
+    position: relative
+    top: 4px
+    
+
+.reset
+  background-color: $red3
+  @include shadowkit(0px, 4px, 0px, 0px, $red4)
+  &:hover
+    background-color: $red3
+    @include shadowkit(0px, 6px, 0px, 0px, $red4)
+    position: relative
+    top: -2px
+  &:active
+    @include shadowkit(0px, 0px, 0px, 0px, $red4)
     position: relative
     top: 4px
 
 
 
 
-.answerone
+// Timer
+.timer
+  background-color: $timer-yellow
+  @include shadowkit(0px, 4px, 0px, 0px, $timer-shadow)
+  align-self: end
+  @extend %btnbase
+  height: 40px
+  width: 170px
+  &:hover
+    background-color: $timer-yellow
+    color: black
+  &:active
+    @include shadowkit(0px, 4px, 0px, 0px, $timer-shadow)
+    top: 0px
 
-.answertwo
 
-.answerthree
 
-.answerfour
+
+
+
+
+
 
 
 

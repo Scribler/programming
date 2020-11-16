@@ -1,10 +1,66 @@
+// Shadow webkit
 @mixin shadowkit($set1: 0px, $set2: 4px, $set3: 0px, $set4: 0px, $color: $blue-shadow)
   box-shadow: $set1 $set2 $set3 $set4 $color
   -moz-box-shadow: $set1 $set2 $set3 $set4 $color
   -webkit-box-shadow: $set1 $set2 $set3 $set4 $color
 
-@mixin transform-duration-all($set: all, $duration: 0.3s)
+// Transform Duration & webkit
+@mixin transform-duration-all($set: all, $duration: 0.2s)
   transition: $set $duration
   -webkit-transition: $set $duration
   -moz-transition: $set $duration
   -ms-transition: $set $duration
+
+// Transform Duration 0s
+@mixin transform-duration-none($set: all, $duration: 0s)
+  transition: $set $duration
+  -webkit-transition: $set $duration
+  -moz-transition: $set $duration
+  -ms-transition: $set $duration
+
+// button extension
+%btnbase
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: $background-grey-math
+  @include shadowkit(0px, 4px, 0px, 0px, $clear-shadow)
+  border-radius: 3px
+  cursor: pointer
+  @include transform-duration-all()
+  &:hover
+    background-color: $dark-grey
+    color: $background-grey-math
+  &:active
+    @include shadowkit(0px, 0px, 0px, 0px, $clear-shadow)
+    position: relative
+    top: 4px
+
+
+%btnrs
+  @include shadowkit(0px, 4px, 0px, 0px, $clear-shadow)
+  @include transform-duration-none()
+  align-self: center
+  height: 40px
+  width: 90px
+  margin-right: 20px
+  display: flex
+  justify-content: center
+  align-items: center
+  color: $background-grey-math
+  border-radius: 3px
+  cursor: pointer
+  &:hover
+    // @include transform-duration-all()
+    background-color: $dark-grey
+    color: $background-grey-math
+
+  &:active
+    @include transform-duration-all()
+    @include shadowkit(0px, 0px, 0px, 0px, $clear-shadow)
+    position: relative
+    top: 4px
+
+
+
+
