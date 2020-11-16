@@ -123,6 +123,7 @@ header
   margin: 60px auto 10px auto
   font-size: 100px
   font-family: "Comic Sans MS", cursive, sans-serif
+  color: $darker-grey
   justify-content: center
   align-items: center
 
@@ -132,6 +133,7 @@ header
   height: 50px
   width: 450px
   background-color: $instructions
+  color: $darker-grey
   @include shadowkit(0px, 4px, 0px, 0px, $instructions-shadow)
   margin: 10px auto 10px auto
   text-align: center
@@ -187,9 +189,12 @@ header
 
 
 //Start/Reset Button
+
+// Both 'start' and 'reset' buttons
 .start-reset
   @extend %btnrs
 
+// start button
 .start
   background-color: $green3
   @include shadowkit(0px, 4px, 0px, 0px, $green0)
@@ -203,7 +208,7 @@ header
     position: relative
     top: 4px
     
-
+// reset button
 .reset
   background-color: $red3
   @include shadowkit(0px, 4px, 0px, 0px, $red4)
@@ -222,19 +227,17 @@ header
 
 // Timer
 .timer
+  display: flex
+  justify-content: center
+  align-items: center
   background-color: $timer-yellow
+  color: $darker-grey
+  border-radius: 3px
+  cursor: pointer
   @include shadowkit(0px, 4px, 0px, 0px, $timer-shadow)
   align-self: end
-  @extend %btnbase
   height: 40px
   width: 170px
-  &:hover
-    background-color: $timer-yellow
-    color: black
-  &:active
-    @include shadowkit(0px, 4px, 0px, 0px, $timer-shadow)
-    top: 0px
-
 
 
 

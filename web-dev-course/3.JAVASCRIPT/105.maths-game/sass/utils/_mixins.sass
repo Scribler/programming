@@ -20,18 +20,25 @@
 
 // button extension
 %btnbase
+  @include shadowkit(0px, 4px, 0px, 0px, $clear-shadow)
+  @include transform-duration-none()
   display: flex
   justify-content: center
   align-items: center
   background-color: $background-grey-math
-  @include shadowkit(0px, 4px, 0px, 0px, $clear-shadow)
+  color: $darker-grey
   border-radius: 3px
   cursor: pointer
-  @include transform-duration-all()
   &:hover
     background-color: $dark-grey
     color: $background-grey-math
+    @include transform-duration-none()
+    @include shadowkit(0px, 5px, 0px, 0px, $clear-shadow)
+    position: relative
+    top: -1px
+
   &:active
+    @include transform-duration-all()
     @include shadowkit(0px, 0px, 0px, 0px, $clear-shadow)
     position: relative
     top: 4px
@@ -51,7 +58,6 @@
   border-radius: 3px
   cursor: pointer
   &:hover
-    // @include transform-duration-all()
     background-color: $dark-grey
     color: $background-grey-math
 

@@ -2,24 +2,38 @@
   margin: 0;
   padding: 0; }
 
-.answer, .timer {
+.answer {
+  box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0s;
+  -webkit-transition: all 0s;
+  -moz-transition: all 0s;
+  -ms-transition: all 0s;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #DEDEDE;
-  box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.2);
+  color: #202020;
   border-radius: 3px;
-  cursor: pointer;
-  transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s; }
-  .answer:hover, .timer:hover {
+  cursor: pointer; }
+  .answer:hover {
     background-color: #4E4F4F;
-    color: #DEDEDE; }
-  .answer:active, .timer:active {
+    color: #DEDEDE;
+    transition: all 0s;
+    -webkit-transition: all 0s;
+    -moz-transition: all 0s;
+    -ms-transition: all 0s;
+    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: -1px; }
+  .answer:active {
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
@@ -146,6 +160,7 @@ header {
   margin: 60px auto 10px auto;
   font-size: 100px;
   font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #202020;
   justify-content: center;
   align-items: center; }
 
@@ -154,6 +169,7 @@ header {
   height: 50px;
   width: 450px;
   background-color: #9E7DCE;
+  color: #202020;
   box-shadow: 0px 4px 0px 0px #6d4f97;
   -moz-box-shadow: 0px 4px 0px 0px #6d4f97;
   -webkit-box-shadow: 0px 4px 0px 0px #6d4f97;
@@ -233,21 +249,19 @@ header {
     top: 4px; }
 
 .timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #A7C948;
+  color: #202020;
+  border-radius: 3px;
+  cursor: pointer;
   box-shadow: 0px 4px 0px 0px #7A9236;
   -moz-box-shadow: 0px 4px 0px 0px #7A9236;
   -webkit-box-shadow: 0px 4px 0px 0px #7A9236;
   align-self: end;
   height: 40px;
   width: 170px; }
-  .timer:hover {
-    background-color: #A7C948;
-    color: black; }
-  .timer:active {
-    box-shadow: 0px 4px 0px 0px #7A9236;
-    -moz-box-shadow: 0px 4px 0px 0px #7A9236;
-    -webkit-box-shadow: 0px 4px 0px 0px #7A9236;
-    top: 0px; }
 
 footer {
   grid-column-start: 1;
