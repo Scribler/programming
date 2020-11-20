@@ -56,13 +56,23 @@
           </div>
 
           <div class="timer">
-            Time Remaining: <span id="remaining-time">00 </span> sec
+    <!-- use a paragraph tag otherwise you'll need to use '&nbsp;' in order to make spaces. -->
+            <p>
+              Time Remaining: <span id="remaining-time-value">60</span>sec
+            </p>
           </div>
+        </div>
+
+        <div class="gameover">
+          this content will be created by javascript later
+          <!-- <p>Game Over!</p> -->
+          <!-- <p>Your Score is: <span id="score"></span></p> -->
         </div>
 
 
       </div>
     </main>
+
 
 
     <footer>
@@ -78,7 +88,7 @@
                 <p>
                     <span property="addressLocality">Yourtown</span>,
                     <span property="addressRegion">AK</span>,
-                    <span property="postalCode">12345</span>   
+                    <span property="postalCode">12345</span>
                 </p>
                 <p property="addressCountry">United States of America</p>
             </address>

@@ -180,11 +180,9 @@ header
 // start reset button & Timer Container
 .btn-and-timer
   display: flex
-  justify-content: flex-end
-  flex-direction: row
   height: 40px
-  width: 450px
-  margin: 0px auto
+  width: 550px
+  margin: 30px auto 0px auto
 
 
 
@@ -193,6 +191,7 @@ header
 // Both 'start' and 'reset' buttons
 .start-reset
   @extend %btnrs
+  margin: 0 auto
 
 // start button
 .start
@@ -228,27 +227,46 @@ header
 // Timer
 .timer
   display: flex
-  justify-content: center
   align-items: center
+  justify-content: center
   background-color: $timer-yellow
   color: $darker-grey
   border-radius: 3px
   cursor: pointer
   @include shadowkit(0px, 4px, 0px, 0px, $timer-shadow)
-  align-self: end
   height: 40px
-  width: 170px
+  width: 200px
+  position: absolute
+  top: 430px
+  left: 370px
+  display: none
+  // "visibility: hidden" is still loaded on the page and will take up space on the page and interact with other elements
+  // "display: none" the object is not loaded to the page and will not interact with other elements
+  // visibility: hidden
 
-
-
-
-
-
-
+// Game Over
+.gameover
+  display: flex
+  flex-direction: column
+  // justify-content: space-around
+  background: linear-gradient(#F7CC69, #F67C6F)
+  position: absolute
+  top: 120px
+  left: 45px
+  height: 200px
+  width: 500px
+  text-align: center
+  font-size: 2.5em
+  color: $text-color-white
+  text-transform: uppercase
+  z-index: 2
+  display: none
 
 
 
 // MATHS GAME END
+
+
 
 
 // FOOTER
