@@ -35,8 +35,7 @@
           Try Again
         </div>
 
-        <div class="question">
-          7x9
+        <div class="question" id="question">
         </div>
 
         <div class="instructions">
@@ -44,18 +43,18 @@
         </div>
 
         <div class="answers-containter">
-          <div class="answer answerone">1</div>
-          <div class="answer answertwo">2</div>
-          <div class="answer answerthree">3</div>
-          <div class="answer answerfour">4</div>
+          <div class="answer answerone" id="a0" onclick="questioncheck()">1</div>
+          <div class="answer answertwo" id="a1">2</div>
+          <div class="answer answerthree" id="a2">3</div>
+          <div class="answer answerfour" id="a3">4</div>
         </div>
 
         <div class="btn-and-timer">
-          <div class="start-reset start" id="startReset" onclick="btnswap()">
-            Start Game
+          <div class="start-reset start" id="startReset" onclick="btnswap(), timerstart()">
+            Start
           </div>
 
-          <div class="timer">
+          <div class="timer" id="time">
     <!-- use a paragraph tag otherwise you'll need to use '&nbsp;' in order to make spaces. -->
             <p>
               Time Remaining: <span id="remaining-time-value">60</span>sec
@@ -63,10 +62,10 @@
           </div>
         </div>
 
-        <div class="gameover">
-          this content will be created by javascript later
-          <!-- <p>Game Over!</p> -->
-          <!-- <p>Your Score is: <span id="score"></span></p> -->
+        <div class="gameover" id="finished">
+          <!-- this content will be created by javascript later -->
+          <p>Game Over!</p>
+          <p>Your Score is: <span id="score"></span></p>
         </div>
 
 
