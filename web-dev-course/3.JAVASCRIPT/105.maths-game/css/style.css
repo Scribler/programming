@@ -121,6 +121,9 @@ header {
   -webkit-box-shadow: 0px 4px 0px 0px #9da853; }
 
 .correct {
+  display: none; }
+
+.correctvisible {
   background-color: green;
   color: #f8fbfb;
   position: absolute;
@@ -130,10 +133,12 @@ header {
   text-align: center;
   box-shadow: 0px 4px 0px 0px #0B4800;
   -moz-box-shadow: 0px 4px 0px 0px #0B4800;
-  -webkit-box-shadow: 0px 4px 0px 0px #0B4800;
-  display: none; }
+  -webkit-box-shadow: 0px 4px 0px 0px #0B4800; }
 
 .wrong {
+  display: none; }
+
+.wrongvisible {
   background-color: red;
   color: #f8fbfb;
   position: absolute;
@@ -143,8 +148,7 @@ header {
   text-align: center;
   box-shadow: 0px 4px 0px 0px #a90805;
   -moz-box-shadow: 0px 4px 0px 0px #a90805;
-  -webkit-box-shadow: 0px 4px 0px 0px #a90805;
-  display: none; }
+  -webkit-box-shadow: 0px 4px 0px 0px #a90805; }
 
 .question {
   display: flex;

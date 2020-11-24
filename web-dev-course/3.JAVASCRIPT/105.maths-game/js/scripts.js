@@ -46,7 +46,6 @@ var numgenerator = function(x){
   return Math.floor(Math.random() * x);
 }
 
-
 function genquestion(){
   //generate question and answers
   var x = numgenerator(11);
@@ -83,9 +82,23 @@ function genquestion(){
   }
   // Wrong question Click
   // Correct question Click
-  function questioncheck(){
-  
-  }
+}
+
+// ***** START HERE! *****
+// method 1 = souce box with correct answer
+// method 2 = re-solve for correct answer from current question and check result.
+
+
+function questioncheck(x){
+    var divcontent = document.getElementById(x).innerHTML;
+    if(divcontent == answer){
+      var rightAnswer = document.getElementById("correct");
+      rightAnswer.classList.add("correctvisible");
+    } else {
+      var wrongAnswer = document.getElementById("tryagain");
+      wrongAnswer.classList.add("wrongvisible");
+    }
+  console.log(answer);
 }
 
 

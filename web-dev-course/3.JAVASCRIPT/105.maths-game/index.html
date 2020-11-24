@@ -27,11 +27,11 @@
           score: <span id="score-value">0</span>
         </div>
 
-        <div class="correct">
+        <div class="correct" id="correct">
           Correct
         </div>
 
-        <div class="wrong">
+        <div class="wrong" id="tryagain">
           Try Again
         </div>
 
@@ -41,14 +41,14 @@
         <div class="instructions">
           Click on the correct answer.
         </div>
-
+<!-- answer buttons -->
         <div class="answers-containter">
-          <div class="answer answerone" id="a0" onclick="questioncheck()">1</div>
-          <div class="answer answertwo" id="a1">2</div>
-          <div class="answer answerthree" id="a2">3</div>
-          <div class="answer answerfour" id="a3">4</div>
+          <div class="answer answerone" id="a0" onclick="questioncheck(this.id)">1</div>
+          <div class="answer answertwo" id="a1" onclick="questioncheck(this.id)">2</div>
+          <div class="answer answerthree" id="a2" onclick="questioncheck(this.id)">3</div>
+          <div class="answer answerfour" id="a3" onclick="questioncheck(this.id)">4</div>
         </div>
-
+<!-- start/reset button -->
         <div class="btn-and-timer">
           <div class="start-reset start" id="startReset" onclick="btnswap(), timerstart()">
             Start
@@ -61,14 +61,11 @@
             </p>
           </div>
         </div>
-
         <div class="gameover" id="finished">
           <!-- this content will be created by javascript later -->
           <p>Game Over!</p>
           <p>Your Score is: <span id="score"></span></p>
         </div>
-
-
       </div>
     </main>
 

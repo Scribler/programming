@@ -92,6 +92,9 @@ header
 
 // Answer Confirmations
 .correct
+  display: none
+
+.correctvisible
   background-color: $green
   color: $text-color-white
   position: absolute
@@ -100,9 +103,11 @@ header
   width: 80px
   text-align: center
   @include shadowkit(0px, 4px, 0px, 0px, $dgreen-shadow)
-  display: none
 
 .wrong
+  display: none // make it disapear untill called by javascript
+
+.wrongvisible
   background-color: $red
   color: $text-color-white
   position: absolute
@@ -111,7 +116,6 @@ header
   width: 80px
   text-align: center
   @include shadowkit(0px, 4px, 0px, 0px, $red-shadow)
-  display: none // make it disapear untill called by javascript
 
 // Quesion container
 .question
