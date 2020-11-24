@@ -124,6 +124,7 @@ header {
   display: none; }
 
 .correctvisible {
+  display: inline;
   background-color: green;
   color: #f8fbfb;
   position: absolute;
@@ -139,6 +140,7 @@ header {
   display: none; }
 
 .wrongvisible {
+  display: inline;
   background-color: red;
   color: #f8fbfb;
   position: absolute;

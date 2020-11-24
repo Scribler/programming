@@ -22,8 +22,8 @@ function btnswap(){
     genquestion();
   }
 }
-
-
+var answer = 0;
+var question = 0;
 
 // Show Countdown Timber box and display gameover box when time is up
 function timerstart(){
@@ -50,8 +50,8 @@ function genquestion(){
   //generate question and answers
   var x = numgenerator(11);
   var y = numgenerator(11);
-  var question = x + "x" + y;
-  var answer = x * y;
+  question = x + "x" + y;
+  answer = x * y;
   // find a box to put the answer
   var answerboxnum = numgenerator(4);
   var answerbox = "a" + answerboxnum;
@@ -82,6 +82,8 @@ function genquestion(){
   }
   // Wrong question Click
   // Correct question Click
+  // return answer;
+  // return question;
 }
 
 // ***** START HERE! *****
@@ -93,6 +95,7 @@ function questioncheck(x){
     var divcontent = document.getElementById(x).innerHTML;
     if(divcontent == answer){
       var rightAnswer = document.getElementById("correct");
+      document.getElementById("tryagain").classList.remove("wrongvisible");
       rightAnswer.classList.add("correctvisible");
     } else {
       var wrongAnswer = document.getElementById("tryagain");
