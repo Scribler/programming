@@ -1,4 +1,7 @@
-var score = 200;
+var score = 0;
+var answer = 0;
+var question = 0;
+
 
 
 // Change start/reset button functions
@@ -22,8 +25,6 @@ function btnswap(){
     genquestion();
   }
 }
-var answer = 0;
-var question = 0;
 
 // Show Countdown Timber box and display gameover box when time is up
 function timerstart(){
@@ -97,9 +98,23 @@ function questioncheck(x){
       var rightAnswer = document.getElementById("correct");
       document.getElementById("tryagain").classList.remove("wrongvisible");
       rightAnswer.classList.add("correctvisible");
+      var clearverify = setTimeout(function(){
+        var rightAnswer = document.getElementById("correct");
+        rightAnswer.classList.remove("correctvisible");
+        rightAnswer.classList.add("correct");
+      }, 500)
+      score = score + 10;
+      document.getElementById("score-value").innerHTML = score;
+      console.log(score);
+      genquestion();
     } else {
       var wrongAnswer = document.getElementById("tryagain");
       wrongAnswer.classList.add("wrongvisible");
+      var clearverify = setTimeout(function(){
+        var wrongAnswer = document.getElementById("tryagain");
+        wrongAnswer.classList.remove("wrongvisible");
+        wrongAnswer.classList.add("wrong");
+      }, 1000)
     }
   console.log(answer);
 }
@@ -132,70 +147,6 @@ function questioncheck(x){
                 // generate new Q&A
             // no?
                 // show try again for 1s
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

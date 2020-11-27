@@ -13,7 +13,8 @@
     "compile_102": "node-sass 102.objects/sass/style.sass 102.objects/css/style.css -w",
     "compile_103": "node-sass 103.if-and-switch/sass/style.sass 103.if-and-switch/css/style.css -w",
     "compile_104": "node-sass 104.timing-events/sass/style.sass 104.timing-events/css/style.css -w",
-    "compile_105": "node-sass 105.maths-game/sass/style.sass 105.maths-game/css/style.css -w"
+    "compile_105": "node-sass 105.maths-game/sass/style.sass 105.maths-game/css/style.css -w",
+    "compile_106": "node-sass 106.maths-game-copy/sass/style.sass 106.maths-game-copy/css/style.css -w"
   },
   "author": "me",
   "license": "ISC",

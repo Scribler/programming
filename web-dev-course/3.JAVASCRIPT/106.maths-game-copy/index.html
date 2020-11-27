@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <title>Maths Game Lesson Version</title>
+    <link href="../images/site-icon.jpg" rel="shortcut icon">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <img src="images/main-logo.png">
+        <div>
+          <h1>Math's Game -Lesson Version-</h1>
+          <p>Practicing What I've Learned So Far</p>
+        </div>
+      </div>
+    </header>
+
+
+    <main>
+      <div class="container">
+
+        <div class="score">
+          score: <span id="score-value">0</span>
+        </div>
+
+        <div class="correct" id="correct">
+          Correct
+        </div>
+
+        <div class="wrong" id="tryagain">
+          Try Again
+        </div>
+
+        <div class="question" id="question">
+        </div>
+
+        <div class="instructions">
+          Click on the correct answer.
+        </div>
+<!-- answer buttons -->
+        <div class="answers-containter">
+          <div class="answer answerone" id="a0" onclick="questioncheck(this.id)">1</div>
+          <div class="answer answertwo" id="a1" onclick="questioncheck(this.id)">2</div>
+          <div class="answer answerthree" id="a2" onclick="questioncheck(this.id)">3</div>
+          <div class="answer answerfour" id="a3" onclick="questioncheck(this.id)">4</div>
+        </div>
+<!-- start/reset button -->
+        <div class="btn-and-timer">
+          <div class="start-reset start" id="startReset" onclick="btnswap(), timerstart()">
+            Start
+          </div>
+
+          <div class="timer" id="time">
+    <!-- use a paragraph tag otherwise you'll need to use '&nbsp;' in order to make spaces. -->
+            <p>
+              Time Remaining: <span id="remaining-time-value">60</span>sec
+            </p>
+          </div>
+        </div>
+        <div class="gameover" id="finished">
+          <!-- this content will be created by javascript later -->
+          <p>Game Over!</p>
+          <p>Your Score is: <span id="score"></span></p>
+        </div>
+      </div>
+    </main>
+
+
+
+    <footer>
+      <div class="footer-container">
+        <!-- Address Markup using "RDFa". See: "https://www.w3.org/TR/rdfa-primer/" for more information.-->
+        <section class="contact item" vocab="http://schema.org/" typeof="LocalBusiness">
+            <h2>Contact us!</h2>
+            <address property="email">
+                <a href="mailto:us@example.com">us@example.com</a>
+            </address>
+            <address property="address" typeof="PostalAddress">
+                <p property="streetAddress">123 Main St., Suite 404</p>
+                <p>
+                    <span property="addressLocality">Yourtown</span>,
+                    <span property="addressRegion">AK</span>,
+                    <span property="postalCode">12345</span>
+                </p>
+                <p property="addressCountry">United States of America</p>
+            </address>
+            <a href="000.credits/index.html">Credits</a>
+            <p>Created my free logo at LogoMakr.com</p>
+        </section>
+        <a href="../index.html" class="item">Back To JS Projects Page</a>
+      </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
