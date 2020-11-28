@@ -1,9 +1,26 @@
-console.log("Testing");
+//VARIABLES
+var playing = false;
 
-for(x=0; x<6; x++){
-  console.log(x);
-  document.getElementById("question").innerHTML += x;
+
+
+// if we click on the start/reset?
+document.getElementById("startreset").onclick = function(){
+    // if we are playing?
+  if(playing == true){
+    console.log("you are playing")
+    location.reload(); //reload page
+  } else {
+    console.log("you are not playing")
+  }
 }
+
+
+
+
+
+
+
+
 
 // if we click on the start/reset?
     // if we are playing?

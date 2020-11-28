@@ -81,23 +81,16 @@ function genquestion(){
     var wronganswer = a*b;
     document.getElementById(boxnum).innerHTML = wronganswer;
   }
-  // Wrong question Click
-  // Correct question Click
-  // return answer;
-  // return question;
-}
 
-// ***** START HERE! *****
-// method 1 = souce box with correct answer
-// method 2 = re-solve for correct answer from current question and check result.
-
-
+// Check validity of answer clicked
 function questioncheck(x){
     var divcontent = document.getElementById(x).innerHTML;
+    // compare contents of div to correct answer
     if(divcontent == answer){
       var rightAnswer = document.getElementById("correct");
       document.getElementById("tryagain").classList.remove("wrongvisible");
       rightAnswer.classList.add("correctvisible");
+      // Correct Box - appears for one second on correct answer
       var clearverify = setTimeout(function(){
         var rightAnswer = document.getElementById("correct");
         rightAnswer.classList.remove("correctvisible");
@@ -106,8 +99,10 @@ function questioncheck(x){
       score = score + 10;
       document.getElementById("score-value").innerHTML = score;
       console.log(score);
+      // Loads a new question after correct answer clicked
       genquestion();
     } else {
+      // Try again box appears for one second on selectiong wrong answer
       var wrongAnswer = document.getElementById("tryagain");
       wrongAnswer.classList.add("wrongvisible");
       var clearverify = setTimeout(function(){
