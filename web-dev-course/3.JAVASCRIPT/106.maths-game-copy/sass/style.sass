@@ -232,12 +232,6 @@ header
 
 // Timer
 .timer
-  display: none
-  // "visibility: hidden" is still loaded on the page and will take up space on the page and interact with other elements
-  // "display: none" the object is not loaded to the page and will not interact with other elements
-  // visibility: hidden
-
-.visible
   display: flex
   align-items: center
   justify-content: center
@@ -252,12 +246,25 @@ header
   position: absolute
   top: 430px
   left: 370px
+  display: none
+
+// .visible
+  // display: flex
+  // align-items: center
+  // justify-content: center
+  // background-color: $timer-yellow
+  // color: $darker-grey
+  // border-radius: 3px
+  // cursor: pointer
+  // @include shadowkit(0px, 4px, 0px, 0px, $timer-shadow)
+  // height: 40px
+  // width: 200px
+  // position: absolute
+  // top: 430px
+  // left: 370px
 
 // Game Over
 .gameover
-  display: none
-
-.gamevisible
   display: flex
   flex-direction: column
   justify-content: center
@@ -275,6 +282,9 @@ header
   z-index: 2
   p
     padding-top: 20px
+  display: none
+
+.gamevisible
 
 
 // MATHS GAME END

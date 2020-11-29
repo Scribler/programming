@@ -26,7 +26,7 @@ function btnswap(){
   }
 }
 
-// Show Countdown Timber box and display gameover box when time is up
+// Show Countdown Timer box and display gameover box when time is up
 function timerstart(){
   var counter = document.getElementById("remaining-time-value");
   var x = 60;
@@ -81,6 +81,7 @@ function genquestion(){
     var wronganswer = a*b;
     document.getElementById(boxnum).innerHTML = wronganswer;
   }
+}
 
 // Check validity of answer clicked
 function questioncheck(x){

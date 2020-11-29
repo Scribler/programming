@@ -253,9 +253,6 @@ header {
     top: 4px; }
 
 .timer {
-  display: none; }
-
-.visible {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -270,12 +267,10 @@ header {
   width: 200px;
   position: absolute;
   top: 430px;
-  left: 370px; }
-
-.gameover {
+  left: 370px;
   display: none; }
 
-.gamevisible {
+.gameover {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -289,8 +284,9 @@ header {
   font-size: 2.5em;
   color: #f8fbfb;
   text-transform: uppercase;
-  z-index: 2; }
-  .gamevisible p {
+  z-index: 2;
+  display: none; }
+  .gameover p {
     padding-top: 20px; }
 
 footer {

@@ -254,7 +254,21 @@ header {
     top: 4px; }
 
 .timer {
-  display: none; }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #A7C948;
+  color: #202020;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0px 4px 0px 0px #7A9236;
+  -moz-box-shadow: 0px 4px 0px 0px #7A9236;
+  -webkit-box-shadow: 0px 4px 0px 0px #7A9236;
+  height: 40px;
+  width: 200px;
+  position: absolute;
+  top: 430px;
+  left: 370px; }
 
 .visible {
   display: flex;

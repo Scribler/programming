@@ -233,10 +233,22 @@ header
 
 // Timer
 .timer
-  display: none
-  // "visibility: hidden" is still loaded on the page and will take up space on the page and interact with other elements
-  // "display: none" the object is not loaded to the page and will not interact with other elements
-  // visibility: hidden
+  // display: none
+  display: flex
+  align-items: center
+  justify-content: center
+  // text-align: center
+  background-color: $timer-yellow
+  color: $darker-grey
+  border-radius: 3px
+  cursor: pointer
+  @include shadowkit(0px, 4px, 0px, 0px, $timer-shadow)
+  height: 40px
+  width: 200px
+  position: absolute
+  top: 430px
+  left: 370px
+
 
 .visible
   display: flex
