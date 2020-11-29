@@ -1,16 +1,18 @@
 //VARIABLES
 var playing = false;
+var score;
 
 
 
 // if we click on the start/reset?
-document.getElementById("startreset").onclick = function(){
+document.getElementById("start-reset").onclick = function(){
     // if we are playing?
   if(playing == true){
     console.log("you are playing")
     location.reload(); //reload page
   } else {
     console.log("you are not playing")
+    score = 0;
   }
 }
 
