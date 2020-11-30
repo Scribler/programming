@@ -1,10 +1,42 @@
-//VARIABLES
+// VARIABLES
 var playing = false;
+var time_left = 2;
 var score;
-var time_left = 5;
-var time_feed = document.getElementById("remaining-time-value");
-var score_feed = document.getElementById("score-value");
-var game_over_score_feed = document.getElementById("game-over-score-value");
+var time_counter;
+
+var time_feed = document.getElementById("remaining-time-value"); // display remaining time
+var game_over_message = document.getElementById("finished");
+var score_feed = document.getElementById("score-value"); // display running score
+// var game_over_score_feed = document.getElementById("game-over-score-value"); // display final score
+
+
+
+// FUNCTIONS
+function start_countdown(){
+  time_feed.innerHTML = time_left;
+  time_counter = setInterval(function(){
+  
+    // yes -> continue
+    time_left--;
+    time_feed.innerHTML = time_left;
+
+    // no -> gameover
+    if(time_left == 0){
+      stop_countdown();
+    }
+  }, 1000)
+}
+
+function stop_countdown(){
+  clearInterval(time_counter);
+  // game_over_score_feed.innerHTML = score;
+  game_over_message.innerHTML = "<p>Game Over</p><p>Your Score Is: " + score + "</p>";
+  document.getElementById("finished").style.display = "flex";
+}
+
+
+
+// APPLICATION
 
 
 
@@ -45,55 +77,25 @@ document.getElementById("start-reset").onclick = function(){
 
     // start countdown
       // time left?
-    //
-    //
-    //
-    //
-    //
-    //
-    //      THIS 'startcountdown' FUNCTION IS NEW
-    //
-    //      IT STILL NEEDS TO BE ACTIVATED
-    //
-    //
-    //
-    //
-    //
-    // 
-    function startcountdown(){
-      document.getElementById("remaining-time-value").innerHTML = time_left;
-      var time_counter = setInterval(function(){
-          // yes -> continue
-        time_left--;
-        time_feed.innerHTML = time_left;
-
-          // no -> gameover
-        if(time_left == 0){
-          clearInterval(time_counter);
-          game_over_score_feed.innerHTML = score;
-          document.getElementById("finished").style.display = "flex";
-        }
-      }, 1000)
-    }
-
+    start_countdown();
   }
 }
 
 
 
 
-// if we click on the start/reset?
-    // if we are playing?
-        // reload page
+// if we click on the start/reset? *
+    // if we are playing? *
+        // reload page *
 
-    // if we are not playing?
-        // set score to 0
-        // show countdownbox
-        // reduce time by 1s in loops
-        // time left?
-            // yes -> continue
-            // no -> gameover
-        // change button to reset
+    // if we are not playing? *
+        // set score to 0 *
+        // show countdownbox *
+        // reduce time by 1s in loops *
+        // time left? *
+            // yes -> continue *
+            // no -> gameover *
+        // change button to reset *
         // generate new Q&A
 
 // if we click on answer box
