@@ -4,6 +4,7 @@ var time_left = 2;
 var score;
 var time_counter;
 
+var timer_container = document.getElementById("time");
 var time_feed = document.getElementById("remaining-time-value"); // display remaining time
 var game_over_message = document.getElementById("finished");
 var score_feed = document.getElementById("score-value"); // display running score
@@ -32,6 +33,7 @@ function stop_countdown(){
   // game_over_score_feed.innerHTML = score;
   game_over_message.innerHTML = "<p>Game Over</p><p>Your Score Is: " + score + "</p>";
   document.getElementById("finished").style.display = "flex";
+  timer_container.style.display = "none";
 }
 
 
