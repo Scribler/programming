@@ -16,32 +16,74 @@
     </header>
 
     <main>
-      <section class="basic Counter">
+      <section class="project project__text-converter">
 
-        <h2>Counting Machine</h2>
 
-        <div class="counting-machine">
+        <div class="project-area">
+          <h2>Text Converter</h2>
 
-          <p>Pick An option</p>
-          <p class="number" id="number">:0</p>
+          <div class="text-converter">
+            <div>
+              enter text to convert here
+            </div>
 
-          <div class="counting-options">
-            <button>Count Forwards</button>
-            <button>Count Backwards</button>
-            <button>Count by Tens</button>
-            <button>Count by Sevens</button>
+            <button>Convert Text</button>
+
+            <div>
+              converted text goes here
+            </div>
           </div>
-
-          <div class="stop-clear">
-            <button>STOP</button>
-            <button>CLEAR</button>
-          </div>
-
         </div>
+
+
+
+
+        <div class="notes-area">
+          <h2>Notes</h2>
+          <div class="text-area">
+          </div>
+        </div>
+
 
       </section>
 
 
+      <section class="project counter">
+        <div class="project-area counting-machine">
+          <h2>Counting Machine</h2>     <!-- Section title -->
+          <div class="number" id="number">0</div>     <!-- Number that changes -->
+          <!-- -->
+          <h3>Pick A Number</h3>
+          <div class="counting-options">    <!-- buttons for stuff :P  -->
+            <button id="forwards">Count Forwards</button>
+            <button id="backwards">Count Backwards</button>
+            <button id="tens">Count by Tens</button>
+            <button id="sevens">Count by Sevens</button>
+          </div>
+
+          <div class="stop-clear">
+            <button id="stop">STOP</button>
+            <button id="clear">CLEAR</button>
+          </div>
+        </div>
+
+
+
+
+        <div class="notes-area">
+          <h2>Notes</h2>
+          <div class="text-area">
+            <h3>Beginner SASS steps</h4>
+            <ol>
+              <li>FIRST - Build your sass in the main sass file. </li>
+              <li>Move parts of that file into their respective folders and link to them(@import "foo/bar")</li>
+              <li></li>
+            </ol>
+          </div>
+        </div>
+
+
+      </section>
 
 
 

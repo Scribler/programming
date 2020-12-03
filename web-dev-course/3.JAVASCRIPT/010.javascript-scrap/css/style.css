@@ -7,9 +7,81 @@ body, html {
   background-color: #edf2f7;
   color: #090A0A; }
 
+.counter .project-area {
+  background-color: #FEE1DC; }
+
+.counter .notes-area {
+  background-color: #E6FFD9; }
+
+.counter .number {
+  text-align: center;
+  font-size: 110px; }
+
+.counter h3 {
+  text-align: center;
+  padding: 5px 0 5px 0; }
+
 body {
   display: flex;
   flex-direction: column; }
+
+button {
+  background-color: #0500FE;
+  color: #edf2f7;
+  border-radius: 10px;
+  padding: 5px; }
+
+.project {
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  margin-bottom: 10px; }
+  .project h2 {
+    font-size: 40px;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    border-bottom: 1px solid #090A0A;
+    margin-bottom: 20px; }
+  .project .project-area {
+    border: 1px solid #3AA82F;
+    flex: 0 1 450px; }
+  .project .notes-area {
+    border: 1px solid #BA0009;
+    flex: 0 1 450px; }
+
+.notes-area ol {
+  padding-left: 30px; }
+  .notes-area ol li {
+    padding-bottom: 5px; }
+
+header {
+  display: flex;
+  align-items: center;
+  height: 60px; }
+  header img {
+    padding: 0 10px 0 10px; }
+
+.counter .project-area {
+  background-color: #FEE1DC; }
+
+.counter .notes-area {
+  background-color: #E6FFD9; }
+
+.counter .number {
+  text-align: center;
+  font-size: 110px; }
+
+.counter h3 {
+  text-align: center;
+  padding: 5px 0 5px 0; }
+
+.counting-options {
+  display: flex;
+  justify-content: center; }
+
+.stop-clear {
+  display: flex;
+  justify-content: center; }
 
 footer {
   margin-top: auto; }

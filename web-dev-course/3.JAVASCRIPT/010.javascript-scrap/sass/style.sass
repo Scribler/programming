@@ -6,6 +6,7 @@
 // @import "components/buttons"
 // @import "components/carousels"
 // @import "components/navigation"
+@import "pages/counter.sass"
 // @import "layout/header"
 // @import "layout/footer"
 // @import "layout/grid"
@@ -17,5 +18,93 @@ body
   flex-direction: column
 
 
+// UNIVERSAL STYLES
+button
+  background-color: $buttonblue
+  color: $buttontext
+  border-radius: 10px
+  padding: 5px
+
+.project
+  display: flex
+  justify-content: center
+  height: 80vh
+  margin-bottom: 10px
+  h2
+    font-size: 40px
+    text-align: center
+    padding: 15px 0 15px 0
+    border-bottom: 1px solid $text
+    margin-bottom: 20px
+  .project-area
+    border: 1px solid $green1
+    flex: 0 1 450px
+  .notes-area
+    border: 1px solid $red1
+    flex: 0 1 450px
+
+.notes-area
+  ol
+    padding-left: 30px
+    li
+      padding-bottom: 5px
+
+// HEADER
+
+header
+  display: flex
+  align-items: center
+  height: 60px
+  img
+    padding: 0 10px 0 10px
+
+
+
+// COUNTER
+
+.counter
+  .project-area
+    background-color: #FEE1DC
+  
+  .notes-area
+    background-color: #E6FFD9
+  
+  .number
+    text-align: center
+    font-size: 110px
+
+  h3
+    text-align: center
+    padding: 5px 0 5px 0
+
+.counting-options
+  display: flex
+  justify-content: center
+
+.stop-clear
+  display: flex
+  justify-content: center
+
+
+// FOOTER
+
 footer
   margin-top: auto;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
