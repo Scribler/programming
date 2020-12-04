@@ -13,6 +13,17 @@ var score_feed = document.getElementById("score-value"); // display running scor
 
 
 // FUNCTIONS
+
+// This function is utilized at the end of start countdown when timer hits '0'.
+function stop_countdown(){
+  clearInterval(time_counter);
+  // game_over_score_feed.innerHTML = score;
+  game_over_message.innerHTML = "<p>Game Over</p><p>Your Score Is: " + score + "</p>";
+  document.getElementById("finished").style.display = "flex";
+  timer_container.style.display = "none";
+}
+
+// This function starts (and ends at '0') the countdown.
 function start_countdown(){
   time_feed.innerHTML = time_left;
   time_counter = setInterval(function(){
@@ -28,13 +39,7 @@ function start_countdown(){
   }, 1000)
 }
 
-function stop_countdown(){
-  clearInterval(time_counter);
-  // game_over_score_feed.innerHTML = score;
-  game_over_message.innerHTML = "<p>Game Over</p><p>Your Score Is: " + score + "</p>";
-  document.getElementById("finished").style.display = "flex";
-  timer_container.style.display = "none";
-}
+
 
 
 
@@ -42,7 +47,7 @@ function stop_countdown(){
 
 
 
-// CLICK START / RESET BUTTON
+// BUTTON -- CLICK START / RESET BUTTON
 
 document.getElementById("start-reset").onclick = function(){
   // if we are playing?
