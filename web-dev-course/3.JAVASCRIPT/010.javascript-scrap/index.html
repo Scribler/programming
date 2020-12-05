@@ -66,6 +66,20 @@
             <button id="clear">CLEAR</button>
           </div>
         </div>
+        <div class="second-counter">
+          <input type="number" id="value">
+          <br />
+          <br />
+
+          <button id="add">add</button>
+          <button id="subtract">subtract</button>
+          <button id="multiply">multiply by</button>
+          <button id="divide">divide by</button>
+          <button id="stopping">STOP</button>
+
+          <div id="result">0</div>
+        </div>
+
 
 
 
@@ -77,7 +91,66 @@
             <ol>
               <li>FIRST - Build your sass in the main sass file. </li>
               <li>Move parts of that file into their respective folders and link to them(@import "foo/bar")</li>
-              <li></li>
+            </ol>
+            <h3>Javascript Tips</h3>
+            <ol>
+              <li>START with a status variable that your functions can relate to.</li>
+              <li>Make a function for each action if possible</li>
+              <li>For BUTTONS use:
+                <br />
+                <br />
+                <span class="code-yellow">document</span>.<span class="code-blue">getElementById</span>("<span class="code-green">sevens</span>).onclick = <span class="code-purple">function</span>(){
+                <br />
+                <span class="tab"></span>yourCodeHere;
+                <br />
+                }</li>
+              <br />
+              <li>
+                If you want to use a counter you must make the interval accesible from outside the function. To do this follow these steps.
+                <ol>
+                  <!-- first list item -->
+                  <li>First set an open variable. You will assign the interval too this later.
+                    <br />
+                    <br />
+                    <div class="white-box">
+                      <span class="code-purple">var</span> foo;
+                    </div>
+                    <br />
+                  </li>
+                    <!-- second list item -->
+                  <li>In your function set the interval to 'foo'
+                    <br />
+                    <br />
+                    <div class="white-box">
+                      <span class="code-purple">function</span> <span class="code-blue">bar</span>(){
+                      <br />
+                      <span class="tab"></span>foo = <span class="code-blue">setInterval</span>(<span class="code-purple">function</span>(){}, 1000)<br />
+                      }
+                    </div>
+                  </li>
+                    <br />
+                  <li>
+                    Now you can use 'clearInterval' on the assigned variable "foo" to stop the interval even though you aren't in the scope of the counter's function.
+                    <br />
+                    <br />
+                    <div class="white-box">
+                      <span class="code-blue">clearInterval</span>(foo)
+                    </div>
+                    <br />
+                    <br />
+                    For button:
+                    <br />
+                    <div class="white-box">
+                      <span class="code-yellow">document</span>.<span class="code-blue">getElementById</span>("<span class="code-green">sevens</span>").onclick = <span class="code-purple">function</span>(){
+                      <br />
+                      <span class="tab"></span><span class="code-blue">clearInterval</span>(foo)
+                      <br />
+                      }
+                    </div>
+                  </li>
+                  </li>
+                </ol>
+              </li>
             </ol>
           </div>
         </div>
@@ -88,6 +161,9 @@
 
 
 
+                    <span class="tab"></span>
+                    <div class="white-box">
+                    </div>
 
 
 

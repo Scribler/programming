@@ -25,6 +25,14 @@ body {
   display: flex;
   flex-direction: column; }
 
+.tab {
+  padding-left: 14px; }
+
+.white-box {
+  background-color: #edf2f7;
+  padding: 20px;
+  border: 1px solid #3B3C3C; }
+
 button {
   background-color: #0500FE;
   color: #edf2f7;
@@ -34,7 +42,6 @@ button {
 .project {
   display: flex;
   justify-content: center;
-  height: 80vh;
   margin-bottom: 10px; }
   .project h2 {
     font-size: 40px;
@@ -43,16 +50,17 @@ button {
     border-bottom: 1px solid #090A0A;
     margin-bottom: 20px; }
   .project .project-area {
+    padding-bottom: 10px;
     border: 1px solid #3AA82F;
-    flex: 0 1 450px; }
+    flex: 0 1 650px; }
   .project .notes-area {
+    padding: 0 20px 10px 0;
     border: 1px solid #BA0009;
-    flex: 0 1 450px; }
-
-.notes-area ol {
-  padding-left: 30px; }
-  .notes-area ol li {
-    padding-bottom: 5px; }
+    flex: 0 1 650px; }
+    .project .notes-area ol {
+      padding-left: 30px; }
+      .project .notes-area ol li {
+        padding-bottom: 5px; }
 
 header {
   display: flex;
@@ -82,6 +90,18 @@ header {
 .stop-clear {
   display: flex;
   justify-content: center; }
+
+.code-purple {
+  color: #705BA2; }
+
+.code-blue {
+  color: #5282BA; }
+
+.code-yellow {
+  color: #D6B66A; }
+
+.code-green {
+  color: #7FBD74; }
 
 footer {
   margin-top: auto; }

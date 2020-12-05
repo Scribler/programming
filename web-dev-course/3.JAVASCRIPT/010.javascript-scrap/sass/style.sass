@@ -19,6 +19,15 @@ body
 
 
 // UNIVERSAL STYLES
+
+.tab
+  padding-left: 14px;
+
+.white-box
+  background-color: $background
+  padding: 20px
+  border: 1px solid #3B3C3C
+
 button
   background-color: $buttonblue
   color: $buttontext
@@ -28,7 +37,7 @@ button
 .project
   display: flex
   justify-content: center
-  height: 80vh
+  // height: 90vh
   margin-bottom: 10px
   h2
     font-size: 40px
@@ -37,17 +46,18 @@ button
     border-bottom: 1px solid $text
     margin-bottom: 20px
   .project-area
+    padding-bottom: 10px
     border: 1px solid $green1
-    flex: 0 1 450px
+    flex: 0 1 650px
   .notes-area
+    padding: 0 20px 10px 0
     border: 1px solid $red1
-    flex: 0 1 450px
+    flex: 0 1 650px
+    ol
+      padding-left: 30px
+      li
+        padding-bottom: 5px
 
-.notes-area
-  ol
-    padding-left: 30px
-    li
-      padding-bottom: 5px
 
 // HEADER
 
@@ -84,6 +94,19 @@ header
 .stop-clear
   display: flex
   justify-content: center
+
+// NOTES AREA
+
+.code-purple
+  color: $codepurple 
+
+.code-blue
+  color: $codeblue
+.code-yellow
+  color: #D6B66A
+.code-green
+  color: #7FBD74
+
 
 
 // FOOTER
