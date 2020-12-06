@@ -1,3 +1,20 @@
+//
+//
+// TEXT CONVERTER
+//
+//
+
+
+// Convert text to rainbow colors
+
+
+
+//
+//
+// COUNTER
+//
+//
+
 
 // VARIABLES
 var counting = false;
