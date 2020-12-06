@@ -1,133 +1,99 @@
 // VARIABLES
 var playing = false;
-var time_left = 2;
 var score;
-var time_counter;
+var time_remaining;
+var action;
 
-var timer_container = document.getElementById("time");
-var time_feed = document.getElementById("remaining-time-value"); // display remaining time
+var start_reset = document.getElementById("start-reset");
+var time_feed = document.getElementById("time-value"); // display remaining time
 var game_over_message = document.getElementById("finished");
 var score_feed = document.getElementById("score-value"); // display running score
-// var game_over_score_feed = document.getElementById("game-over-score-value"); // display final score
 
-
-
+//
+//
 // FUNCTIONS
+//
+//
 
-// This function is utilized at the end of start countdown when timer hits '0'.
-function stop_countdown(){
-  clearInterval(time_counter);
-  // game_over_score_feed.innerHTML = score;
-  game_over_message.innerHTML = "<p>Game Over</p><p>Your Score Is: " + score + "</p>";
-  document.getElementById("finished").style.display = "flex";
-  timer_container.style.display = "none";
-}
-
-// This function starts (and ends at '0') the countdown.
-function start_countdown(){
-  time_feed.innerHTML = time_left;
-  time_counter = setInterval(function(){
-  
-    // yes -> continue
-    time_left--;
-    time_feed.innerHTML = time_left;
-
-    // no -> gameover
-    if(time_left == 0){
-      stop_countdown();
-    }
-  }, 1000)
-}
-
-
-
-
-
-// APPLICATION
-
-
-
-// BUTTON -- CLICK START / RESET BUTTON
-
-document.getElementById("start-reset").onclick = function(){
-  // if we are playing?
+//Swap start/reset button
+function swap_button(){
   if(playing == true){
-    location.reload(); //reload page
-
-
-  //if we are not yet playing?
+    start_reset.innerHTML = "Reset Game";
+    start_reset.classList.add("reset");
+    start_reset.classList.remove("start");
   } else {
-    
-    // set playing to true
-    
-    playing = true;
-    
-
-    // set score to 0
-    // NOTE "score" and "score-value" must have different names or the javascript won't work.
-    
-    score = 0;
-    score_feed.innerHTML = score;
-
-
-    // change button name and style to 'reset game'
-    
-    document.getElementById("start-reset").innerHTML = "Reset Game";
-    document.getElementById("start-reset").classList.add("reset");
-    document.getElementById("start-reset").classList.remove("start");
-    
-
-    // show countdownbox
-    
-    document.getElementById("time").style.display = "flex";
-
-
-    // start countdown
-      // time left?
-    start_countdown();
+    start_reset.innerHTML = "Start";
+    start_reset.classList.add("start");
+    start_reset.classList.remove("reset");
   }
 }
 
 
 
+// Start countdown (TERMINATE when 0)
+function start_countdown(){
+  time_feed.innerHTML = time_remaining;
+  playing = true;
+  // swap_button();
+  action = setInterval(function(){
+    time_remaining -= 1;
+    time_feed.innerHTML = time_remaining;
 
-// if we click on the start/reset? *
-    // if we are playing? *
-        // reload page *
+    if(time_remaining == 0){// game over
+      stop_countdown();
+    }
+  }, 1000)
+}
 
-    // if we are not playing? *
-        // set score to 0 *
-        // show countdownbox *
-        // reduce time by 1s in loops *
-        // time left? *
-            // yes -> continue *
-            // no -> gameover *
-        // change button to reset *
-        // generate new Q&A
+// Stop countdown
+function stop_countdown(){ // game over
+  clearInterval(action);
+  game_over_message.innerHTML = "<p>Game Over</p><p>Your Score Is: " + score + "</p>";
+  show("finished", "flex");
+  hide("timer");
+  hide("correct");
+  hide("wrong");
+  swap_button(); // change button name and style to 'reset game'
+}
 
-// if we click on answer box
-    // if we are playing?
-        // correct answer
-            // yes?
-                // Increase score by 1
-                // show correct box for 1s
-                // generate new Q&A
-            // no?
-                // show try again for 1s
+// show element
+function show(element_name, style){
+  document.getElementById(element_name).style.display = style;
+}
 
+// hide element
+function hide(element_name){
+  document.getElementById(element_name).style.display = "none";
+}
 
+// generate questions and answers
+function generate_qa(){
 
+}
 
-// ********* change (ctrl u and ctrl d) to (ctrl k and ctrl j) *********
 //
 //
+// APPLICATION
 //
-// THIS WILL STOP CONSTANT UNDO ERRORS!!!!!
+//
 
+// BUTTON -- CLICK START / RESET BUTTON
+document.getElementById("start-reset").onclick = function(){
+  if(playing == true){ // if we are playing?
+    location.reload(); //reload page
 
-
-
-
-
+  } else { //if we are not yet playing?
+    playing = true; // set playing to true
+    swap_button(); // change button name and style to 'reset game'
+    score = 0; // set score to 0
+    score_feed.innerHTML = score;
+    show("timer", "flex"); // show countdownbox
+    time_remaining = 4; // countdown starting value
+    start_countdown(); // start countdown
+    generate_qa(); // generate questions and answers
+  }
+}
 
 console.log("This is the Lesson Version");
+
+
