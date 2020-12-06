@@ -49,16 +49,27 @@
 
 
       <section class="project counter">
+
+
+
+
+
+
+
         <div class="project-area counting-machine">
           <h2>Counting Machine</h2>     <!-- Section title -->
+
           <div class="number" id="number">0</div>     <!-- Number that changes -->
-          <!-- -->
+
           <h3>Pick A Number</h3>
+          
+          <input type="number" id="value">
+          
           <div class="counting-options">    <!-- buttons for stuff :P  -->
-            <button id="forwards">Count Forwards</button>
-            <button id="backwards">Count Backwards</button>
-            <button id="tens">Count by Tens</button>
-            <button id="sevens">Count by Sevens</button>
+            <button id="add">add</button>
+            <button id="subtract">subtract</button>
+            <button id="multiply">multiply by</button>
+            <button id="divide">divide by</button>
           </div>
 
           <div class="stop-clear">
@@ -66,26 +77,12 @@
             <button id="clear">CLEAR</button>
           </div>
         </div>
-        <div class="second-counter">
-          <input type="number" id="value">
-          <br />
-          <br />
-
-          <button id="add">add</button>
-          <button id="subtract">subtract</button>
-          <button id="multiply">multiply by</button>
-          <button id="divide">divide by</button>
-          <button id="stopping">STOP</button>
-
-          <div id="result">0</div>
-        </div>
-
-
-
 
 
         <div class="notes-area">
           <h2>Notes</h2>
+
+
           <div class="text-area">
             <h3>Beginner SASS steps</h4>
             <ol>
@@ -93,9 +90,13 @@
               <li>Move parts of that file into their respective folders and link to them(@import "foo/bar")</li>
             </ol>
             <h3>Javascript Tips</h3>
+            <!-- list 1 -->
             <ol>
+              <!-- l1 i1 -->
               <li>START with a status variable that your functions can relate to.</li>
-              <li>Make a function for each action if possible</li>
+              <!-- l1 i2 -->
+              <li>Make a function for each action if possible</li> 
+              <!-- l1 i3 -->
               <li>For BUTTONS use:
                 <br />
                 <br />
@@ -103,12 +104,17 @@
                 <br />
                 <span class="tab"></span>yourCodeHere;
                 <br />
-                }</li>
+                }
+              </li>
               <br />
+
+
+              <!-- l1 i4 -->
               <li>
                 If you want to use a counter you must make the interval accesible from outside the function. To do this follow these steps.
+                <!-- list 2 -->
                 <ol>
-                  <!-- first list item -->
+                  <!-- list2 item1 -->
                   <li>First set an open variable. You will assign the interval too this later.
                     <br />
                     <br />
@@ -117,7 +123,8 @@
                     </div>
                     <br />
                   </li>
-                    <!-- second list item -->
+
+                  <!-- list 2 item2 -->
                   <li>In your function set the interval to 'foo'
                     <br />
                     <br />
@@ -129,6 +136,8 @@
                     </div>
                   </li>
                     <br />
+
+                  <!-- list2 item3 -->
                   <li>
                     Now you can use 'clearInterval' on the assigned variable "foo" to stop the interval even though you aren't in the scope of the counter's function.
                     <br />
@@ -148,9 +157,10 @@
                       }
                     </div>
                   </li>
-                  </li>
                 </ol>
               </li>
+
+
             </ol>
           </div>
         </div>
