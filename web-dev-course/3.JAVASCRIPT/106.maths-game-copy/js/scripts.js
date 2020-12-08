@@ -9,6 +9,7 @@ var time_feed = document.getElementById("time-value"); // display remaining time
 var game_over_message = document.getElementById("finished");
 var score_feed = document.getElementById("score-value"); // display running score
 
+
 //
 //
 // FUNCTIONS
@@ -53,7 +54,11 @@ function stop_countdown(){ // game over
   hide("timer");
   hide("correct");
   hide("wrong");
+  playing = false;
   swap_button(); // change button name and style to 'reset game'
+  // start_reset.innerHTML = "Start";
+  // start_reset.classList.add("start");
+  // start_reset.classList.remove("reset");
 }
 
 // show element
@@ -66,10 +71,24 @@ function hide(element_name){
   document.getElementById(element_name).style.display = "none";
 }
 
+function numgen(y){
+  x = Math.floor(Math.random() * y);
+  return x;
+}
+
+
 // generate questions and answers
 function generate_qa(){
+  var x = numgen(10); // first question number
+  var y = numgen(10); // second question number
+  var correct_answer = x * y; //correct answer
+  console.log(correct_answer);
 
+
+  console.log('program will now generate a question and answers');
 }
+
+generate_qa();
 
 //
 //
@@ -89,6 +108,7 @@ document.getElementById("start-reset").onclick = function(){
     score_feed.innerHTML = score;
     show("timer", "flex"); // show countdownbox
     time_remaining = 4; // countdown starting value
+    hide("finished"); // hide gameover box
     start_countdown(); // start countdown
     generate_qa(); // generate questions and answers
   }
