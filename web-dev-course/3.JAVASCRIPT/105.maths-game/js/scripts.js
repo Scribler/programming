@@ -1,3 +1,5 @@
+// VARIABLES
+
 var score = 0;
 var answer = 0;
 var question = 0;
@@ -9,25 +11,25 @@ var question = 0;
 // - make timer visible
 // - generate first question
 // - reset page
+
+
 function btnswap(){
-  //reload page on click
-  if(document.getElementById("startReset").innerHTML == "Reset"){
+  if(document.getElementById("startReset").innerHTML == "Reset"){ //reload page on click
     location.reload();
-  // start game on click
-  } else {
-    // change button text to reset
-    document.getElementById("startReset").innerHTML = "Reset";
+
+  } else { // start game on click
+    document.getElementById("startReset").innerHTML = "Reset"; // change button text to reset
     document.getElementById("startReset").classList.remove("start");
     document.getElementById("startReset").classList.add("reset");
-    // make timer visible
-    document.getElementById("time").classList.add("visible");
-    // generate first question
-    genquestion();
+    document.getElementById("time").classList.add("visible"); // make timer visible
+
+    genquestion(); // generate first question
   }
 }
 
-// Show Countdown Timer box and display gameover box when time is up
-function timerstart(){
+
+
+function timerstart(){ // Show Countdown Timer box and display gameover box when time is up
   var counter = document.getElementById("remaining-time-value");
   var x = 60;
   var myCounter = setInterval(function(){
@@ -44,13 +46,13 @@ function timerstart(){
 // Generate new Questions
 
 var numgenerator = function(x){
-  return Math.floor(Math.random() * x);
+  return Math.round(Math.random() * x);
 }
 
 function genquestion(){
   //generate question and answers
-  var x = numgenerator(11);
-  var y = numgenerator(11);
+  var x = numgenerator(10);
+  var y = numgenerator(10);
   question = x + "x" + y;
   answer = x * y;
   // find a box to put the answer
@@ -91,8 +93,7 @@ function questioncheck(x){
       var rightAnswer = document.getElementById("correct");
       document.getElementById("tryagain").classList.remove("wrongvisible");
       rightAnswer.classList.add("correctvisible");
-      // Correct Box - appears for one second on correct answer
-      var clearverify = setTimeout(function(){
+      var clearverify = setTimeout(function(){ // Correct Box - appears for one second on correct answer
         var rightAnswer = document.getElementById("correct");
         rightAnswer.classList.remove("correctvisible");
         rightAnswer.classList.add("correct");
@@ -100,11 +101,10 @@ function questioncheck(x){
       score = score + 10;
       document.getElementById("score-value").innerHTML = score;
       console.log(score);
-      // Loads a new question after correct answer clicked
-      genquestion();
+
+      genquestion(); // Loads a new question after correct answer clicked
     } else {
-      // Try again box appears for one second on selectiong wrong answer
-      var wrongAnswer = document.getElementById("tryagain");
+      var wrongAnswer = document.getElementById("tryagain"); // Try again box appears for one second on selectiong wrong answer
       wrongAnswer.classList.add("wrongvisible");
       var clearverify = setTimeout(function(){
         var wrongAnswer = document.getElementById("tryagain");

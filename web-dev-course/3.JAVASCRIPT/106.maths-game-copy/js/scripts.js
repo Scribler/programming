@@ -8,6 +8,8 @@ var start_reset = document.getElementById("start-reset");
 var time_feed = document.getElementById("time-value"); // display remaining time
 var game_over_message = document.getElementById("finished");
 var score_feed = document.getElementById("score-value"); // display running score
+var correct_answer;
+var correct_position;
 
 
 //
@@ -71,22 +73,34 @@ function hide(element_name){
   document.getElementById(element_name).style.display = "none";
 }
 
-function numgen(y){
-  x = Math.floor(Math.random() * y);
+function numgen(y){ // use 9 instead of ten for numbers between 1 and 100
+  var x;
+  x = 1 + Math.round(Math.random() * y); // adding '1' at the begginning stops it from returning '0'
   return x;
 }
 
-
 // generate questions and answers
 function generate_qa(){
-  var x = numgen(10); // first question number
-  var y = numgen(10); // second question number
-  var correct_answer = x * y; //correct answer
-  console.log(correct_answer);
+  var x = numgen(9); // first question number
+  var y = numgen(9); // second question number
+  var question = document.getElementById("question")
+  correct_position = numgen(3);
 
-
-  console.log('program will now generate a question and answers');
+  correct_answer = x * y; //correct answer
+  question.innerHTML = x + "X" + y;
+  document.getElementById("box" + correct_position).innerHTML = correct_answer;
+  wrong_answers();
 }
+
+function wrong_answers(){
+  var positions = [0, 1, 2, 3];
+  positions.splice(correct_position, 1);
+  console.log(positions);
+
+
+}
+
+wrong_answers();
 
 generate_qa();
 
