@@ -99,9 +99,13 @@ function generate_qa(){
       
 
 
-
-
+      //
+      //
       // PROGRAM SHOULD NOT MAKE TWO WRONG ANSWERS THAT ARE THE SAME
+      //
+      // solve the issue here (                   )
+      //
+      //
 
 
 
