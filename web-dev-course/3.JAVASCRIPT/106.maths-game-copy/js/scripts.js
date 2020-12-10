@@ -93,8 +93,23 @@ function generate_qa(){
   for(i = 1; i < 5; i++){ // generate wrong answers and place in other boxes
     if(i !== correct_position){
       var wrong_answer = numgen(9) * numgen(9);
-      document.getElementById("box" + i).innerHTML = wrong_answer; // fill one box with the wrong answer
+      while(wrong_answer == correct_answer){ // stops program from making a 'wrong' answer the same as the correct answer
+        var wrong_answer = numgen(9) * numgen(9);
+      }
+      
 
+
+
+
+      // PROGRAM SHOULD NOT MAKE TWO WRONG ANSWERS THAT ARE THE SAME
+
+
+
+
+
+
+
+      document.getElementById("box" + i).innerHTML = wrong_answer; // fill one box with the wrong answer
     }
 
   }
