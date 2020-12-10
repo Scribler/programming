@@ -1,0 +1,105 @@
+// Imports - uncomment when needed
+
+@import "utils/variables"
+@import "base/base"
+// @import "base/typography"
+// @import "components/buttons"
+// @import "components/carousels"
+// @import "components/navigation"
+// @import "layout/header"
+// @import "layout/footer"
+// @import "layout/grid"
+// @import "utils/functions>"
+// @import "utils/mixins"
+
+// ACTIVATE PAGES AND SPLIT OFF UNIQUE STYLING
+// @import "pages/how-to-become-a-programmer"
+
+
+// UNIVERSAL STYLES
+.indent
+  padding-left: 30px
+
+li
+  margin-left: 45px
+
+
+
+
+// HEADER
+header
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: $green0
+  div
+    text-align: center
+    padding: 20px
+
+.personal-logo
+  height: 60px
+  width: 60px
+
+
+
+
+
+
+MAIN
+main
+  display: flex
+  height: 100%
+  // justify-content: center
+
+.sidebar
+  display: flex
+  flex-direction: column
+  background-color: $yellow5
+  flex: 0 1 200px
+  height: 100%
+  padding: 10px 0 20px 10px
+  // display: none
+  h2
+    padding-bottom: 10px
+  a
+    font-size: 12px
+
+
+
+
+article
+  display: flex
+  justify-content: center
+  flex: 0 1 900px
+
+.article-inner
+  display: flex
+  flex-direction: column
+
+.article-title
+  display: flex
+  justify-content: center
+  align-items: center
+  flex: 0 1 80px
+
+.article-content
+  display: flex
+  flex-direction: column
+  padding: 5px
+  // flex: 0 1 auto
+  p
+    flex: 0 1 38px
+    line-height: 1.5em
+
+
+
+// FOOTER
+
+footer
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  background-color: $red2
+  margin-top: auto
+  flex: 0 1 80px
