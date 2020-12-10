@@ -88,19 +88,50 @@ function generate_qa(){
 
   correct_answer = x * y; //correct answer
   question.innerHTML = x + "X" + y;
-  document.getElementById("box" + correct_position).innerHTML = correct_answer;
-  wrong_answers();
+  document.getElementById("box" + correct_position).innerHTML = correct_answer; // fill one box with the correct answer
+
+  for(i = 1; i < 5; i++){ // generate wrong answers and place in other boxes
+    if(i !== correct_position){
+      var wrong_answer = numgen(9) * numgen(9);
+      document.getElementById("box" + i).innerHTML = wrong_answer; // fill one box with the wrong answer
+
+    }
+
+  }
+  
+
+  // wrong_answers();
 }
 
-function wrong_answers(){
-  var positions = [0, 1, 2, 3];
-  positions.splice(correct_position, 1);
-  console.log(positions);
 
 
-}
 
-wrong_answers();
+
+
+// need to make 
+
+
+// function wrong_answers(){
+  // var positions = [0, 1, 2, 3];
+  // positions.splice(correct_position, 1);
+  // console.log(positions);
+// }
+//
+// wrong_answers();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 generate_qa();
 
