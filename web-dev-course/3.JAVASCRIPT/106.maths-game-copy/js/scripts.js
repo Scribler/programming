@@ -64,13 +64,13 @@ function stop_countdown(){ // game over
 }
 
 // show element
-function show(element_name, style){
-  document.getElementById(element_name).style.display = style;
+function show(id, style){
+  document.getElementById(id).style.display = style;
 }
 
 // hide element
-function hide(element_name){
-  document.getElementById(element_name).style.display = "none";
+function hide(id){
+  document.getElementById(id).style.display = "none";
 }
 
 function numgen(y){ // use 9 instead of ten for numbers between 1 and 100

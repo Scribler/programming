@@ -1,18 +1,24 @@
 //
-//
-// TEXT CONVERTER
-//
+// NON REPEATING NUMBER GENERATOR
 //
 
+var x = document.getElementById("x");
+var y = document.getElementById("y");
+var z = document.getElementById("z");
 
-// Convert text to rainbow colors
+function random_number(x){
+  x.innerHTML = Math.round(Math.random *10);
+}
+
+random_number(x);
+random_number(y);
+random_number(z);
 
 
 
-//
+
 //
 // COUNTER
-//
 //
 
 

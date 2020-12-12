@@ -43,24 +43,32 @@ button {
   display: flex;
   justify-content: center;
   margin-bottom: 10px; }
-  .project h2 {
-    font-size: 40px;
-    text-align: center;
-    padding: 15px 0 15px 0;
-    border-bottom: 1px solid #090A0A;
-    margin-bottom: 20px; }
-  .project .project-area {
-    padding-bottom: 10px;
-    border: 1px solid #3AA82F;
-    flex: 0 1 650px; }
-  .project .notes-area {
-    padding: 0 20px 10px 0;
-    border: 1px solid #BA0009;
-    flex: 0 1 650px; }
-    .project .notes-area ol {
-      padding-left: 30px; }
-      .project .notes-area ol li {
-        padding-bottom: 5px; }
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  padding: 15px 0 15px 0;
+  border-bottom: 1px solid #090A0A;
+  margin-bottom: 20px; }
+
+.project-area {
+  padding-bottom: 10px;
+  border: 1px solid #3AA82F;
+  flex: 0 1 650px; }
+
+.notes-area {
+  padding: 0 20px 10px 0;
+  border: 1px solid #BA0009;
+  flex: 0 1 650px; }
+
+ul {
+  padding-left: 30px; }
+
+ol {
+  padding-left: 30px; }
+
+li {
+  padding-bottom: 5px; }
 
 header {
   display: flex;
@@ -68,6 +76,10 @@ header {
   height: 60px; }
   header img {
     padding: 0 10px 0 10px; }
+
+.number-generator {
+  margin: 10px;
+  height: 400px; }
 
 .counter .project-area {
   background-color: #FEE1DC; }
