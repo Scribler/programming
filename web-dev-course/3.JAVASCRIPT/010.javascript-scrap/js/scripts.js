@@ -1,18 +1,84 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //
 // NON REPEATING NUMBER GENERATOR
 //
+var getx = document.getElementById("x");
+var gety = document.getElementById("y");
+var getz = document.getElementById("z");
 
-var x = document.getElementById("x");
-var y = document.getElementById("y");
-var z = document.getElementById("z");
+var x = generator();
+var y;
+var z;
 
-function random_number(x){
-  x.innerHTML = Math.round(Math.random *10);
+//
+// FUNCTIONS
+//
+
+
+function generator(){
+  var operand = Math.round(Math.random() * 10);
+  return operand;
 }
 
-random_number(x);
-random_number(y);
-random_number(z);
+function ychecker(){
+  if(y == x){
+      y = generator();
+      ychecker();
+  } else {
+      gety.innerHTML = y;
+  }
+}
+
+function zchecker(){
+  if(z == x || z == y){
+      z = generator();
+      zchecker();
+  } else {
+      getz.innerHTML = z;
+  }
+}
+//
+// PROGRAM
+//
+
+
+
+// generate x and push it to html
+x = generator();
+getx.innerHTML = x;
+
+
+// generate x and y
+y = generator();
+z = generator();
+
+// test y and z to make sure they are not repeats of x or eachother
+ychecker();
+zchecker();
+
+
+
+
+
+
+
+
+
 
 
 
@@ -20,7 +86,6 @@ random_number(z);
 //
 // COUNTER
 //
-
 
 // VARIABLES
 var counting = false;
