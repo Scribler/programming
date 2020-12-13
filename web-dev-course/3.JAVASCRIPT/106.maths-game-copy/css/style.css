@@ -121,10 +121,6 @@ header {
   -webkit-box-shadow: 0px 4px 0px 0px #9da853; }
 
 .correct {
-  display: none; }
-
-.correctvisible {
-  display: inline;
   background-color: green;
   color: #f8fbfb;
   position: absolute;
@@ -134,13 +130,10 @@ header {
   text-align: center;
   box-shadow: 0px 4px 0px 0px #0B4800;
   -moz-box-shadow: 0px 4px 0px 0px #0B4800;
-  -webkit-box-shadow: 0px 4px 0px 0px #0B4800; }
-
-.wrong {
+  -webkit-box-shadow: 0px 4px 0px 0px #0B4800;
   display: none; }
 
-.wrongvisible {
-  display: inline;
+.wrong {
   background-color: red;
   color: #f8fbfb;
   position: absolute;
@@ -150,7 +143,8 @@ header {
   text-align: center;
   box-shadow: 0px 4px 0px 0px #a90805;
   -moz-box-shadow: 0px 4px 0px 0px #a90805;
-  -webkit-box-shadow: 0px 4px 0px 0px #a90805; }
+  -webkit-box-shadow: 0px 4px 0px 0px #a90805;
+  display: none; }
 
 .question {
   display: flex;
@@ -169,8 +163,7 @@ header {
 
 .instructions {
   display: flex;
-  height: 90px;
-  line-height: 1.3em;
+  height: 50px;
   width: 450px;
   background-color: #9E7DCE;
   color: #202020;

@@ -62,14 +62,16 @@ function zchecker(){
 x = generator();
 getx.innerHTML = x;
 
-
+document.getElementById("xygen").onclick = function(){
 // generate x and y
-y = generator();
-z = generator();
-
+  y = generator();
+  z = generator();
 // test y and z to make sure they are not repeats of x or eachother
-ychecker();
-zchecker();
+  ychecker();
+  zchecker();
+}
+
+
 
 
 
