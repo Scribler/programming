@@ -115,16 +115,26 @@ function generate_qa(){
   correct_answer = x * y; //correct answer
   question.innerHTML = x + "X" + y;
   document.getElementById("box" + correct_position).innerHTML = correct_answer; // fill one box with the correct answer
+  var answers = [];
 
   for(i = 1; i < 5; i++){ // generate wrong answers and place in other boxes
-    if(i !== correct_position){
-      var wrong_answer = numgen(9) * numgen(9); // generate wrong answer
-                // console.log("wrong answer " + i + " from first generator: " + wrong_answer);
-      wrong_answer_checker(i, wrong_answer);
-    } else {
-      continue;
-    }
+    if(i != correct_position){
+      var wrong_answer;
+      do{
+        wrong_answer = numgen(9) * numgen(9); // generate wrong answer
+      } while(wrong_answer == correct_answer);
+      document.getElementById("box" + i).innerHTML = wrong_answer;
+    } 
   }
+// MY OLD VERSION
+  // for(i = 1; i < 5; i++){ // generate wrong answers and place in other boxes
+    // if(i != correct_position){
+      // var wrong_answer = numgen(9) * numgen(9); // generate wrong answer
+      // wrong_answer_checker(i, wrong_answer);
+    // } else {
+      // continue;
+    // }
+  // }
 }
 
 
