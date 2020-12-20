@@ -1,0 +1,153 @@
+//
+// mother file
+//
+
+//variable can store any CSS value
+@import "utils/variables"
+// @import "utils/functions>"
+@import "components/navigation"
+@import "base/base"
+
+
+// BASE
+
+//
+// base file
+//
+
+* 
+  box-sizing: border-box
+
+article
+  div
+    h3
+      color: $color2
+      font-size: 28px
+    p
+      color: $color3
+      font-size: 20px
+  div:nth-child(1)
+    h3:nth-child(1)
+      @include h_transform(-3deg);
+
+div:nth-child(2)
+    h3:nth-child(1)
+      @include h_transform();
+
+
+//
+// typography
+//
+
+
+// COMPONENTS
+
+
+//
+// buttons
+//
+
+%btn-common
+  color: white
+  font-size: 20px * 2
+  border-radius: 4px
+  border: none
+  cursor: pointer
+
+%btn-wide
+  width: 300 / 800 * 100%
+
+.btn-success
+  @extend %btn-common
+  @extend %btn-wide
+  background-color: lawngreen
+
+.btn-warning
+  @extend %btn-common
+  background-color: darkorange
+
+.btn-error
+  @extend %btn-common
+  background-color: red
+
+
+//
+// carousels
+//
+
+
+
+//
+// navigation
+//
+
+nav 
+  display: flex
+  background-color: $color1
+  a 
+    flex: 1
+    text-ecoration: none
+    text-transform: uppercase
+    font-size: 20px
+    padding: 20px
+    
+    &:hover
+      // background-color: yellow
+      background-color: darken($color1, 10%)
+    &:active
+      background-color: darken($color1, 20%)
+    &.active
+      color: #b314db
+      font-weight: bold
+      font-size: 24px
+
+
+// LAYOUT
+
+//
+// footer
+//
+
+
+
+//
+// grid
+//
+
+
+
+//
+// header
+//
+
+// UTILS
+
+//
+// functions
+//
+
+
+
+//
+// mixins
+//
+
+@mixin h_transform($angle: -5deg)
+  transform: rotate($angle)
+  -ms-transform: rotate($angle) //ie versions 9 and older
+  -moz-transform: rotate($angle) //firefox 3.5 and older
+  -webkit-transform: rotate($angle) // safari,chrome,android older versions
+
+
+
+//
+// variables
+//
+
+$color1: #f8f594 //yellow
+// $color1: change-color(#f8f594, $green: 200)//yellow
+$color2: #5d12e7 //bluePurple
+$color3: #316901 //green
+$color4: #b314db //purple
+
+

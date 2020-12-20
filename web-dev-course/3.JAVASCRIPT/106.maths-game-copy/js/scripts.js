@@ -186,10 +186,20 @@ document.getElementById("start-reset").onclick = function(){
 for(i = 1; i < 5; i++){
   // run 'check_answer()' for each answer button
   document.getElementById("box" + i).onclick = function(){
-    var t = "b" + i;
     if(playing == true){
-      console.log(t);
-      check_answer(toString(t).innerHTML);
+
+
+
+
+
+      // NEED TO FIND A WAY TO CYCLE THROUGH THE DIFFERENT BOXES
+      
+
+
+
+
+      var tes = ("b" + i).innerHTML;
+      check_answer(tes);
     } 
   }
 }
