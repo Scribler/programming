@@ -133,34 +133,6 @@ function generate_qa(){
   }
 }
 
-// TESTING GENERATOR LOGIC start
-var dacheckarr = ["test"];
-var dacheck;
-var dachecktime = 10;
-var dachecktimer;
-
-document.getElementById("starttest").onclick = function(){
-  dacheck = setInterval(function(){
-    do{
-      dacheck = Math.round(Math.random() * 10);
-    }while(dacheckarr.indexOf(dacheck) > -1);
-    dacheckarr.push(dacheck);
-    console.log(dacheckarr);
-  }, 1000);
-  //timer
-  dachecktimer = setInterval(function(){
-    dachecktime -= 1;
-    if(dachecktime == 0){
-      clearInterval(dacheck);
-    }
-  }, 1000);
-}
-
-document.getElementById("stoptest").onclick = function(){
-  clearInterval(dacheck);
-}
-// TESTING GENERATOR LOGIC end
-
 
 
 // MY OLD VERSION
@@ -175,31 +147,9 @@ document.getElementById("stoptest").onclick = function(){
 // }
 
 
-function short_timer(id){
-  var time = 1;
-  show(id, "inline");
-  actions = setInterval(function(){
-    time -= 1;
-    if(time == 0){// game over
-      hide(id);
-      clearInterval(actions);
-    }
-  }, 1000);
-}
 
 
 
-function check_answer(answer){ // check if button contains the correct answer and respond accordingly
-  console.log(answer);
-  if(answer == correct_answer){
-    score++;
-    score_feed.innerHTML = score;
-    short_timer("correct");
-    generate_qa();
-  } else {
-    short_timer("wrong");
-  }
-}
 
 
 
@@ -229,31 +179,68 @@ document.getElementById("start-reset").onclick = function(){
 
 // CHOSE AN ANSWER!
 
-// run 'check_answer()' for each answer button
-document.getElementById("box1").onclick = function(){
-  if(playing == false){
-  } else {
-    check_answer(b1.innerHTML);
+
+
+
+
+for(i = 1; i < 5; i++){
+  // run 'check_answer()' for each answer button
+  document.getElementById("box" + i).onclick = function(){
+    var t = "b" + i;
+    if(playing == true){
+      console.log(t);
+      check_answer(toString(t).innerHTML);
+    } 
   }
 }
-document.getElementById("box2").onclick = function(){
-  if(playing == false){
+
+
+function short_timer(id){ // sets a timeout for showing correct or wrong display
+  if(id == "correct"){
+    show(id, "inline");
+    hide("wrong");
+    setTimeout(function(){
+      hide(id);
+    }, 1000);
   } else {
-    check_answer(b2.innerHTML);
+    show(id, "inline");
+    hide("correct");
+    setTimeout(function(){
+      hide(id);
+    }, 1000);
   }
 }
-document.getElementById("box3").onclick = function(){
-  if(playing == false){
+
+
+function check_answer(answer){ 
+  console.log(answer);
+  if(answer == correct_answer){
+    score++;
+    score_feed.innerHTML = score;
+    short_timer("correct");
+    generate_qa();
   } else {
-    check_answer(b3.innerHTML);
+    short_timer("wrong");
   }
 }
-document.getElementById("box4").onclick = function(){
-  if(playing == false){
-  } else {
-    check_answer(b4.innerHTML);
-  }
-}
+// document.getElementById("box2").onclick = function(){
+  // if(playing == false){
+  // } else {
+    // check_answer(b2.innerHTML);
+  // }
+// }
+// document.getElementById("box3").onclick = function(){
+  // if(playing == false){
+  // } else {
+    // check_answer(b3.innerHTML);
+  // }
+// }
+// document.getElementById("box4").onclick = function(){
+  // if(playing == false){
+  // } else {
+    // check_answer(b4.innerHTML);
+  // }
+// }
 
 
 
