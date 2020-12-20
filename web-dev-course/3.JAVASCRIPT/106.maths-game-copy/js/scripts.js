@@ -115,17 +115,54 @@ function generate_qa(){
   correct_answer = x * y; //correct answer
   question.innerHTML = x + "X" + y;
   document.getElementById("box" + correct_position).innerHTML = correct_answer; // fill one box with the correct answer
-  var answers = [];
+  var answers = [correct_answer];
+  console.log(answers);
 
   for(i = 1; i < 5; i++){ // generate wrong answers and place in other boxes
     if(i != correct_position){
       var wrong_answer;
       do{
         wrong_answer = numgen(9) * numgen(9); // generate wrong answer
-      } while(wrong_answer == correct_answer);
+        }
+      while(answers.indexOf(wrong_answer) > -1);
+      answers.push(wrong_answer);
+      console.log(answers);
+      console.log(answers.indexOf(wrong_answer));
       document.getElementById("box" + i).innerHTML = wrong_answer;
-    } 
+    }
   }
+}
+
+// TESTING GENERATOR LOGIC start
+var dacheckarr = ["test"];
+var dacheck;
+var dachecktime = 10;
+var dachecktimer;
+
+document.getElementById("starttest").onclick = function(){
+  dacheck = setInterval(function(){
+    do{
+      dacheck = Math.round(Math.random() * 10);
+    }while(dacheckarr.indexOf(dacheck) > -1);
+    dacheckarr.push(dacheck);
+    console.log(dacheckarr);
+  }, 1000);
+  //timer
+  dachecktimer = setInterval(function(){
+    dachecktime -= 1;
+    if(dachecktime == 0){
+      clearInterval(dacheck);
+    }
+  }, 1000);
+}
+
+document.getElementById("stoptest").onclick = function(){
+  clearInterval(dacheck);
+}
+// TESTING GENERATOR LOGIC end
+
+
+
 // MY OLD VERSION
   // for(i = 1; i < 5; i++){ // generate wrong answers and place in other boxes
     // if(i != correct_position){
@@ -135,7 +172,7 @@ function generate_qa(){
       // continue;
     // }
   // }
-}
+// }
 
 
 function short_timer(id){
@@ -217,5 +254,12 @@ document.getElementById("box4").onclick = function(){
     check_answer(b4.innerHTML);
   }
 }
+
+
+
+
+
+
+
 
 console.log("This is the Lesson Version");
