@@ -7,7 +7,21 @@
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-color: #edf2f7; }
+
+.link {
+  text-decoration: none;
+  color: blue; }
+
+.link:active {
+  color: blue; }
+
+.link-footer {
+  color: white; }
+
+.link-footer:active {
+  color: white; }
 
 .header {
   background-color: orange;
@@ -18,7 +32,6 @@ body {
   padding: 10px 0; }
 
 main {
-  background-color: teal;
   flex: 1; }
 
 footer {

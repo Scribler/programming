@@ -7,7 +7,25 @@
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-color: #edf2f7; }
+
+.link {
+  text-decoration: none;
+  color: blue; }
+
+.link:active {
+  color: blue; }
+
+.link-footer {
+  color: white; }
+
+.link-footer:active {
+  color: white; }
+
+.lesson {
+  min-height: 150px;
+  background-color: #FDC2AC; }
 
 .header {
   background-color: orange;
@@ -15,11 +33,18 @@ body {
   padding: 10px 0; }
 
 .page-heading {
-  padding: 10px 0; }
+  padding: 10px 0;
+  font-size: 1.5em; }
+
+.lesson-title {
+  text-align: center;
+  font-size: 1.3em; }
 
 main {
-  background-color: teal;
   flex: 1; }
+
+.lesson-embedding {
+  background-color: #E2FFD5; }
 
 footer {
   background-color: green;

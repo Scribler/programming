@@ -19,9 +19,26 @@ body
   display: flex
   flex-direction: column
   min-height: 100vh
+  background-color: $background
 
 
-//
+.link
+  text-decoration: none
+  color: blue
+.link:active
+  color: blue
+
+
+.link-footer
+  color: white
+.link-footer:active
+  color: white
+
+
+.lesson
+  min-height: 150px
+  background-color: $defaultlesson
+
 // HEADER
 //
 .header
@@ -31,6 +48,11 @@ body
 
 .page-heading
   padding: 10px 0
+  font-size: 1.5em
+
+.lesson-title
+  text-align: center
+  font-size: 1.3em
 
 
 //
@@ -38,10 +60,12 @@ body
 //
 
 main
-  background-color: teal
   flex: 1
 
-
+// COOKIES LESSON
+.lesson-embedding
+  background-color: $embeddinglesson
+//
 
 
 
