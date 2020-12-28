@@ -27,15 +27,42 @@
       <div class="lesson lesson-embedding">
         <h2 class="lesson-title">Embedding jQUERY</h2>
         <p>When embedding  jquery there is a full version and an abbreviated one</p>
+        <br />
+        <br />
         <p>Full is like this</p>
+        <br />
+        <textarea>
+$(document).ready(function(){
+  $("cssTag").css("attribute-name", "attribute");
+});
+        </textarea>
 
-        <p>$(document)</p>
+<!-- THIS IS THE ABOVE IN REGULAR HTML -->
+          <!-- <p><span class="tabspan"></span>$(document).ready(function(){</p> -->
+          <!-- <p><span class="tabspan"></span><span class="tabspan"></span>$("cssTag").css("attribute-name", "attribute");</p> -->
+          <!-- <p><span class="tabspan"></span>});</p> -->
 
 
+        <br />
+        <br />
+
+        <p>Abreviated is like this</p>
+        <br />
+        <textarea>
+$(function(){
+  $("cssTag").css("attribute-name", "attribute");
+});
+        </textarea>
+        <br />
+        <br />
+
+<!-- THIS IS THE ABOVE IN REGULAR HTML -->
+        <!-- <span class="tabspan"></span> -->
+        <!-- <p><span class="tabspan"></span>$(function(){</p> -->
+        <!-- <p><span class="tabspan"></span><span class="tabspan"></span>$("cssTag").css("attribute-name", "attribute");</p> -->
+        <!-- <p><span class="tabspan"></span>});</p> -->
 
 
-
-        <p>Lesson stuff here</p>
         <button id="disappear">Make paragraphs disappear</button>
       </div>
 
@@ -58,6 +85,11 @@
 
         <div class="box greenbox">
           <p>Microsoft</p>
+          <ul>
+            <li>BMW</li>
+            <li>Audi</li>
+            <li>Mercedes</li>
+          </ul>
         </div>
         
         <div class="box bluebox">

@@ -40,6 +40,17 @@ body {
   text-align: center;
   font-size: 1.3em; }
 
+.tabspan {
+  padding-left: 20px; }
+
+textarea {
+  width: 390px;
+  height: 88px;
+  font-size: 8px; }
+
+ul {
+  padding-left: 30px; }
+
 main {
   flex: 1; }
 
@@ -47,7 +58,7 @@ main {
   background-color: #E2FFD5; }
 
 .box {
-  height: 100px;
+  height: auto;
   width: auto;
   margin-bottom: 5px; }
 

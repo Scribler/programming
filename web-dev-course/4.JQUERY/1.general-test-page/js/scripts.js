@@ -11,7 +11,7 @@ $(function(){ // check if page is loaded
   $("*").css("font-size", "18px");
   // $("div > p").css("text-align","center"); // center paragraphs that are children of divs
   $("div ~ p").css("text-align","center"); // center paragraphs that are siblings of divs
-  $("div p").css("text-align","center"); // center paragraphs that are siblings of divs
+  // $("div p").css("text-align","center"); // center paragraphs that are siblings of divs
 
 // Selecting a 'class'
   $(".yellowbox").css("background-color", "purple");
@@ -31,6 +31,16 @@ $(function(){ // check if page is loaded
 
 // select anything with an 'href'
   $("[href]").css("color", "red");
+  $("a").css({
+    color: "aqua",
+    backgroundColor: "black"
+  });
+
+// list items
+  $("li:first-child, li:last-child").css({
+    backgroundColor: "grey",
+    color: "yellow"
+  });
 });
 
 
