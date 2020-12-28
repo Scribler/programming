@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile_j": "node-sass sass/style.sass css/style.css -w",
+    "compile_main": "node-sass sass/style.sass css/style.css -w",
     "compile_1": "node-sass sass/pages/1.general/style.sass 1.general-test-page/css/style.css -w"
   },
   "author": "Steven McIntyre",

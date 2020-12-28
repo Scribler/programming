@@ -46,6 +46,20 @@ main {
 .lesson-embedding {
   background-color: #E2FFD5; }
 
+.box {
+  height: 100px;
+  width: auto;
+  margin-bottom: 5px; }
+
+.bluebox {
+  background-color: #4762A2; }
+
+.yellowbox {
+  background-color: #E3E35F; }
+
+.greenbox {
+  background-color: #57B63F; }
+
 footer {
   background-color: green;
   margin-top: auto;
