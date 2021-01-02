@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile_main": "node-sass sass/style.sass css/style.css -w",
-    "compile_1": "node-sass sass/pages/1.general/style.sass 1.general-test-page/css/style.css -w"
+    "compile_1": "node-sass sass/pages/1.general/style.sass 1.general-test-page/css/style.css -w",
+    "compile_2": "node-sass sass/pages/2.practice/style.sass 2.practice/css/style.css -w"
   },
   "author": "Steven McIntyre",
   "license": "ISC",

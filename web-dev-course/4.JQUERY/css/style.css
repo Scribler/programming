@@ -4,12 +4,6 @@
   box-sizing: border-box;
   font-size: 16px; }
 
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: #edf2f7; }
-
 .link {
   text-decoration: none;
   color: blue; }
@@ -26,16 +20,22 @@ body {
 .header {
   background-color: orange;
   text-align: center;
-  padding: 10px 0; }
+  padding: 10px 0 20px 0; }
 
 .page-heading {
   padding: 10px 0; }
-
-main {
-  flex: 1; }
 
 footer {
   background-color: green;
   margin-top: auto;
   padding: 10px 0;
   text-align: center; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #edf2f7; }
+
+main {
+  flex: 1; }

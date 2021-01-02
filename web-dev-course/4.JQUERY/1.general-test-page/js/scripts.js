@@ -1,4 +1,4 @@
-
+console.log("Font-size is different because of javascript. It's not a css problem. ;)")
 // Long Version
 //
 // $(document).ready(function(){ // check if page is loaded
@@ -8,7 +8,7 @@
 
 // Short Version
 $(function(){ // check if page is loaded
-  $("*").css("font-size", "18px");
+  $("*").css("font-size", "16px");
   // $("div > p").css("text-align","center"); // center paragraphs that are children of divs
   $("div ~ p").css("text-align","center"); // center paragraphs that are siblings of divs
   // $("div p").css("text-align","center"); // center paragraphs that are siblings of divs
@@ -41,6 +41,15 @@ $(function(){ // check if page is loaded
     backgroundColor: "grey",
     color: "yellow"
   });
+
+$("tr:even").css("background-color", "#bbf362");
+$("tr:odd").css("background-color", "#811c90");
+
+$(":input").css("background-color", "#1da492");
+$(":Submit").css("background-color", "#B094FE");
+
+$("div:has(table)").css("background-color", "#AFFFF5");
+
 });
 
 
