@@ -1,0 +1,35 @@
+.tab {
+  margin-right: 9px; }
+
+li {
+  margin: 5px 0 5px 18px;
+  color: blue; }
+
+.sidebar li {
+  margin: 5px 0 5px 5px;
+  list-style: none; }
+
+input {
+  margin-right: 5px; }
+
+h2 {
+  text-decoration: underline;
+  margin-bottom: 5px; }
+
+main {
+  display: flex;
+  flex-direction: row; }
+
+.sidebar {
+  flex: 0 1 230px;
+  padding: 5px; }
+
+.main-content {
+  flex: 0 1 100vw;
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid black;
+  padding: 5px 5px 5px 15px; }
+
+article {
+  min-height: 60vh; }
