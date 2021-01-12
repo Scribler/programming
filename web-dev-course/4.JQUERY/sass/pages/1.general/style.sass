@@ -22,28 +22,11 @@ body
   min-height: 100vh
   background-color: $background
 
-
-.lesson
-  min-height: 150px
-  background-color: $defaultlesson
-
-// HEADER
-//
-// .header
-  // background-color: orange
-  // text-align: center
-  // padding: 10px 0
-//
-// .page-heading
-  // padding: 10px 0
-  // font-size: 1.5em
-
-.lesson-title
-  text-align: center
-  font-size: 1.3em
-
-.tabspan
-  padding-left: 20px
+main
+  display: flex
+  flex-direction: column
+  flex: 1
+  align-items: center
 
 textarea
   width: 390px
@@ -53,12 +36,19 @@ textarea
 ul
   padding-left: 30px
 
-//
-// MAIN
-//
+.lesson
+  min-height: 150px
+  background-color: $defaultlesson
+  // max-width: 900px
+  min-width: 900px
 
-main
-  flex: 1
+.lesson-title
+  text-align: center
+  font-size: 1.3em
+
+.tabspan
+  padding-left: 20px
+
 
 //
 // JQUERY Embedding

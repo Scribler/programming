@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-    <title>#</title>
+    <title>Course Notes</title>
     <!-- <link href="../images/site-icon.jpg" rel="shortcut icon"> -->
     <link href="../css/style.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -11,7 +11,7 @@
 
   <body>
     <header class="header">
-      <h1 class="page-heading">PRACTICE PAGE</h1>
+      <h1 class="page-heading">COURSE NOTES</h1>
       <p>Review of everything learned in the course so far</p>
     </header>
 
@@ -23,40 +23,16 @@
         <ul>
 
           <li>
+            <input type="checkbox" id="htmltags">
+            <label for="htmltags"><a href="#html-tags">HTML Tags</a></label>
+          </li>
+          <li>
             <input type="checkbox" id="check1">
-            <label for="check1">Element Positioning</label>
-          </li>
-          <li>
-            <input type="checkbox" id="check2">
-            <label for="check2">Flexbox</label>
-          </li>
-          <li>
-            <input type="checkbox" id="check3">
-            <label for="check3">Grid</label>
-          </li>
-          <li>
-            <input type="checkbox" id="check4">
-            <label for="check4">Inputs</label>
-          </li>
-          <li>
-            <input type="checkbox" id="check5">
-            <label for="check5">Radio Buttons</label>
-          </li>
-          <li>
-            <input type="checkbox" id="check6">
-            <label for="check6">Buttons</label>
+            <label for="check1"><a href="#inputs">Inputs</a></label>
           </li>
           <li>
             <input type="checkbox" id="check7">
-            <label for="check7">Forms</label>
-          </li>
-          <li>
-            <input type="checkbox" id="check8">
-            <label for="check8">Images</label>
-          </li>
-          <li>
-            <input type="checkbox" id="check9">
-            <label for="check9">TextBoxes</label>
+            <label for="check7"><a href="#forms">Forms</a></label>
           </li>
           <!-- <li> -->
             <!-- <input type="checkbox" id="check#"> -->
@@ -67,27 +43,40 @@
       </div>
       <div class="main-content">
 
-        <article class="practice-page-notes">
+
+
+
+        <article class="lesson practice-page-notes" id="practice-page-notes">
           <h2>Practice Page Planning Notes</h2>
           <br />
           <h3>Planned Features</h3>
-          <ul>
-            <li>Generate a repeating pattern of background colors to use for articles to give them some visual difference</li>
-            <li>Have the links in the sidebar jump to different sections of the site using an animation</li>
-          </ul>
+            <ul>
+              <li>Javascript - alternating background colors for articles</li>
+              <li>Compile some most used HTML Tags</li>
+            </ul>
+        </article>
+       
+
+
+
+        <article class="lesson html-tags" id="html-tags">
+          <h2>HTML Tags</h2>
+          <p><a href="https://www.w3schools.com/tags/default.asp" target="_blank">W3Schools</a> has a complete list of HTML tags for both current HTML5 and depricated HTML tags. However, below I have listed some common ones that should get you started.</p>
+          <textarea class="tags">
+
+
+<header>  - Where all of your metadata, etc goes.
+<main>    - Put the main content of your website here.
+<footer>  - goes at the end of your website, and often contains contact information as well as references and copyright information.
+
+          </textarea>
+          <footer><a href="#top">Return To Top of Page</a></footer>
         </article>
 
-        <article class="element-positioning">
-          <h2>Element Positioning</h2>
-          <p>Stuff about element positioning</p>
-        </article>
 
-        <article class="flex-box">
-          <h2>Flexbox</h2>
-          <p>stuff about flexbox</p>
-        </article>
 
-        <article class="inputs">
+
+        <article class="inputs" id="inputs">
           <h2>Inputs</h2>
           <p>Below are listed the different attributes of a typical input</p>
           <ul>
@@ -96,6 +85,21 @@
             <li>id</li>
             <li>name</li>
           </ul>
+          <footer><a href="#top">Return To Top of Page</a></footer>
+        </article>
+
+
+
+
+        <article id="forms">
+          <h2>Forms</h2>
+          <ul>
+            <h3>Forms need a few different elements in order to function properly</h3>
+            <li>test</li>
+            <li>test2</li>
+            <li>test3</li>
+          </ul>
+          <footer><a href="#top">Return To Top of Page</a></footer> <!-- there doesn't have to be a matching id for 'top' it's build in to html to bring you to the top of the page -->
         </article>
         
       </div>
@@ -103,7 +107,7 @@
 
     </main>
 
-    <footer>
+    <footer class="footer-main">
       <a class="link link-footer" href="../index.html">Back To Main Page</a>
     </footer>
 

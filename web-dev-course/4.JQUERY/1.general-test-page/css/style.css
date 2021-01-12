@@ -4,16 +4,11 @@ body {
   min-height: 100vh;
   background-color: #edf2f7; }
 
-.lesson {
-  min-height: 150px;
-  background-color: #FDC2AC; }
-
-.lesson-title {
-  text-align: center;
-  font-size: 1.3em; }
-
-.tabspan {
-  padding-left: 20px; }
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center; }
 
 textarea {
   width: 390px;
@@ -23,8 +18,17 @@ textarea {
 ul {
   padding-left: 30px; }
 
-main {
-  flex: 1; }
+.lesson {
+  min-height: 150px;
+  background-color: #FDC2AC;
+  min-width: 900px; }
+
+.lesson-title {
+  text-align: center;
+  font-size: 1.3em; }
+
+.tabspan {
+  padding-left: 20px; }
 
 .lesson-embedding {
   background-color: #E2FFD5; }
