@@ -1,3 +1,5 @@
+// import from '../../../ultils/_variables'
+
 console.log("Font-size is different because of javascript. It's not a css problem. ;)")
 // Long Version
 //
@@ -14,9 +16,9 @@ $(function(){ // check if page is loaded
   // $("div p").css("text-align","center"); // center paragraphs that are siblings of divs
 
 // Selecting a 'class'
-  $(".yellowbox").css("background-color", "purple");
+  $(".yellowbox").css("background-color", "$lightpurple");
 // Selecting a 'id'
-  $("#great").css("background-color", "yellow");
+  $("#great").css("background-color", "$lightyellow");
   $(".orange").css("color", "orange");
 
 // Selecting bluebox of div
@@ -51,9 +53,6 @@ $(":Submit").css("background-color", "#B094FE");
 $("div:has(table)").css("background-color", "#AFFFF5");
 
 });
-
-
-
 
 
 
