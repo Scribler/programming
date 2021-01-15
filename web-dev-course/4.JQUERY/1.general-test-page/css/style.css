@@ -48,6 +48,9 @@ ul {
 .greenbox {
   background-color: #57B63F; }
 
+.brownbox {
+  background-color: brown; }
+
 footer {
   background-color: green;
   margin-top: auto;
