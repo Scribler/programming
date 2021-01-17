@@ -8,12 +8,9 @@ $(document).ready(function(){ // check if page is loaded
 // SHORT VERSION
 $(function(){ // check if page is loaded
 
-// MAKES ALL PARAGRAPHS DISSAPEAR WHEN BUTTON CLICKED
-  $("#disappear").click(function(){
+  $("#disappear").click(function(){ // MAKES ALL PARAGRAPHS DISSAPEAR WHEN BUTTON CLICKED
     $("p").hide(); // hide all paragraphs on page
   });
-
-
 
   $("*").css("font-size", "16px");
   $("div > p").css("text-align","center"); // center paragraphs that are children of divs
@@ -26,11 +23,11 @@ $(function(){ // check if page is loaded
 
   $("div.bluebox").css("font-family", "sans-serif"); // Selecting bluebox of div
 
-// Selecting two separate elements to apply the same styling
-// effects the paragraph that is the first child of its container
+  // Selecting two separate elements to apply the same styling
+  // effects the paragraph that is the first child of its container
   $("div:nth-child(2), div > div:last-child").css("color", "#74E2FE");
 
-// Effects the paragraph that is the first child of its container
+  // Effects the paragraph that is the first child of its container
   $("div > div:last-child").css("text-decoration", "underline");
 
   $("[href]").css("color", "red"); // select anything with an 'href'
@@ -44,13 +41,13 @@ $(function(){ // check if page is loaded
     color: "yellow"
   });
 
-$("tr:even").css("background-color", "#bbf362"); // table row's even numbers set color
-$("tr:odd").css("background-color", "#811c90"); // table row's odd numbers set color
+  $("tr:even").css("background-color", "#bbf362"); // table row's even numbers set color
+  $("tr:odd").css("background-color", "#811c90"); // table row's odd numbers set color
 
-$(":input").css("background-color", "#1da492");
-$(":Submit").css("background-color", "#B094FE");
+  $(":input").css("background-color", "#1da492");
+  $(":Submit").css("background-color", "#B094FE");
 
-$("div:has(table)").css("background-color", "#AFFFF5");
+  $("div:has(table)").css("background-color", "#1700FE");
 
 });
 

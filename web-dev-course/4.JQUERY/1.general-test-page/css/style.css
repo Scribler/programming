@@ -51,6 +51,9 @@ ul {
 .brownbox {
   background-color: brown; }
 
+.misc-items {
+  color: grey; }
+
 footer {
   background-color: green;
   margin-top: auto;
