@@ -20,7 +20,7 @@ ul {
 
 .lesson {
   min-height: 150px;
-  background-color: #FDC2AC;
+  background-color: #A5B4AF;
   max-width: 1300px;
   min-width: 900px; }
 
@@ -47,6 +47,12 @@ ul {
 
 .greenbox {
   background-color: #57B63F; }
+
+.jadd {
+  background-color: red;
+  color: green;
+  border: solid 2px orange;
+  padding: 4px; }
 
 .brownbox {
   background-color: brown; }

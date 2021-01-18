@@ -13,12 +13,24 @@ $(function(){ // check if page is loaded
   });
 
   $("*").css("font-size", "16px");
-  $("div > p").css("text-align","center"); // center paragraphs that are children of divs
+  // $("div > p").css("text-align","center"); // center paragraphs that are children of divs
   $("div ~ p").css("text-align","center"); // center paragraphs that are siblings of divs
-  $("div p").css("text-align","center"); // center paragraphs that are siblings of divs
+  // $("div p").css("text-align","center"); // center paragraphs that are siblings of divs
 
   $(".yellowbox").css("background-color", "purple"); // Selecting a 'class'
-  $("#great").css("background-color", "yellow"); // Selecting a 'id'
+
+  // $("#facebook").css("background-color", "blue"); // Selecting a 'id'
+  
+  $("#facebook").css({
+    'background-color' : 'blue',
+    'color' : 'white',
+    'padding' : '4px',
+    'border' : '3px solid black',
+  }); // Selecting a 'id' and adding multiple attributes
+  
+
+  $("#apple").css("background-color", "white"); // Selecting a 'id'
+  $("#microsoft").addClass("jadd"); // Selecting a 'id'
   $(".orange").css("color", "orange");
 
   $("div.bluebox").css("font-family", "sans-serif"); // Selecting bluebox of div
@@ -41,14 +53,17 @@ $(function(){ // check if page is loaded
     color: "yellow"
   });
 
+// TABLES
+  $("div:has(table)").css("background-color", "#1700FE");
+
   $("tr:even").css("background-color", "#bbf362"); // table row's even numbers set color
   $("tr:odd").css("background-color", "#811c90"); // table row's odd numbers set color
+  $("th").css("background-color", "yellow"); // table row's odd numbers set color
 
   $(":input").css("background-color", "#1da492");
   $(":Submit").css("background-color", "#B094FE");
 
-  $("div:has(table)").css("background-color", "#1700FE");
 
 });
 
-
+console.log("Javascript is working to end")
