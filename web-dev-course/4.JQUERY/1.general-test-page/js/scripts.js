@@ -66,4 +66,7 @@ $(function(){ // check if page is loaded
 
 });
 
-console.log("Javascript is working to end")
+console.log("Javascript is working to end");
+
+
+console.log("Stop What You are doing. Are you Going to use this in real life?");

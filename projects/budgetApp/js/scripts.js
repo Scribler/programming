@@ -14,3 +14,7 @@ document.getElementById("incomeBiWeekly").value = incomebw;
 
 // How to make expenses come off of income?
 //
+
+
+
+console.log("Possible to start up multiple terminals accessing the same instance of tmux?")
