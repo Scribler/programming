@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  /* display: grid; */
+  /* grid-template-columns: minmax(auto, 15%) auto minmax */
+}
+
+/* header */
+.box1 {
+  background-color: blueviolet;
+  flex: 0 1 100px;
+}
+
+
+
+
+/* content */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 auto;
+}
+
+.box2 {
+  background-color: bisque;
+  flex: 0 1 300px;
+}
+
+.box3 {
+  background-color: lightcoral;
+  flex: 1 1 min(800px);
+}
+
+.box4 {
+  background-color: lightgoldenrodyellow;
+  flex: 0 1 300px;
+}
+
+
+
+
+/* footer */
+.box5 {
+  background-color: greenyellow;
+  margin-top: auto;
+  flex: 0 1 100px;
+}
