@@ -1,18 +1,17 @@
 {
   "name": "4.jquery",
   "version": "1.0.0",
-  "description": "",
+  "description": "jquery",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile_main": "node-sass sass/style.sass css/style.css -w",
-    "compile_1": "node-sass sass/pages/1.general/style.sass 1.general-test-page/css/style.css -w",
-    "compile_2": "node-sass sass/pages/2.practice/style.sass 2.practice/css/style.css -w"
+    "compile_main": "sass --watch sass/style.sass css/style.css ",
+    "compile_1": "sass --watch sass/pages/1.general/style.sass 1.general-test-page/css/style.css"
   },
-  "author": "Steven McIntyre",
+  "author": "scarp3r",
   "license": "ISC",
   "dependencies": {
     "jquery": "^3.5.1",
-    "node-sass": "^5.0.0"
+    "sass": "^1.32.5"
   }
 }

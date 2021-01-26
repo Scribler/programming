@@ -54,10 +54,15 @@ $(function(){ // check if page is loaded
   });
 
 // TABLES
-  $("div:has(table)").css("background-color", "#1700FE");
+  $("div:has(table)").css("background-color", "#D4FFFB");
+  $("div:has(table)").css("text-align", "center");
+  $(".brownbox").css("display", "flex");
+  $(".brownbox").css("flex-direction", "column");
+  $(".brownbox").css("align-items", "center");
+  $(".brownbox").css("justify-content", "space-between");
 
   $("tr:even").css("background-color", "#bbf362"); // table row's even numbers set color
-  $("tr:odd").css("background-color", "#811c90"); // table row's odd numbers set color
+  $("tr:odd").css("background-color", "#9AFFBD"); // table row's odd numbers set color
   $("th").css("background-color", "yellow"); // table row's odd numbers set color
 
   $(":input").css("background-color", "#1da492");

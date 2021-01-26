@@ -1,0 +1,80 @@
+LINUX / UNIX FILESYSTEM (general concepts)
+  /bin: bineries
+              -ex. ls, which, ... (small programs you can run from bash generally)
+
+  /sbin: system bineries
+              -ex. programs used by the system administrator and are not available to users outside of single user mode.
+
+  /boot: stuff you computer needs to boot.  DON'T TOUCH IT
+
+  /cdrom: default mounting point for cd-drive (legacy - may not be there)
+
+  /dev: devices
+              - a folder inside for each of your devices(hardware).
+              - typically only accessed by applications and drivers
+  /etc: could be 'etcetera', 'edit to configure'
+              - Where all your systemwide configurations and settings are stored
+              - NOT per user
+  /home: 
+
+  /lib
+  /lib32
+  /lib64: library storage
+             - library's are files that verious programs can use to complete various functions
+             - required by the bineries in 'bin', and 'sbin'
+
+  /media
+  /mnt(mount): other mounted drives. (floppy disk, usb, external, second internal hard drive, etc.)
+             - media is 'new'. Used to only be mnt
+             - media is managed by the os, and is where things are automatically mounted to.
+             - mnt is where you would put things that you mount manually
+  
+  /opt: optional
+             - Where manually installed software from venders live
+             - printer drivers
+             - vpn software
+             - store software you've created yourself
+  
+  /proc: storage for sudo files that contain information about system resources and processess.
+             - every process will have a file here that contains information about that process
+             - handy for developers(maybe for finding system status for fixing bugs?)
+  
+  /root: root user's home folder.
+             - not found in the home folder
+             - need root user access in order to access it
+  
+  /run: different distro's use it in different ways 
+             - temp fs file system
+             - stored in ram!
+  
+  /snap: stores snap packages and is Ubunto specific
+
+  /srv: storage for server data
+             - stores user data
+
+  /sys: created every time the system boots up
+             - a way to interact with the kernal
+
+  /temp: applications can save stuff here while opperating, and is usually emptied when restarting
+             - recovery files might be here if the computer crashes.
+             - navigate here under root in single user mode and clean out if needed
+
+  /usr: unix system resource
+             - user applications and programs are usually installed here in 'local' or 'usr/share'
+
+  /var: files and directories expected to grow
+             - var/crash stores crash files
+             - printer buffer here?
+
+  /home: each usr has a folder inside of it, and you can only access your own home folder.
+             - contains your own files and folders
+             - can be installed on a different hard drive or partition so that you can do a system re-install without loosing your files.
+             - also stores your application settings (usually hidden files like '.vimrc')- This way each person on a computer can have their own .vimrc on a computer.
+             - desktop settings are saved here as well.
+             - icons and themes go here as well.
+
+             - 
+
+GENERAL CONCEPTS
+  singleUserMode: uses files in bin & sbin.  Is a mode that logs you in as root and allows you to do system repairs and upgrades or testing.  Networking is usually disabled in this mode for security issues. When you install a program in linux it will almost certainly NOT be placed in 'bin' or 'sbin'.
+
