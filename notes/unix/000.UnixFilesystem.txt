@@ -78,3 +78,5 @@ LINUX / UNIX FILESYSTEM (general concepts)
 GENERAL CONCEPTS
   singleUserMode: uses files in bin & sbin.  Is a mode that logs you in as root and allows you to do system repairs and upgrades or testing.  Networking is usually disabled in this mode for security issues. When you install a program in linux it will almost certainly NOT be placed in 'bin' or 'sbin'.
 
+  'cd -': changes you to the previous directory you were in. 
+

@@ -1,10 +1,18 @@
 $(function(){
+  
   $("p").click(function(){
     $("p").css("background-color", "#FC9285");
   });
+  
   $("#disappear").click(function(){
     location.reload();
   });
+
+  $("table").click(function(){
+    $("table").css("transform" , "scale(1.5, 1.5)");
+  });
+
+
 });
 
 

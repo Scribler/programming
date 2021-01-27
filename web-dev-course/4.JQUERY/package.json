@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile_main": "sass --watch sass/style.sass css/style.css ",
+    "compile_main": "sass --watch sass/style.sass css/style.css",
     "compile_1": "sass --watch sass/pages/1.general/style.sass 1.general-test-page/css/style.css"
   },
   "author": "scarp3r",
