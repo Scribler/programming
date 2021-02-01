@@ -20,7 +20,8 @@ body
   display: flex
   flex-direction: column
   min-height: 100vh
-  background-color: $background
+  // background-color: $background
+  background-image: linear-gradient(to top left, #A7FFFE, #A054FE)
 
 main
   display: flex
@@ -42,7 +43,7 @@ ul
 
 .lesson
   min-height: 150px
-  background-color: $defaultlesson
+  // background-color: $defaultlesson
   max-width: 1300px
   min-width: 900px
 
@@ -70,21 +71,25 @@ ul
 
 .bluebox
   background-color: $facebookblue
+
 .yellowbox
   background-color: $appleyellow
+
 .greenbox
   background-color: $microsoftgreen
+
 .jadd
   background-color: red
   color: green
   border: solid 2px orange
   padding: 4px
+
 .brownbox
   display: flex
   flex-direction: column
   justify-content: space-around
   align-items: center
-  background-color: #C29775
+  background-color: rgb(132, 88, 45, .3)
   min-height: 400px
   // padding: 30px 0
 
@@ -97,11 +102,17 @@ td
   background-color: #FEDDC5
 
 table
-  background-color: #D7E3D9
+  background-image: linear-gradient(#D7FFEF, #DAFFD8)
+  // background-color: #D7E3D9
   border: 3px dashed green
   border-radius: 30px
   padding: 15px
-  transition: width 2s, height 2s
+  transition: all .5s ease-in-out
+
+table:hover
+  transform: scale(1.2, 1.2)
+  background-image: linear-gradient(#8EFFEC, #B8FF89)
+
 
 th
   border: 1px solid black

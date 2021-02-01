@@ -1,0 +1,16 @@
+Server can only run one opperating system usually
+
+To fix this install a HyperVisor(VMware)
+  - use this to split up your server's resources into little virtual computers
+  - virtualizes the hardware, and then installs the opperating system onto that virtual hardware.
+
+
+
+DOCKER
+- 1 opperating system
+- Virtualizes the different opperating systems
+- hardware > opperating system > Docker engine (os1 , os2, os3)
+    - The os's can be flexible and light weight or huge, but since you don't have a limited virtual machine you can grow and have far more flexibility.
+    - faster and lighter weight than VM's
+
+

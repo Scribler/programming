@@ -1,0 +1,2 @@
+lrwxr-xr-x@  1 root  wheel    11 Feb  5  2020 var -> private/var
+drwxr-xr-t   3 root  wheel    96 Dec 19 19:04 vm

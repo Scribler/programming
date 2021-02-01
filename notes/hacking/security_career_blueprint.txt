@@ -1,0 +1,56 @@
+red team - looking for access to a system (offensive)
+blue team - security defence and responding to hacks(frontline defence)
+
+
+JOBS - way more jobs for blue jobs. Almost 10 to 1
+     - red jobs are usually done by outside companies
+     - blue jobs are usually internal
+
+BLUE JOBS
+  - degree -> not needed at all
+  - certifications (The new normal)
+      - 
+****************************
+CAREER PATH
+****************************
+
+USEFUL Certifications to Get
+
+
+- INE IT Essentials
+
+- INE PTS(Penetration Testing Student) FIRST INTRODUCTION - start here then do eJPT
+
+- INE eJPT Certification, elearn security degree (Get this first?)
+
+- PRACTICE PRACTICE PRACTICE (DOCUMENT YOUR EXPERIENCE)
+    - hack the box
+    - try hack me
+    - ctftime.org (capture the flag hacking contest)
+    - cyber blue range
+
+- BUILD HOME LAB
+    - ????
+
+- NETWORK WITH PEOPLE!!!!!! ***This is Most important***
+    - Linked in, have 1000 followers (digital resume)
+    - Twitter (main engagement)
+    - Hacking meetups
+    - reddit
+
+
+HR REQUIRED CERTS
+- OSCP (HR required)(MOST EFFECTIVE FOR GETTING PAST THE GATE KEEPERS)
+- CEH (HR required - same as PTS, but recruiters look for it, so take it anyways.)
+- SEC+
+
+****************************
+
+
+
+
+
+
+
+
+

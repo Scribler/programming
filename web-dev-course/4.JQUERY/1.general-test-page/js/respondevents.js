@@ -1,3 +1,4 @@
+
 $(function(){
   
   $("p").click(function(){
@@ -8,9 +9,9 @@ $(function(){
     location.reload();
   });
 
-  $("table").click(function(){
-    $("table").css("transform" , "scale(1.5, 1.5)");
-  });
+  // $("table").click(function(){
+    // $("table").addClass("grow");
+  // });
 
 
 });
@@ -31,7 +32,7 @@ $(function(){
 
 
 
-
+console.log("end of javascript");
 
 
 
@@ -48,3 +49,15 @@ $(function(){
 //
 // experiment with previous styles and activating them with jquery
 // test
+//
+
+
+
+
+
+
+
+
+
+
+

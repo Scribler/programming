@@ -1,0 +1,186 @@
+***********************************************
+LINUX / UNIX FILESYSTEM (general concepts)
+***********************************************
+  /bin: bineries
+              -ex. ls, which, ... (small programs you can run from bash generally)
+
+  /sbin: system bineries
+              -ex. programs used by the system administrator and are not available to users outside of single user mode.
+
+  /boot: stuff you computer needs to boot.  DON'T TOUCH IT
+
+  /cdrom: default mounting point for cd-drive (legacy - may not be there)
+
+  /dev: devices
+              - a folder inside for each of your devices(hardware).
+              - typically only accessed by applications and drivers
+  /etc: could be 'etcetera', 'edit to configure'
+              - Where all your systemwide configurations and settings are stored
+              - NOT per user
+  /home: 
+
+  /lib
+  /lib32
+  /lib64: library storage
+             - library's are files that verious programs can use to complete various functions
+             - required by the bineries in 'bin', and 'sbin'
+
+  /media
+  /mnt(mount): other mounted drives. (floppy disk, usb, external, second internal hard drive, etc.)
+             - media is 'new'. Used to only be mnt
+             - media is managed by the os, and is where things are automatically mounted to.
+             - mnt is where you would put things that you mount manually
+  
+  /opt: optional
+             - Where manually installed software from venders live
+             - printer drivers
+             - vpn software
+             - store software you've created yourself
+  
+  /proc: storage for sudo files that contain information about system resources and processess.
+             - every process will have a file here that contains information about that process
+             - handy for developers(maybe for finding system status for fixing bugs?)
+  
+  /root: root user's home folder.
+             - not found in the home folder
+             - need root user access in order to access it
+  
+  /run: different distro's use it in different ways 
+             - temp fs file system
+             - stored in ram!
+  
+  /snap: stores snap packages and is Ubunto specific
+
+  /srv: storage for server data
+             - stores user data
+
+  /sys: created every time the system boots up
+             - a way to interact with the kernal
+
+  /temp: applications can save stuff here while opperating, and is usually emptied when restarting
+             - recovery files might be here if the computer crashes.
+             - navigate here under root in single user mode and clean out if needed
+
+  /usr: unix system resource
+             - user applications and programs are usually installed here in 'local' or 'usr/share'
+
+  /var: files and directories expected to grow
+             - var/crash stores crash files
+             - printer buffer here?
+
+  /home: each usr has a folder inside of it, and you can only access your own home folder.
+             - contains your own files and folders
+             - can be installed on a different hard drive or partition so that you can do a system re-install without loosing your files.
+             - also stores your application settings (usually hidden files like '.vimrc')- This way each person on a computer can have their own .vimrc on a computer.
+             - desktop settings are saved here as well.
+             - icons and themes go here as well.
+
+             - 
+
+***********************************************
+GENERAL CONCEPTS / BASH PROGRAMS & COMMANDS
+***********************************************
+- 'singleUserMode':     uses files in bin & sbin.  Is a mode that logs you in as root and allows you to do system repairs and upgrades or testing.  Networking is usually disabled in this mode for security issues. When you install a program in linux it will almost certainly NOT be placed in 'bin' or 'sbin'.
+
+-'echo $PATH':        Prints a colon separated list of the paths to all the directory's that the computer will look for programs in.
+
+********
+NOTE ABOUT PATH'S
+
+-If you write a program (THAT RUN'S ANOTHER PROGRAM) you should used the "Absolute Path" so that no matter what system it is on, it will go back to root and trace from there.
+********
+
+-'which foo':----------------   Shows the ABSOLUTE path to the version of foo that will run if you call foo.
+
+-'absolute path':------------   The path from root to a file.
+
+-'relative path':------------   The path to a file from the current directory.
+
+-'pwd':----------------------   Print Working Directory
+
+-'~':------------------------   Home directory
+
+-'cd -':---------------------   Changes you to the previous directory you were in. 
+
+-'ln -s <target> <link name>'   Creates a symbolic link to the target.
+
+-'drwx--r--r'----------------   ['d'(directory),'rwx'(owner - Read / Write / eXecute)],['--r'(group - noRead / noWrite / eXecute)],['--r'(otherUsers - noRead / noWrite / eXecute)]
+
+-'chown'---------------------   change the owner and/or group of one or multiple files ex: "chown <user name>:<group name> <item1> <item2> <item3>" *note the ':' that designates
+                                the group name is not a user name.*
+
+-'chmod'---------------------   (#) Change the permissions for an item
+                                        - ex: chmod <option> <mode> <item> {chmod -c [class][sign][permission] <item>}
+
+                                (#) 'c' === will verbosely display all changes to each item you make which is useful in checking for mistakes
+
+                                (#) [class] === item classes EX: 'u' user(owner), 'g' group, 'o' other, 'a' all.
+
+                                (#) you can change more than one class at a time. For example
+                                        - chmod -c ug[sign][permission] <item>
+
+                                        The two below accomplish the same thing since 'a'(all) is just the combination of 'u, g, and o'.
+                                        - chmod -c a[sign][permission] <item> 
+                                        - chmod -c ugo[sign][permission] <item>
+
+                                        The second set of input [sign] involves mathematical signs which represent the method we want to apply.
+                                        - [-+=] + add, – remove, = set (replace)
+                                        - + add will insert [permission] to the item class.
+                                        - – remove will delete [permission] from the item class.
+                                        - = set will delete all existing permissions from the class and replace them with [permission].
+
+                                        The following would add [permission] to item’s user (owner) and group classes.
+                                        - chmod -c ug+[permission] <item>
+
+                                        The following would remove [permission] from the item’s user, group and other classes.
+                                        - chmod -c ugo-[permission] <item>
+                                        
+- 'rwx' (read write execute) - read    = file(read file)     directory(are you able to see(list) which files are inside this directory?)
+                         - write   = file(modify file)   directory(are you aloud to rename create or remove files within this directory?)[if you have write privaledge for a file but not 
+                                                                                                                                          the folder containing it. you can only empty it. You 
+                                                                                                                                          are not able to actually delete the file.]
+                         - execute = file(execute file)  directory(search - are you aloud to enter this directory. You must have permission for the directory as well as the directories
+                                                                   leading up to it from root.) 
+                         - '-' = you don't have permission.
+
+-mv <foo> <bar> - used to move or rename files
+
+-cp <foo/bar> <foo/foo/bar/bar> - copy file
+
+-rm - remove file
+
+-rm -r = remove recursive
+
+-rmdir = remove EMPTY directory
+
+-mkdir = create directory
+
+-Every program has an 'input stream' and an 'output stream' and you can direct these streams and even direct them into other programs or files.
+
+->> - append foo >> bar adds contents of foo to bar and doesn't overwrite them.
+
+-'ls -l / | tail -n3' === 'list' + 'long' + 'root directory' + 'pipe to' + 'tail' + 'numberoflines 3'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

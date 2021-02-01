@@ -2,7 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #edf2f7;
+  background-image: linear-gradient(to top left, #A7FFFE, #A054FE);
 }
 
 main {
@@ -24,7 +24,6 @@ ul {
 
 .lesson {
   min-height: 150px;
-  background-color: #A5B4AF;
   max-width: 1300px;
   min-width: 900px;
 }
@@ -72,7 +71,7 @@ ul {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: #C29775;
+  background-color: rgba(132, 88, 45, 0.3);
   min-height: 400px;
 }
 
@@ -83,11 +82,16 @@ td {
 }
 
 table {
-  background-color: #D7E3D9;
+  background-image: linear-gradient(#D7FFEF, #DAFFD8);
   border: 3px dashed green;
   border-radius: 30px;
   padding: 15px;
-  transition: width 2s, height 2s;
+  transition: all 0.5s ease-in-out;
+}
+
+table:hover {
+  transform: scale(1.2, 1.2);
+  background-image: linear-gradient(#8EFFEC, #B8FF89);
 }
 
 th {
